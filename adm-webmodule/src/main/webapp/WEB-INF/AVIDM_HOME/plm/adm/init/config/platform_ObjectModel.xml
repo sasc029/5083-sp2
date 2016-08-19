@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="GBK"?>
+<folders>	
+	<folder id="platform">
+		<folder id="ObjectModel">
+			<folder id="MasterMapping">
+				<param id="ActiveDocumentMaster" name="现行文件主对象映射" value="ActiveDocument" />
+				<!-- <param id="ActiveSetMaster" name="现行套主对象映射" value="ActiveSet" /> -->
+				<param id="ActiveOrderMaster" name="现行单据主对象映射" value="ActiveOrder" />
+			</folder>
+		</folder>						
+	</folder>
+</folders>

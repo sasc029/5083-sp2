@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<!-- 现行文件-右键菜单 -->
+	<model id="ActiveContext.ListFolderContents.com.bjsasc.adm.active.model.activedocument.ActiveDocument" action="com.bjsasc.plm.operate.active" callback="reload">
+		<!-- 现行文件-操作菜单-删除，编辑，修订-->
+		<action id="com.bjsasc.adm.activedata.delete"  target="popup"/>
+		<action id="com.bjsasc.adm.activedocument.edit"  target="popup"/>
+		<action id="com.bjsasc.plm.newVersion.adm" target="popup" callback="plm.visit"/>
+		<!-- 现行文件-操作菜单-(复制，另存为，移动，重命名,设置生命周期)共通 -->
+		<action id="com.bjsasc.plm.copy.adm" target="popup"/>
+		<action id="com.bjsasc.plm.saveas.adm" target="popup"/>
+		<action id="com.bjsasc.plm.move.adm" target="popup"/>
+		<action id="com.bjsasc.plm.rename.adm" target="popup"/>
+		<action id="com.bjsasc.plm.reasignLifeCycleTemplate.adm"/>
+		<!-- 审批页面启动 -->
+		<action id="com.bjsasc.plm.ApproveOrder.approve.adm" target="popup"/>
+		<!-- 现行套-操作菜单-新建
+		<action id="com.bjsasc.adm.activeset.create"  target="popup"/>
+		-->
+		<action id="com.bjsasc.adm.activeorder.create"  target="popup"/>
+		<action id="com.bjsasc.plm.domain.author.adm" target="popup"/>
+		<action id="adm.storage.operate" target="ajax"/>
+		<action id="ddm.distribute.operate" target="ajax"/>
+	</model>
+		<!-- 现行单据-右键菜单 -->
+	<model id="ActiveContext.ListFolderContents.com.bjsasc.adm.active.model.activeorder.ActiveOrder" action="com.bjsasc.plm.operate" callback="reload">
+		<!-- 现行单据-操作菜单-删除，编辑-->
+		<action id="com.bjsasc.adm.activedata.delete"  target="popup"/>
+		<action id="com.bjsasc.adm.activeorder.edit"  target="popup"/>
+		<!-- 现行单据-操作菜单-(复制，移动，重命名,设置生命周期)共通 -->
+		<action id="com.bjsasc.plm.copy.adm" target="popup"/>
+		<action id="com.bjsasc.plm.move.adm" target="popup"/>
+		<action id="com.bjsasc.plm.rename.adm" target="popup"/>
+		<action id="com.bjsasc.plm.reasignLifeCycleTemplate.adm"/>
+		<!-- 审批页面启动 -->
+		<action id="com.bjsasc.plm.ApproveOrder.approve.adm" target="popup"/>
+
+		<action id="com.bjsasc.plm.domain.author.adm" target="popup"/>
+		<action id="adm.storage.operate" target="ajax"/>
+		<action id="ddm.distribute.operate" target="ajax"/>
+	</model>
+		<!-- 现行套-右键菜单 -->
+	<model id="ActiveContext.ListFolderContents.com.bjsasc.adm.active.model.activeset.ActiveSet" action="com.bjsasc.plm.operate" callback="reload">
+		<!-- 现行套-操作菜单-删除，编辑，修订-->
+		<action id="com.bjsasc.adm.activedata.delete"  target="popup"/>
+		<action id="com.bjsasc.adm.activeset.edit"  target="popup"/>
+		<action id="com.bjsasc.plm.newVersion.adm" target="popup" callback="plm.visit"/>
+		<!-- 现行套-操作菜单-(复制，另存为，移动，重命名,设置生命周期)共通 -->
+		<action id="com.bjsasc.plm.copy.adm" target="popup"/>
+		<action id="com.bjsasc.plm.saveas.adm" target="popup"/>
+		<action id="com.bjsasc.plm.move.adm" target="popup"/>
+		<action id="com.bjsasc.plm.rename.adm" target="popup"/>
+		<action id="com.bjsasc.plm.reasignLifeCycleTemplate.adm"/>
+		<!-- 审批页面启动 -->
+		<action id="com.bjsasc.plm.ApproveOrder.approve.adm" target="popup"/>
+		<action id="com.bjsasc.adm.activeorder.create"  target="popup"/>
+		<action id="com.bjsasc.plm.domain.author.adm" target="popup"/>
+		<action id="adm.storage.operate" target="ajax"/>
+		<action id="ddm.distribute.operate" target="ajax"/>
+	</model>
+</config>

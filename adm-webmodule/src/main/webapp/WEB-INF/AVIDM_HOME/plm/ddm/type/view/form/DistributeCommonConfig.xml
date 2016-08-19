@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="GBK"?>
+<type id="DistributeCommonConfig">
+	<attr id="configID">
+		<validators>
+			<validator id="EmptyValidator" />
+			<param id="className">com.bjsasc.ddm.distribute.model.distributecommonconfig.DistributeCommonConfig</param>
+		</validators>
+	</attr>
+
+	<attr id="configName">
+		<validators>
+			<validator id="EmptyValidator"/>
+			<param id="className">com.bjsasc.ddm.distribute.model.distributecommonconfig.DistributeCommonConfig</param>
+		</validators>
+	</attr>
+	
+	<attr id="configValue">
+		<validators>
+			<validator id="EmptyValidator"/>
+			<param id="className">com.bjsasc.ddm.distribute.model.distributecommonconfig.DistributeCommonConfig</param>
+		</validators>
+	</attr>
+
+	<attr id="configDefaultValue">
+		<validators>
+			<validator id="EmptyValidator"/>
+			<param id="className">com.bjsasc.ddm.distribute.model.distributecommonconfig.DistributeCommonConfig</param>
+		</validators>
+	</attr>
+</type>

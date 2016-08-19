@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<type id="RecDesInfo" name="回收销毁信息" alias="recDesInfo"
+	icon="/plm/images/prop/prop.gif">
+	<attr id="CLASSID" />
+	<attr id="INNERID" />
+	<attr id="OID" />
+	<attr id="OIDS" />
+	<attr id="DISORDEROBJECTLINKID" visible="false"/>
+	<attr id="DISORDEROBJECTLINKCLASSID" visible="false"/>
+	<attr id="DISINFOID" visible="false"/>
+	<attr id="DISINFONAME" />
+	<attr id="DISINFOTYPE" />
+	<attr id="NEEDRECOVERNUM" />
+	<attr id="NEEDDESTROYNUM" />
+	<attr id="DISINFONUM" />
+	<attr id="RECOVERNUM" />
+	<attr id="DESTROYNUM" />
+	<attr id="TASKNAME" />
+	<attr id="DISMEDIATYPE" />
+	<attr id="DISTYPE" />
+	<attr id="NOTE" />
+	<attr id="SENDTIME" />
+	<attr id="LIFECYCLE_STATE" />
+	<attr id="LIFECYCLE_STATEID" />
+	<attr id="LIFECYCLE_TEMPLATE" />
+	<attr id="CREATOR" />
+	<attr id="MODIFIER" />
+	<attr id="CREATE_TIME" />
+	<attr id="MODIFY_TIME" />
+	<attr id="DISOBJID" />
+	<attr id="DISOBJNAME" />
+	<attr id="TITLE" visible="false" formater="TitleFormater">	
+		<src>disTypeName</src>
+		<src>disMediaTypeName</src>
+		<src>disUrgentName</src>
+	</attr>
+</type>

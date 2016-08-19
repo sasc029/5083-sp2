@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+	 http://www.springframework.org/schema/tx 
+	 http://www.springframework.org/schema/tx/spring-tx-3.0.xsd 
+	 http://www.springframework.org/schema/aop 
+	 http://www.springframework.org/schema/aop/spring-aop-3.0.xsd"
+	default-autowire="no" default-lazy-init="true">
+	<!-- 现行文件服务 -->
+	<bean id="adm_activedocumentservice" class="com.bjsasc.adm.active.service.activedocumentservice.ActiveDocumentServiceImpl">
+	</bean>
+	<!-- 现行单据服务 -->
+	<bean id="adm_activeorderservice" class="com.bjsasc.adm.active.service.activeorderservice.ActiveOrderServiceImpl">
+	</bean>
+	<!-- 现行套服务 -->
+	<bean id="adm_activesetservice" class="com.bjsasc.adm.active.service.activesetservice.ActiveSetServiceImpl">
+	</bean>
+	<!-- 现行文件模型服务 -->
+	<bean id="adm_activemodelservice" class="com.bjsasc.adm.active.service.admmodelservice.AdmModelServiceImpl">
+	</bean>	
+	<!-- Excel数据服务 -->
+	<bean id="adm_exceldataservice" class="com.bjsasc.adm.active.service.exceldataservice.ExcelDataServiceImpl">
+	</bean>
+	<!-- Xml数据服务 -->
+	<bean id="adm_xmldataservice" class="com.bjsasc.adm.active.service.xmldataservice.XmlDataServiceImpl">		
+	</bean>
+	<!-- 回收站服务 -->
+	<bean id="adm_activerecycleservice" class="com.bjsasc.adm.active.service.activerecycleservice.ActiveRecycleServiceImpl">
+	</bean>
+	<!-- 统计与输出服务 -->
+	<bean id="adm_activestatisticsservice" class="com.bjsasc.adm.active.service.activestatisticsservice.ActiveStatisticsServiceImpl">		
+	</bean>
+	<!-- 模型视图服务 -->
+	<bean id="adm_modelviewservice" class="com.bjsasc.adm.active.service.modelviewservice.ModelViewServiceImpl">		
+	</bean>
+	<!-- 现行文件上下文服务 -->
+	<bean id="adm_active_context_service" class="com.bjsasc.adm.active.service.activecontext.ActiveContextServiceImpl">		
+	</bean>
+	<!-- 生命周期服务 -->
+	<bean id="adm_activelifecycleservice" class="com.bjsasc.adm.active.service.activelifecycle.ActiveLifecycleServiceImpl">		
+	</bean>
+	<!-- 自定义服务 -->
+	<!-- 生命周期模板服务 -->
+	<bean id="adm_template_service" class="com.bjsasc.adm.active.self.service.AdmTemplateServiceImpl"></bean>
+	<!-- 生命周期初始化规则服务 -->
+	<bean id="adm_lifeCycle_rule" class="com.bjsasc.adm.active.self.service.AdmLifeCycleRuleImpl"></bean>
+	<!-- 对象初始化规则服务 -->
+	<bean id="adm_rule_service" class="com.bjsasc.adm.active.self.service.AdmRuleServiceImpl"></bean>
+	<!-- 现行对象服务 -->
+	<bean id="adm_activechangeservice" class="com.bjsasc.adm.active.service.activechangeservice.ActiveChangeServiceImpl">			
+	</bean>
+	<!-- 校验权限服务 -->
+	<bean id="adm_optvalidation_service" class="com.bjsasc.adm.active.service.activeoptvalidation.ActiveOptValidationServiceImpl"></bean>
+	
+	<!-- 相关现行单据服务 -->
+	<bean id="ActiveDocument_RelatedObject_ActiveOrder" 
+		class="com.bjsasc.adm.active.service.activerelated.RelatedActiveOrderImpl"></bean>
+		
+	<!-- 相关现行套服务 -->
+	<bean id="ActiveDocument_RelatedObject_ActiveSet" 
+		class="com.bjsasc.adm.active.service.activerelated.RelatedActiveSetImpl"></bean>
+		
+	<!-- 相关现行文件服务 -->
+	<bean id="RelatedObject_ActiveDocument" 
+		class="com.bjsasc.adm.active.service.activerelated.RelatedActiveDocumentImpl"></bean>
+		
+	<!-- 现行文件,现行单据,现行套直接入库服务 -->
+	<bean id="adm_putintostorageservice" class="com.bjsasc.ddm.distribute.service.distributeorder.DistributeOrderServiceImpl">
+	</bean>		
+	
+	<!-- 现行文件 检查接口实现 -->
+	<bean id="activeDocument_check_manager" class="com.bjsasc.adm.active.service.extend.ActiveDocumentCheckServiceImpl">
+	</bean>
+
+	<!-- 现行文件 保存接口实现 -->
+	<bean id="activeDocument_saveas_manager" class="com.bjsasc.adm.active.service.extend.ActiveDocumentPersistSaveAsServiceImpl">
+	</bean>
+
+	<!-- 现行单据 保存接口实现 -->
+	<bean id="activeOrder_saveas_manager" class="com.bjsasc.adm.active.service.extend.ActiveOrderPersistSaveAsServiceImpl">
+	</bean>
+
+	<!-- 现行套 保存接口实现 -->
+	<bean id="activeSet_saveas_manager" class="com.bjsasc.adm.active.service.extend.ActiveSetPersistSaveAsServiceImpl">
+	</bean>
+
+	<!-- 现行文件夹 粘贴板 接口实现 -->
+	<bean id="ActiveFolderClipboardContainer" class="com.bjsasc.adm.active.service.activefolder.ActiveFolderClipboardContainerImpl">
+	</bean>
+
+	<!-- 现行文件 移动 接口实现 -->
+	<bean id="activeDocument_move_manager" class="com.bjsasc.adm.active.service.activefolder.ActiveMoveServiceImpl">
+	</bean>
+
+	<!-- 现行子文件夹 移动 接口实现 -->
+	<bean id="activeSubFolder_move_manager" class="com.bjsasc.adm.active.service.extend.ActiveSubFolderMoveServiceImpl">
+	</bean>
+
+	<!-- 现行文件 增删改 接口实现 -->
+	<bean id="activeDocument_persist_service" class="com.bjsasc.adm.active.service.extend.ActiveDocumentPersistSUDServiceImpl">
+	</bean>
+
+	<!-- 现行单据 增删改 接口实现 -->
+	<bean id="activeOrder_persist_service" class="com.bjsasc.adm.active.service.extend.ActiveOrderPersistSUDServiceImpl">
+	</bean>
+
+	<!-- 现行套 增删改 接口实现 -->
+	<bean id="activeSet_persist_service" class="com.bjsasc.adm.active.service.extend.ActiveSetPersistSUDServiceImpl">
+	</bean>
+	
+	<!-- 现行文件夹 删除 接口实现 -->
+	<bean id="activeSubFolder_persist_service" class="com.bjsasc.adm.active.service.extend.ActiveSubFolderPersistServiceImpl">
+	</bean>
+	
+	<!-- 现行文件夹 格式化 -->
+	<bean id="PathBuilder_ActiveFolderedImpl" class="com.bjsasc.adm.active.service.activefolder.PathBuilder_ActiveFolderedImpl">
+	</bean>
+	
+	<!-- 文件夹内容表格数据查询服务 -->
+	<bean id="GridDataService_ListActiveFolderContentsImpl" class="com.bjsasc.adm.active.service.activefolder.GridDataService_ListActiveFolderContentsImpl">
+	</bean>
+	
+	<!-- 现行文件 版本控制服务类 -->
+	<bean id="adm_ActiveDocument_version_service" class="com.bjsasc.adm.active.service.extend.ActiveDocumentVersionServiceImpl">
+	</bean>
+	
+	<!-- 现行单据 版本控制服务类 -->
+	<bean id="adm_ActiveOrder_version_service" class="com.bjsasc.adm.active.service.extend.ActiveOrderVersionServiceImpl">
+	</bean>
+	
+	<!-- 现行套 版本控制服务类 -->
+	<bean id="adm_ActiveSet_version_service" class="com.bjsasc.adm.active.service.extend.ActiveSetVersionServiceImpl">
+	</bean>
+	
+	<!-- 现行子文件夹 文件夹管理服务类 -->
+	<bean id="adm_subfolder_manager" class="com.bjsasc.adm.active.service.activefolder.ActiveSubFolderManagerServiceImpl">
+	</bean>
+</beans>

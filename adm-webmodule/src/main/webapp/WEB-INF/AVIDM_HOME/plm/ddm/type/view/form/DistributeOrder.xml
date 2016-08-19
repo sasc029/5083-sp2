@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="GBK"?>
+<type id="DistributeOrder">
+	<attr id="NAME">
+		<validators>
+			<validator id="EmptyValidator"></validator>
+		</validators>
+	</attr>
+	<attr id="NUMBER">
+		<validators>
+			<validator id="EmptyValidator"></validator>
+			<validator id="NumberUniqueValidator"><param id="className">com.bjsasc.ddm.distribute.model.distributeorder.DistributeOrder</param></validator>
+		</validators>
+	</attr>
+	<attr id="NOTE" max="1000">
+		<validators>
+			<validator id="StringMaxLengthValidator" />
+		</validators>
+	</attr>
+</type>

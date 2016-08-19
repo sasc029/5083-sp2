@@ -1,0 +1,10 @@
+﻿<admLifecycle updateStateInWorkflow="false">
+	<!-- 现行数据管理生命周期 -->
+	<admObject class="com.bjsasc.adm.active.model.ActiveBase">
+		<!-- <state name="受控中"   nextStateName="发放中" />
+		<state name="发放中" nextStateName="已发放"  rejectiveStateName="补发中" />
+		<state name="补发中" nextStateName="发放中" />
+		<state name="已发放" />
+		<state name="已回收" /> -->
+	</admObject>
+</admLifecycle>

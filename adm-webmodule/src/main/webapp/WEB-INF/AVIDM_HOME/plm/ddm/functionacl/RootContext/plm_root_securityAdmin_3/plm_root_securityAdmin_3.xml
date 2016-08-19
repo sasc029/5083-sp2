@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="GBK"?>
+<principal id="plm_root_securityAdmin" name="站点的安全管理员" type="">
+	<function id="plm_global_root_context">
+		<function id="plm_root_context_tool">
+			<function id="plm_root_context_business_manager">
+				<function id="plm_root_context_manager_distribute" />
+			</function>
+		</function>
+	</function>
+	<function id="plm_global_org_context">
+		<function id="plm_org_context_tool">
+			<function id="plm_org_context_business_manager">
+				<function id="plm_org_context_manager_distribute" />
+			</function>
+		</function>
+	</function>
+</principal>

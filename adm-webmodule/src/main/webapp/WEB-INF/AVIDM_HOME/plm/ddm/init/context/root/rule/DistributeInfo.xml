@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="GBK"?>
+<rule name="分发信息初始化规则" typeId="DistributeInfo" type="system">
+	<attr id="lifeCycleInfo" algorithm="com.bjsasc.plm.core.context.rule.algorithm.impl.LifeCycleRuleImpl">
+		<arg name="templateName" value="分发信息生命周期"/>
+		<arg name="stateName" value="未分发"/>
+	</attr>
+</rule>

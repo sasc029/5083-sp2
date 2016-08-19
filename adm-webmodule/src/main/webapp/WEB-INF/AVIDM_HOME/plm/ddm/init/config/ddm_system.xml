@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="GBK"?>
+<folders>
+	<folder id="plm">						
+		<folder id="system">
+			<folder id="beans">
+				<folder id="beforeDeletePersistable">
+					<param id="listener" name="listener" value="distributeOrderDeleteListener" merge="true" ></param><!-- 多个监听以分号分隔 -->
+				</folder>
+				<!-- 删除对象前的发放单检查监听 -->
+				<folder id="distributeOrderDeleteListener" name="删除对象前的发放单监听">
+					<param id="id" name="id" value="distributeOrderDeleteListener" default="distributeOrderDeleteListener" ></param>
+					<param id="beantype" name="beantype" value="listener" default="listener"></param>
+					<param id="class" name="class" value="com.bjsasc.ddm.distribute.listener.DistributeOrderDeleteListener" default="com.bjsasc.ddm.distribute.listener.DistributeOrderDeleteListener"></param>
+					<param id="sync" name="sync" value="true" default="true"></param>
+				</folder>
+			</folder>
+		</folder>
+	</folder>	
+</folders>

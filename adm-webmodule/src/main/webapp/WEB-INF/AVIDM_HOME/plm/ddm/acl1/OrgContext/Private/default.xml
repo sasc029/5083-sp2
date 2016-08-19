@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="GBK"?>
+<acls>
+	<acl category="DOM" dn="LC_ALLLIFECYCLESTATE" typeId="Document" pClass="role" pValue="plm_file_keeper" accept="access" reject=""/>
+	<acl category="DOM" dn="LC_ALLLIFECYCLESTATE" typeId="Part" pClass="role" pValue="plm_file_keeper" accept="access" reject=""/>
+	<acl category="DOM" dn="LC_ALLLIFECYCLESTATE" typeId="CADDocument" pClass="role" pValue="plm_file_keeper" accept="access" reject=""/>
+</acls>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<spot id="ListActiveContexts" filter="false">
+		<types>
+			<type id="ActiveContext" />
+		</types>
+		<default>
+			<column id="NEW_MARK" />
+			<column id="TYPE" />
+			<column id="NAME" />
+			<column id="CONTEXT"/>
+			<column id="ISPRIVATE" />
+ 			<column id="MODIFIER"/>	
+			<column id="MODIFY_TIME"/>
+			<column id="CREATOR"/>
+			<column id="CREATE_TIME"/>
+		</default>
+		<custom>
+			<column id="CONTEXT" name="组织"/>
+		</custom>
+	</spot>
+	<spot id="ActiveContext.ListFolderContents" filter="true">
+		<types>
+			<type id="ActiveDocument" view="true"/>
+			<type id="ActiveOrder" view="true"/>
+			<!-- <type id="ActiveSet" view="true"/> -->
+			<type id="SubFolder" view="true"/>
+		</types>
+		<default>
+			<column id="TYPE" />
+			<column id="NUMBER" />
+			<column id="NAME" />
+			<column id="VERSION" />
+			<column id="LIFECYCLE_STATE" />
+			<column id="MODIFY_TIME" />
+			<column id="MODIFIER" />
+			<column id="CREATOR" />					
+		</default>
+	</spot>	
+</config>

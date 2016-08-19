@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<spot id="ListDistributeReturnDetail" filter="false">
+		<types>
+			<type id="DistributeOrder" />
+			<type id="ReturnReason" />
+		</types>
+		<default>
+			<!-- <column id="ID" /> -->
+			<column id="NUMBER" />
+			<column id="NAME" />
+			<column id="RETURNCOUNT" />
+			<column id="RETURNREASON" />
+			<column id="RETURNTIME" />
+			<column id="RETURNUSER" />
+		</default>
+	</spot>
+</config>

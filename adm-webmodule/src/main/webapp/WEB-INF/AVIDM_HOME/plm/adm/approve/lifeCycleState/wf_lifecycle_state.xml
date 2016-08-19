@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Lifecycle_State_Config>
+	<LifecycleObject name="现行数据生命周期">
+		<WorkFlowEvent id="StartWorkflow" name="流程启动">
+			<wfTemplate name="default">
+				<LifecycleSate id="approving" activityName="default"/>
+			</wfTemplate>
+		</WorkFlowEvent>
+		<WorkFlowEvent id="ActivityReject" name="流程打回">
+			<wfTemplate name="default">
+				<LifecycleSate id="approvereject" activityName="default"/>
+			</wfTemplate>
+		</WorkFlowEvent>
+		<WorkFlowEvent id="ActivityComplete" name="流程活动完成">
+			<wfTemplate name="default">
+				<LifecycleSate id="approving" activityName="default"/>
+			</wfTemplate>
+		</WorkFlowEvent>
+		<WorkFlowEvent id="TerminateWorkflow" name="流程终止">
+			<wfTemplate name="default">
+				<LifecycleSate id="approveterminate" activityName="default"/>
+			</wfTemplate>
+		</WorkFlowEvent>
+		<WorkFlowEvent id="EndWorkflow" name="流程结束">
+			<wfTemplate name="default">
+				<LifecycleSate id="control" activityName="default"/>
+			</wfTemplate>
+		</WorkFlowEvent>
+	</LifecycleObject>
+</Lifecycle_State_Config>

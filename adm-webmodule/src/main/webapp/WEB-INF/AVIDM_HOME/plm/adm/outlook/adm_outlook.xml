@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<!-- 现行数据管理二级菜单定制 -->
+	<clazz id="com.bjsasc">
+		 <action id="com.bjsasc.adm">
+			<action id="com.bjsasc.adm.detail"/>
+			<action id="com.bjsasc.adm.context.model.folder"/>
+			<action id="com.bjsasc.adm.context.model.view"/>
+			<!--
+			<action id="com.bjsasc.adm.context.folder"/>
+			<action id="com.bjsasc.adm.context.part"/>
+			<action id="com.bjsasc.adm.context.workspace"/>
+			<action id="com.bjsasc.adm.context.baseline"/>-->
+			<action id="com.bjsasc.adm.context.template" />
+			<action id="com.bjsasc.adm.context.team" />
+			<action id="com.bjsasc.adm.context.tool" />
+		</action>
+		<action id="com.bjsasc.adm.statictisMessage"/>
+		<action id="com.bjsasc.adm.statictisExport"/>
+		<action id="com.bjsasc.adm.recycleManager"/> 
+	</clazz>
+</config>

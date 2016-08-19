@@ -1,0 +1,28 @@
+﻿<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.bjsasc.avpdm</groupId>
+		<version>5.0.8.3-SP2-SNAPSHOT</version>
+		<artifactId>avpdm-base</artifactId>
+	</parent>
+	<artifactId>adm-webmodule</artifactId>
+	<name>分发管理Web模块</name>
+	<packaging>war</packaging>
+	<dependencies>
+		<dependency>
+			<groupId>com.bjsasc.avpdm</groupId>
+			<artifactId>adm-web</artifactId>
+		
+		</dependency>
+	</dependencies>
+  <properties>
+  	<iswebmodule>true</iswebmodule>
+  </properties>
+</project>
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<!-- 纸质任务 -->
+	<view typeName="DistributeProcessing" CNName="加工单" tableNames="DDM_DIS_PAPERTASK a" condition="a.stateName in ('加工','复制完成','复制退回到加工')"> 
+		<column name="CLASSID">a.classId</column>
+		<column name="INNERID">a.innerId</column>
+		<column name="NUMBER">a.id</column>
+		<column name="NAME">a.name</column>
+		<column name="CONTEXTID">a.contextId</column>
+		<column name="CONTEXTCLASSID">a.contextClassId</column>
+		<column name="WORKSTATE">a.stateName</column>
+		<column name="MODIFY_TIME">a.modifyTime</column> 
+		<column name="CREATE_TIME">a.createTime</column>
+		<column name="CREATOR">a.createbyid</column>
+		<column name="MODIFIER">a.modifybyid</column>
+	</view>
+</config>

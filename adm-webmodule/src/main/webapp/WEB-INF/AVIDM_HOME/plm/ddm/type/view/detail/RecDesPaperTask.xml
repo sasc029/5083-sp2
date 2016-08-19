@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<type id="RecDesPaperTask"  extAttrGroup="业务">
+	<attr id="CLASSID"/>
+	<attr id="INNERID"/>
+	<attr id="OID" visible="false"/>
+	<attr id="TITLE" visible="false" formater="TitleFormater">	
+		<src>number</src>
+		<src>name</src>
+	</attr>
+	<attr id="NUMBER" group="常规" formater="javaScriptLinkFormatImpl" link=""/>
+	<attr id="NAME" group="常规" formater="javaScriptLinkFormatImpl" link=""/>
+	<attr id="NOTE" group="常规"/>
+	<attr id="DISURGENT" group="常规"/>
+	<attr id="DDMCONTEXT" group="系统"/>
+	<attr id="LIFECYCLE_STATE" formater="LifeCycleStateFormater" group="系统">
+		<src>this</src>
+	</attr>
+	<attr id="LIFECYCLE_TEMPLATE" group="系统"/>
+	<attr id="CREATOR" group="系统"/>
+	<attr id="CREATE_TIME" group="系统"/>
+	<attr id="MODIFIER" group="系统"/>
+	<attr id="MODIFY_TIME" group="系统"/>
+	<attr id="DOMAIN" visible="false"/>
+</type>

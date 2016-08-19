@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<sort id="A" title="类型1"> 
+		<widaget id="A_35" title="任务接收" mode="scrollbar" ioc="default" titleurl="/ddm/distributetask/distributeTask_tab.jsp" target="blank" displaystyle="1" url="/ddm/distributetask/getDistributeTask_tab.jsp?stateId=not_sign" height="180" description="任务接收" />
+	</sort>
+</config>

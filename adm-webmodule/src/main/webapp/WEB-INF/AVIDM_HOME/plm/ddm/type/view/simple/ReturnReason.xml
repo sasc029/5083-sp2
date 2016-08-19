@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<type id="ReturnReason" name="回退原因" alias="returnReason"
+	icon="/plm/images/prop/prop.gif">
+	<attr id="CLASSID"/>
+	<attr id="INNERID"/>
+	<attr id="OID" visible="false"/>
+	<attr id="OIDS" visible="false"/>
+	<attr id="OPENCOUNT"/>
+	<attr id="RETURNREASON"/>
+	<attr id="RETURNTIME"/>
+	<attr id="RETURNUSER"/>
+</type>

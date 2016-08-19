@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<spot id="ListAddDuplicateProcessor" filter="false">
+		<types>
+			<type id="DistributePaperTask" />
+		</types>
+		<default>
+			<!-- <column id="ID" /> -->
+			<column id="NUMBER" />
+			<column id="COLLATOR" />
+			<column id="CONTRACTOR" />
+		</default>
+	</spot>
+	<spot id="ListAddDuplicateInfos" filter="false">
+		<types>
+			<type id="DistributePaperTask" />
+		</types>
+		<default>
+			<!-- <column id="ID" /> -->
+			<!-- <column id="DDMCONTEXT" /> -->
+			<column id="NUMBER" />
+			<column id="VERSION" />
+			<column id="DISINFONAME"/>
+			<column id="COLLATOR" />
+			<column id="CONTRACTOR" />
+			<column id="FINISHTIME" />
+		</default>
+	</spot>
+</config>

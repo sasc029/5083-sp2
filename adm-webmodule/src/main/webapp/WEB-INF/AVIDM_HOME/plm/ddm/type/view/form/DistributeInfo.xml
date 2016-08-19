@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="GBK"?>
+<type id="DistributeInfo">
+	<attr id="deadLineDate">
+		<validators>
+			<validator id="EmptyValidator" 
+				clazz="com.bjsasc.plm.type.validator.impl.EmptyValidatorImpl"/>
+		</validators>
+	</attr>
+</type>

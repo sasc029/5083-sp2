@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<spot id="ListDistributeObjectTypes" filter="false">
+		<types>
+			<type id="DistributeObjectType"/>
+		</types>
+		<default>
+				<column id="DOT_DATA" />
+			    <column id="DOT_STATE" />
+			    <column id="CONTEXT" />
+			    <column id="MODIFIER"/>
+			    <column id="MODIFY_TIME"/>
+		</default>
+	</spot>
+	
+</config>

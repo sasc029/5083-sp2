@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<model id="context.root.tool">
+		<model id="com.bjsasc.plm.context.tool.business" >
+			<!-- 发放管理配置 -->
+			<action id="com.bjsasc.ddm.context.business.config"/>			
+		</model>
+	</model>
+	
+	<model id="context.org.tool">
+		<model id="com.bjsasc.plm.context.tool.business">
+			<!-- 发放管理配置 -->
+			<action id="com.bjsasc.ddm.context.business.config"/>			
+		</model>
+	</model>
+
+	<model id="context.product.tool">
+		<model id="com.bjsasc.plm.context.tool.business">
+			<!-- 发放管理配置 -->
+			<action id="com.bjsasc.ddm.context.business.config"/>			
+		</model>
+	</model>
+</config>

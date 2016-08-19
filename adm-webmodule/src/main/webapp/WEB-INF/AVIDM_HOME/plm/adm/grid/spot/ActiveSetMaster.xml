@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<spot id="ACTIVESETMASTER" filter="false">
+		<types>
+			<type id="ActiveSetMaster"/>
+		</types>
+		<default>
+			<column id="NUMBER" />
+			<column id="NAME" />
+			<column id="TYPE"/>
+		</default>
+	</spot>
+</config>

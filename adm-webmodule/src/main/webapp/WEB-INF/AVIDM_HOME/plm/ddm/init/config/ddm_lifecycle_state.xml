@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="GBK"?>
+<folders>
+	<folder id="platform">
+		<folder id="LifeCycle">
+			<folder id="stateDefinition">
+				<folder id="ddm" name="发放管理">
+					<folder id="scheduling" name="调度中">
+						<param id="id" name="id" value="scheduling" />
+						<param id="name" name="name" value="调度中" />
+					</folder>
+					<folder id="ddmApproveing" name="分发审批中">
+						<param id="id" name="id" value="ddmApproveing" />
+						<param id="name" name="name" value="分发审批中" />
+					</folder>
+					<folder id="ddmApprovereject" name="分发审批被退回">
+						<param id="id" name="id" value="ddmApprovereject" />
+						<param id="name" name="name" value="分发审批被退回" />
+					</folder>
+					<folder id="ddmApproveterminate" name="分发审批终止">
+						<param id="id" name="id" value="ddmApproveterminate" />
+						<param id="name" name="name" value="分发审批终止" />
+					</folder>
+					<folder id="backoff" name="已退回">
+						<param id="id" name="id" value="backoff" />
+						<param id="name" name="name" value="已退回" />
+					</folder>
+					<folder id="destroyed" name="销毁完成">
+						<param id="id" name="id" value="destroyed" />
+						<param id="name" name="name" value="销毁完成" />
+					</folder>
+					<folder id="not_distribute" name="未分发">
+						<param id="id" name="id" value="not_distribute" />
+						<param id="name" name="name" value="未分发" />
+					</folder>					
+					<folder id="distributed" name="已分发">
+						<param id="id" name="id" value="distributed" />
+						<param id="name" name="name" value="已分发" />
+					</folder>
+					<folder id="distributing" name="分发中">
+						<param id="id" name="id" value="distributing" />
+						<param id="name" name="name" value="分发中" />
+					</folder>
+					<folder id="not_sign" name="未签收">
+						<param id="id" name="id" value="not_sign" />
+						<param id="name" name="name" value="未签收" />
+					</folder>
+					<folder id="signed" name="已签收">
+						<param id="id" name="id" value="signed" />
+						<param id="name" name="name" value="已签收" />
+					</folder>
+					<folder id="refuse_signed" name="已拒绝">
+						<param id="id" name="id" value="refuse_signed" />
+						<param id="name" name="name" value="已拒绝" />
+					</folder>
+					<folder id="processing" name="加工中">
+						<param id="id" name="id" value="processing" />
+						<param id="name" name="name" value="加工中" />
+					</folder>
+					<folder id="duplicate_backoff" name="复制被退回">
+						<param id="id" name="id" value="duplicate_backoff" />
+						<param id="name" name="name" value="复制被退回" />
+					</folder>
+					<folder id="processing_backoff" name="加工被退回">
+						<param id="id" name="id" value="processing_backoff" />
+						<param id="name" name="name" value="加工被退回" />
+					</folder>
+					<folder id="duplicate_process_not_received" name="复制未签收">
+						<param id="id" name="id" value="duplicate_process_not_received" />
+						<param id="name" name="name" value="复制未签收" />
+					</folder>
+					<folder id="duplicate_process_received" name="复制中">
+						<param id="id" name="id" value="duplicate_process_received" />
+						<param id="name" name="name" value="复制中" />
+					</folder>
+					<folder id="duplicated" name="复制完成">
+						<param id="id" name="id" value="duplicated" />
+						<param id="name" name="name" value="复制完成" />
+					</folder>
+					<folder id="reproviding" name="补发中">
+						<param id="id" name="id" value="reproviding" />
+						<param id="name" name="name" value="补发中" />
+					</folder>
+				</folder>
+			</folder>
+		</folder>
+	</folder>
+</folders>

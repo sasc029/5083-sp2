@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="GBK"?>
+<acls>
+	<acl category="DOM" dn="LC_ALLLIFECYCLESTATE" typeId="ATObject" pClass="role" pValue="plm_sharedTeam_administrator" accept="FullControl" reject=""/>
+	<acl category="DOM" dn="LC_ALLLIFECYCLESTATE" typeId="ATObject" pClass="role" pValue="ActiveContext_administrator" accept="FullControl" reject=""/>
+		
+	<acl category="DOM" dn="LC_ALLLIFECYCLESTATE" typeId="ATObject" pClass="role" pValue="plm_teamMember" accept="access,plm_download" reject=""/>
+	<acl category="DOM" dn="LC_ALLLIFECYCLESTATE" typeId="ATObject" pClass="role" pValue="plm_visitor" accept="access,plm_download" reject=""/>
+</acls>

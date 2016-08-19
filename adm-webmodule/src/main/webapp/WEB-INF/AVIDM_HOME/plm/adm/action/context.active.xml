@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>	
+	<group id="context.active.tab" defaultChild="com.bjsasc.adm.detail">
+		<action id="com.bjsasc.plm.detail" callback="reload" target="self"/>
+		<model id="com.bjsasc.adm.context.template" action="com.bjsasc.adm.context.template" callback="reload" target="self" defaultChild="com.bjsasc.adm.template.workFlowTemplate">
+			<!-- <action id="com.bjsasc.plm.template.fileTemplate"/>
+			<action id="com.bjsasc.plm.template.documentTemplate"/> -->
+			<action id="com.bjsasc.adm.template.workFlowTemplate"/>
+			<action id="com.bjsasc.adm.template.lifeCycleTemplate"/>
+			<!-- <action id="com.bjsasc.plm.template.CADDocumentTemplate"/> -->
+		</model>
+		<!--  <action id="com.bjsasc.adm.context.team" callback="reload" target="self"/>-->
+		<action id="com.bjsasc.adm.context.tool" callback="reload" target="self"/>
+	</group>
+</config>

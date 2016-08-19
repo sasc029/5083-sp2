@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<!-- 现行单据 -->
+	<view typeName="ActiveOrder" CNName="现行单据" tableNames="ADM_ACTIVEORDERMASTER m,Pt_Om_Controlbranch cb, ADM_ACTIVEORDER d" condition="d.masterid=m.innerid and d.controlbranchid=cb.innerid"> 
+		<column name="CLASSID">d.classId</column>
+		<column name="INNERID">d.innerId</column> 
+		<column name="CHECKOUTSTATE">d.checkoutState</column>
+		<column name="NUMBER">m.id</column> 
+		<column name="NAME">m.name</column> 
+		<column name="VERSION">d.versionNo||'.'||d.Iterationno</column>
+		<column name="CONTEXTID">d.contextId</column>
+		<column name="CONTEXTCLASSID">d.contextClassId</column> 
+		<column name="WORKSTATE">d.stateName</column>
+		<column name="MODIFY_TIME">d.modifyTime</column> 
+		<column name="CREATE_TIME">d.createTime</column> 
+		<column name="LATEST_IN_BRANCH">d.latestinbranch</column>
+		<column name="LATEST_IN_LEVEL">cb.latestbranch</column> 
+		<column name="CREATOR">d.createbyid</column>
+		<column name="MODIFIER">d.modifybyid</column>	
+		<column name="VIEWID">cb.viewid</column>
+	</view>	
+</config>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="GBK"?>
+<group id="plm_functions">
+	<function id="plm_global_product_context" name="产品">
+		<function id="plm_product_context_tool" name="管理工具" fixedIncludes="plm_teamMember,plm_visitor,plm_sharedTeam_administrator,plm_product_administrator" fixedExcludes="plm_product_administrator,plm_sharedTeam_administrator,plm_teamMember,plm_visitor" >
+			<function id="plm_product_context_manager_distribute" name="发放管理配置" app="ddm"/>
+		</function>
+		<function id="plm_product_context_operate" name="操作" fixedIncludes="plm_visitor" >
+			<function id="plm_product_context_distributeOperate" name="发放" fixedIncludes="plm_visitor"  app="ddm"/>
+		</function>
+		<function id="plm_product_context_visit" name="查看对象信息">
+			<function id="plm_product_context_related" name="相关对象">
+				<function id="plm_product_context_relatedDistribute" name="发放单"  app="ddm"/>
+			</function>
+		</function>
+	</function>
+</group>

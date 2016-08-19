@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="GBK"?>
+<principal id="virtual_LibraryCreators" name="基础库创建者">
+	<function id="plm_global_context">
+		<function id="plm_global_context_desktop">
+			<function id="plm_global_elecTaskReceive" />
+		</function>
+	</function>
+</principal>

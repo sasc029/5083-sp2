@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="GBK"?>
+<type id="ActiveOrder">
+	<attr id="NAME">
+		<validators>
+			<validator id="EmptyValidator"></validator>
+		</validators>
+	</attr>
+	<attr id="NUMBER">
+		<validators>
+			<validator id="EmptyValidator"></validator>
+			<validator id="NumberUniqueValidator"><param id="className">com.bjsasc.adm.active.model.activeorder.ActiveOrderMaster</param></validator>
+		</validators>
+	</attr>
+	<attr id="NOTE" max="1000">
+		<validators>
+			<validator id="StringMaxLengthValidator" />
+		</validators>
+	</attr>
+	<attr id="DATASOURCE" max="127">
+		<validators>
+			<validator id="EmptyValidator" />
+		</validators>
+		<validators>
+			<validator id="StringMaxLengthValidator" />
+		</validators>
+	</attr>
+	<attr id="AUTHORNAME" max="127">
+		<validators>
+			<validator id="StringMaxLengthValidator" />
+		</validators>
+	</attr>
+	<attr id="AUTHORUNIT" max="127">
+		<validators>
+			<validator id="StringMaxLengthValidator" />
+		</validators>
+	</attr>
+	<attr id="PAGES" max="8">
+		<validators>
+			<validator id="StringMaxLengthValidator" />
+		</validators>
+		<validators>
+			<validator id="IntegerValidator" />
+		</validators>
+	</attr>
+	<attr id="COUNT" max="8">
+		<validators>
+			<validator id="StringMaxLengthValidator" />
+		</validators>
+		<validators>
+			<validator id="IntegerValidator" />
+		</validators>
+	</attr>
+</type>

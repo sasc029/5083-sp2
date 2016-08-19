@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- 每个工程中都必须有此文件 -->
+<apps>
+	<!-- id即文件夹的名称，该值必须与所在目录同名 -->
+	<!-- weight的值决定了该应用的搜索顺序，按照weight递增的顺序搜索并合并文件 -->
+	<!-- source 文件的来源位置 -->
+	<appInfo id="ddm" weight="200" note="发放管理" source="/plm/ddm/appInfo.xml"/>
+</apps>

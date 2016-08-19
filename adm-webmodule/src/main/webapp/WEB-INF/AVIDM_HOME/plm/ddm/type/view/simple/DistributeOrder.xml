@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<type id="DistributeOrder" name="发放单" alias="distributeOrder"
+	icon="/plm/images/prop/prop.gif">
+	<attr id="CLASSID"/>
+	<attr id="INNERID"/>
+	<attr id="OID"/>
+	<attr id="NAME"/>
+	<attr id="ORDERTYPE" />
+	<attr id="STATENAME" />
+	<attr id="NOTE" />
+	<attr id="LIFECYCLE_STATE"/>
+	<attr id="LIFECYCLE_TEMPLATE"/>
+	<attr id="CREATOR"/>
+	<attr id="MODIFIER"/>
+	<attr id="CREATE_TIME"/>
+	<attr id="MODIFY_TIME"/>
+	<attr id="DDMCONTEXT"/>
+	<attr id="DOMAIN"/>
+	<attr id="CONTEXT" visible="false"/>
+	<attr id="NUMBER"/>
+	<attr id="TYPE"/>
+	<attr id="SUBMITUSERNAME"/>
+	<attr id="SUBMITSITENAME"/>
+	<attr id="TITLE" visible="false" formater="TitleFormater">	
+		<src>number</src>
+		<src>name</src>
+	</attr>
+</type>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<spot id="ListDistributeWorkloads" filter="false">
+		<types>
+			<type id="DistributeWorkload"/>
+		</types>
+		<default>
+		    <column id="NUMBER"/>
+			<!-- <column id="DISTRIBUTENAME"/> -->
+			<column id="NAME"/>
+			<column id="CREATOR"/>
+			<column id="CREATE_TIME"/>
+		</default>
+		<custom>
+			<column id="CREATOR" name="操作人" />			
+			<column id="CREATE_TIME" name="操作时间"/>
+		</custom>
+	</spot>
+</config>

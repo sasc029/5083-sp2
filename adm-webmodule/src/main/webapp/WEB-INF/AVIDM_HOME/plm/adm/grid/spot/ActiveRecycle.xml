@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<spot id="ListActiveRecycles" filter="false">
+		<types>
+			<type id="ActiveRecycle"/>
+		</types>
+		<default>
+			<column id="NUMBER" />
+			<column id="NAME" />
+			<column id="FOLDERPATH" />
+			<column id="MODELNAME" />
+			<column id="RECYCLEVERSIONNO" />
+			<column id="SECURITYLEVEL" />
+		</default>
+	</spot>
+	<spot id="moveActiveRecycle" filter="false" search="true" sort="true" page="false" menu="false">
+		<types>
+			<type id="ActiveRecycle" />
+		</types>
+		<default>
+			<column id="TYPE" />
+			<column id="NUMBER" />
+			<column id="NAME" />
+			<column id="FOLDERPATH" />
+			<column id="NEWFOLDER_NAME" />
+		</default>
+		<editable>
+			<column id="NEWFOLDER_NAME"/>
+		</editable>
+		<custom>
+			<column id="NEWFOLDER_NAME" name="新位置" editor="PathSelectEditor" width="150"/>
+		</custom>
+	</spot>	
+</config>

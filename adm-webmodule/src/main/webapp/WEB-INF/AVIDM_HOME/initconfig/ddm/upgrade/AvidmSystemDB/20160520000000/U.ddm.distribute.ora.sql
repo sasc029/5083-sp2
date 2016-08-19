@@ -1,0 +1,5 @@
+--增加DDM_DIS_ORDER表 MASTERDATACLASSID(分发数据主对象类型)
+alter table DDM_DIS_ORDER add MASTERDATACLASSID VARCHAR2(255)
+/
+comment on column DDM_DIS_ORDER.MASTERDATACLASSID is '分发数据主对象类型'
+/

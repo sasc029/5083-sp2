@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="GBK"?>
+<attrs>
+	<attr id="PAGES" name="页数" >
+		<src>pages</src>
+	</attr>
+	<attr id="ADM_COUNT" name="份数" >
+		<src>count</src>
+	</attr>
+	<attr id="DATASOURCE" name="来源" >
+		<src>dataSource</src>
+	</attr>
+	<attr id="ACTIVEDOCUMENTNUMBER" name="现行文件编号" >
+		<src>activeDocumentNumber</src>
+	</attr>
+	<attr id="ACTIVECODE" name="代号" formater="activeCodeLookupFormatter">
+		<src>activeCode</src>
+	</attr>
+	<attr id="AUTHORTIME" name="编制日期" formater="DateFormater" queryFieldId="authorTime" queryComparor="Like,Equal,NotEqual,NotLike" >
+		<src>authorTime</src>
+	</attr>
+	<attr id="AUTHORNAME" name="编制者" queryFieldId="authorName" queryComparor="Like,Equal,NotEqual,NotLike" >
+		<src>authorName</src>
+	</attr>
+	<attr id="AUTHORUNIT" name="编制单位" queryFieldId="authorUnit" queryComparor="Like,Equal,NotEqual,NotLike" >
+		<src>authorUnit</src>
+	</attr>
+	<attr id="ITEMID" name="回收对象ID">
+		<src>itemId</src>
+	</attr>
+	<attr id="ITEMCLASSID" name="回收对象类型">
+		<src>itemClassId</src>
+	</attr>
+	<attr id="ITEMPROPERTIESURL" name="浏览对象属性页面的URL">
+		<src>itemPropertiesUrl</src>
+	</attr>
+	<attr id="MODELID" name="模型ID">
+		<src>modelId</src>
+	</attr>
+	<attr id="RECYCLEVERSIONNO" name="版本">
+		<src>versionNo</src>
+	</attr>
+	<attr id="FOLDERPATH" name="位置">
+		<src>folderPath</src>
+	</attr>
+	<attr id="MODELNAME" name="模型">
+		<src>modelName</src>
+	</attr>
+	<attr id="SECURITYLEVEL" name="密级">
+		<src>securityLevel</src>
+	</attr>
+	<attr id="SECLEVEL" name="密级">
+		<src>master.securityLevelInfo.securityLevelRef.object.name</src>
+	</attr>	
+</attrs>

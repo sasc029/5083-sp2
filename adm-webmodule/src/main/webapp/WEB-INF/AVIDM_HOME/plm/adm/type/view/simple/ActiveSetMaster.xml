@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<type id="ActiveSetMaster" alias="activesetmaster" name="现行套主对象" icon="/plm/images/prop/prop.gif">
+	<attr id="CLASSID"/>
+	<attr id="INNERID"/>
+	<attr id="OID"/>
+	<attr id="TYPE"/>
+	<attr id="TYPENAME"/>
+	<attr id="NUMBER" />	
+	<attr id="NAME" />
+	<attr id="TITLE" visible="false" formater="TitleFormater">
+		<src>number</src>
+		<src>name</src>
+	</attr>
+</type>

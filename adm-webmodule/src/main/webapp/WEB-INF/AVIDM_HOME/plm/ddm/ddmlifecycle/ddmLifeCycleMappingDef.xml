@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lifecycle id="ddmLifeCycleMappingDef" name="发放管理生命周期映射定义文件">
+	<state id="approving" value="approving" note="审批中" />
+	<state id="approveterminate" value="approveterminate" note="审批终止" />
+	<state id="approvereject" value="approvereject" note="审批被退回" />
+	<state id="backoff" value="backoff" note="已退回" />
+	<state id="completed" value="completed" note="已完成" />
+	<state id="control" value="control" note="受控中" />
+	<state id="destroyed" value="destroyed" note="销毁完成" />
+	<state id="distributed" value="distributed" note="已分发" />
+	<state id="distributing" value="distributing" note="分发中" />
+	<state id="duplicate_backoff" value="duplicate_backoff" note="复制被退回" />
+	<state id="duplicate_process_not_received" value="duplicate_process_not_received" note="复制未签收" />
+	<state id="duplicate_process_received" value="duplicate_process_received" note="复制中" />
+	<state id="duplicated" value="duplicated" note="复制完成" />
+	<state id="new" value="new" note="新建" />
+	<state id="not_distribute" value="not_distribute" note="未分发" />
+	<state id="not_sign" value="not_sign" note="未签收" />
+	<state id="processing" value="processing" note="加工中" />
+	<state id="processing_backoff" value="processing_backoff" note="加工被退回" />
+	<state id="refuse_signed" value="refuse_signed" note="已拒绝" />
+	<state id="scheduling" value="scheduling" note="调度中" />
+	<state id="signed" value="signed" note="已签收" />
+	<state id="ddmApproveing" value="ddmApproveing" note="分发审批中" />
+	<state id="ddmApprovereject" value="ddmApprovereject" note="分发审批被退回" />
+	<state id="ddmApproveterminate" value="ddmApproveterminate" note="分发审批终止" />
+</lifecycle>

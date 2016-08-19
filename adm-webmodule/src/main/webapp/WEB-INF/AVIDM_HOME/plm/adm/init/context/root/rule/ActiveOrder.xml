@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="GBK"?>			
+<rule name="现行单据初始化规则" typeId="ActiveOrder" type="system">			
+	<attr id="lifeCycleInfo" algorithm="com.bjsasc.plm.core.context.rule.algorithm.impl.LifeCycleRuleImpl">		
+		<arg name="templateName" value="现行数据生命周期"/>	
+		<arg name="stateName" value="新建"/>	
+	</attr>		
+</rule>

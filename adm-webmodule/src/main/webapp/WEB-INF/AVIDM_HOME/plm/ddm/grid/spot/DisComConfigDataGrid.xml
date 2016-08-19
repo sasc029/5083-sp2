@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<spot id="DisComConfigDataGrid" filter="true">
+		<types>
+			<type id="DistributeCommonConfig"/>
+		</types>
+		<default>
+			<column id="CONFIGID_R"  name="配置编号"/>
+			<column id="CONFIGNAME_R" name="配置名称"/>
+            <column id="CONFIGVALUE_R" name="配置值"/>
+            <column id="CONFIGDEFAULTVALUE_R" name="配置默认值"/>
+            <column id="CONFIGUSER_R" name="配置人"/>
+            <column id="CREATETIME_R" name="创建时间"/>
+            <column id="ISPERMITDELETE_R" name="是否允许删除"/>
+		</default>
+		<custom>
+            <column id="CONFIGVALUE_R" name="配置值" editor="text"/>
+		</custom>
+		<editable>		
+            <column id="CONFIGVALUE_R"/>
+		</editable>
+		
+	</spot>	
+</config>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="GBK"?>
+<type id="ActiveCabinet">
+	<attr id="CLASSID"/>
+	<attr id="INNERID"/>
+	<attr id="OID"/>
+	<attr id="TYPE"/>
+	<attr id="NAME"/>	
+	<attr id="TITLE" visible="false">
+		<src>name</src>
+	</attr>
+</type>

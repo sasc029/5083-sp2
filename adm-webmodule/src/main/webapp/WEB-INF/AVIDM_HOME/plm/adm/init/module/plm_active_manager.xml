@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="GBK"?>
+<group id="adm_modules">
+	<module id="plm_global_active_manager" name="现行数据管理" childUrl="/adm/outlook/listActiveMenu.jsp">
+		<module id="adm_context_manager" name="著录管理">
+			<module id="adm_context_detail" name="详细信息"/>
+			<module id="adm_model_folder" name="按模型分类管理与著录"/>
+			<module id="adm_model_view" name="自定义分类视图"/>
+			<module id="adm_context_template" name="模板"/>
+			<module id="adm_context_team" name="团队"/>
+			<module id="adm_context_tool" name="管理工具"/>
+		</module>
+		
+		<module id="adm_statictis_message" name="现行信息统计图"/>
+		<module id="adm_statistic_export" name="统计与输出"/>
+		<module id="adm_recycle_manager" name="回收站管理"/>
+	</module>
+</group>

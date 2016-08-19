@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="GBK"?>
+<spot id="Default">
+	<type id="ATObject">
+		<type id="ATSuit" />
+			<group name="发放管理">
+			<type id="DistributeOrder" />
+			<type id="DistributePaperTask" />
+			<type id="DistributeOrderObjectLink" />
+			<type id="DistributeInfo" />
+			<type id="DistributeElecTask" />
+			<type id="DistributePaperSignTask" />
+			<type id="RecDesInfo" />
+			<type id="RecDesPaperTask" />
+		</group>
+		
+		<group name="现行数据管理">
+			<type id="ActiveDocument" />
+			<type id="ActiveOrder" />
+		</group>
+	</type>
+</spot>

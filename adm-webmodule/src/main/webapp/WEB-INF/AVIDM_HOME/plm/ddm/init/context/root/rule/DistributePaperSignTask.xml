@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="GBK"?>			
+<rule name="纸质签收任务初始化规则" typeId="DistributePaperSignTask" type="system">			
+	<attr id="lifeCycleInfo" algorithm="com.bjsasc.plm.core.context.rule.algorithm.impl.LifeCycleRuleImpl">		
+		<arg name="templateName" value="电子任务生命周期"/>	
+		<arg name="stateName" value="未签收"/>	
+	</attr>
+</rule>

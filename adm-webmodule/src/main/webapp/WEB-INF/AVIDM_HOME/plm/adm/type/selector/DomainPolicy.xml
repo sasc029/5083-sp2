@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="GBK"?>
+<spot id="DomainPolicy_adm">
+  <type id="ATObject">
+	<type id="ActiveDocument"/>
+   </type>
+</spot>

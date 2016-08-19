@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="GBK"?>
+<spot id="WorkflowTemplate">
+	<type id="DistributeOrder"/>
+	<type id="DistributePaperTask"/>
+	<type id="ActiveDocument"/>
+	<type id="ActiveOrder"/>
+</spot>

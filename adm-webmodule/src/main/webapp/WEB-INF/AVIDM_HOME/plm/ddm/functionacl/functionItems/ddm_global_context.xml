@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group id="plm_functions">
+	<function id="plm_global_context" name="全局">
+		<function id="plm_global_distribute_manager" name="发放管理" app="ddm">
+			<function id="plm_global_distribute_order" name="发放单" app="ddm" />
+			<function id="plm_global_dispatch_manager" name="调度" app="ddm" />
+			<function id="plm_global_distributePaperTask" name="加工单" app="ddm" />
+			<function id="plm_global_duplicate" name="复制加工" app="ddm" />
+			<function id="plm_global_ddm_distribute_inside" name="内发单" app="ddm" />
+			<function id="plm_global_ddm_distribute_outside" name="外发单" app="ddm" />
+			<function id="plm_global_ddm_common_search" name="综合查询" app="ddm" />
+			<function id="plm_global_workload_count" name="工作量统计" app="ddm" />
+			<function id="plm_global_RecoverDestroy" name="回收销毁" app="ddm">
+				<function id="plm_global_RecDesPaperTask" name="回收销毁任务"  app="ddm"/>
+				<function id="plm_global_Recover" name="回收单" app="ddm" />
+				<function id="plm_global_Destroy" name="销毁单"  app="ddm"/>
+			</function>
+			<function id="plm_global_graftManageCenter" name="借用管理中心"  app="ddm"/>
+		</function>
+		<function id="plm_global_context_desktop" name="工作台面">
+			<function id="plm_global_elecTaskReceive" name="任务接收"  app="ddm"/>
+		</function>
+	</function>
+
+</group>

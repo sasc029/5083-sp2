@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="GBK"?>
+<type id="DcA3TaskSignature" alias="dcA3TaskSignature">
+	<attr id="CLASSID"/>
+	<attr id="INNERID"/>
+	<attr id="SIGTRACE_DEALUSERIID"/>
+	<attr id="SIGTRACE_DEALUSERID"/>
+	<attr id="SIGTRACE_DEALUSERNAME"/>
+	<attr id="SIGTRACE_DEALDEVISIONIID"/>
+	<attr id="SIGTRACE_DEALDEVISIONID"/>
+	<attr id="SIGTRACE_DEALDEVISIONNAME"/>
+	<attr id="SIGTRACE_DEALROLE"/>
+	<attr id="SIGTRACE_ISAGREE"/>
+	<attr id="SIGTRACE_DEALMIND"/>
+	<attr id="SIGTRACE_MINDTYPE"/>
+	<attr id="SIGTRACE_ISNEEDDEVISIONMIND"/>
+	<attr id="SIGTRACE_STARTTIME"/>
+	<attr id="SIGTRACE_SIGNATURETIME"/>
+	<attr id="SIGTRACE_SIGNATURESTATE"/>
+	<attr id="SIGTRACE_DOMAINIID"/>
+	<attr id="SIGTRACE_ORDERIID"/>
+	<attr id="SIGTRACE_TASKIID"/>
+	<attr id="SIGTRACE_OBJLINK"/>
+</type>

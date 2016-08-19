@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<spot id="ACTIVESETOBJECT" filter="false">
+		<types>
+			<type id="ActiveDocument"/>
+			<type id="ActiveOrder"/>
+		</types>
+		<default>
+			<column id="TYPE"/>
+			<column id="NUMBER" />
+			<column id="NAME" />
+			<column id="DATASOURCE" />
+			<column id="VERSION"/>
+		</default>
+	</spot>
+</config>

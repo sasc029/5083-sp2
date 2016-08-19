@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="GBK"?>
+<tools>
+	<tool title="创建二级调度"  weight="121" clazz="com.bjsasc.ddm.common.DdmInitTool"/>
+</tools>

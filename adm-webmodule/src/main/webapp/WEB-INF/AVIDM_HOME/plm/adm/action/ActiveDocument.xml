@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<!-- 现行文件-操作菜单 -->
+	<model id="activedocument.operate" action="com.bjsasc.plm.operate.active" callback="reload">
+		<!-- 现行文件-操作菜单-删除，编辑，修订-->
+		<action id="com.bjsasc.adm.activedata.delete"  target="popup"/>
+		<action id="com.bjsasc.adm.activedocument.edit"  target="popup"/>
+		<action id="com.bjsasc.plm.newVersion.adm" target="popup" callback="plm.visit"/>
+		<!-- 现行文件-操作菜单-(复制，另存为，移动，重命名,设置生命周期)共通 -->
+		<action id="com.bjsasc.plm.copy.adm" target="popup"/>
+		<action id="com.bjsasc.plm.saveas.adm" target="popup"/>
+		<action id="com.bjsasc.plm.move.adm" target="popup"/>
+		<action id="com.bjsasc.plm.rename.adm" target="popup"/>
+		<action id="com.bjsasc.plm.reasignLifeCycleTemplate.adm"/>
+		<!-- 审批页面启动 -->
+		<action id="com.bjsasc.plm.ApproveOrder.approve.adm" target="popup"/>
+		<!-- 现行套-操作菜单-新建
+		<action id="com.bjsasc.adm.activeset.create"  target="popup"/>
+		-->
+		<action id="com.bjsasc.adm.activeorder.create"  target="popup"/>
+		<action id="com.bjsasc.plm.domain.author.adm" target="popup"/>
+		<action id="adm.storage.operate" target="ajax"/>
+	</model>
+
+	<!-- 现行文件-操作菜单快捷方式 -->
+	<model id="activedocument.operate.shortcut" action="com.bjsasc.plm.operate" callback="reload">
+		<action id="com.bjsasc.adm.activedocument.create"  target="popup"/>
+	</model>
+	
+	<!-- 文件夹内容工具条-现行文件-新建 -->
+	<model id="activedocument.list.toolbar" extendFor="folder.items.toolbar.ActiveContext" callback="reload" target="popup">
+		<action id="com.bjsasc.adm.activedocument.create"  target="popup"/>
+	</model>
+
+	<!--  现行文件-TAB -->
+	<group id="activedocument.tab" defaultChild="activedocument.tab.normal">
+		<!--  现行文件-TAB-常规 -->
+		<model id="activedocument.tab.normal" action="com.bjsasc.plm.normal" callback="reload" target="popup" >
+			<!--  现行文件-TAB-常规-属性 -->
+			<action id="com.bjsasc.adm.activedocument.attribute" callback="reload" target="self" default="true"/>
+		</model>
+		<!--  现行文件-TAB-相关对象 -->
+		<model id="activedocument.tab.relationobject" action="com.bjsasc.plm.related" callback="reload" target="popup">
+			<!--  现行文件-TAB-相关对象 -->
+		</model>
+		<!--  现行文件-TAB-历史记录 -->
+		<model id="activedocument.tab.historyLog" action="com.bjsasc.plm.history" callback="reload" target="self">
+			<action id="com.bjsasc.plm.history.versioned" />
+			<action id="com.bjsasc.plm.history.rename" />
+		</model>
+	</group>
+	
+	<!-- 结构树操作-同步模型 -->
+	<model id="adm.activeDocumentManage.list.toolbar" callback="reload" target="popup">
+		<action id="adm.activedocumentmanage.reloadModel" target="popup"/>
+		<action id="adm.activeDocumentManage.tree.shortcut.returnroot" target="popup"/>
+	 </model>
+	
+	<!-- 结构树操作-返回根目录 -->
+	<model id="adm.activeDocumentManage.tree.shortcut.toolbar" callback="reload" target="popup">
+		<!-- <action id="adm.activeDocumentManage.tree.shortcut.returnroot" target="popup"/> -->
+	</model>
+	
+	<!-- 回收站画面工具条 -->
+	 <model id="adm.activerecycle.list.toolbar" callback="reload" target="popup">
+		<action id="com.bjsasc.adm.activerecycle.clear"/>
+		<action id="com.bjsasc.adm.activerecycle.delete"/>
+		<action id="com.bjsasc.adm.activerecycle.reduction"/>
+	</model>
+	
+    <!-- 综合查询的打印工具条 -->
+    <model id="adm.commonsearch.list.toolbar" callback="reload" target="popup">
+		<action id="com.bjsasc.adm.commonsearch.dataexport"/>
+	</model>
+	
+	<model id="context.active.list.toolbar" callback="reload" target="popup">
+		<action id="com.bjsasc.adm.context.create"/>
+		<action id="com.bjsasc.plm.delete" target="ajax" callback="reloadTable"/>
+	</model>
+	<!-- 历史记录 修订版本工具条 -->
+	<model id="vc_browse_ActiveDocument" action="" callback="reload" target="popup">
+		<action id="com.bjsasc.plm.compare"/>
+	</model>
+</config>
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="GBK"?>
+<validators>
+	<validator id="IntegerValidator" clazz="com.bjsasc.adm.common.IntegerValidatorImpl"/>
+</validators>

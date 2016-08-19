@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<model id="folder.items.toolbar.ActiveContext" action="com.bjsasc.plm.operate"
+		callback="reload" target="popup">
+		<action id="com.bjsasc.plm.activefolder.create" target="popupMulti" />
+	</model>
+	<!-- 现行文件上下文-文件夹内容工具条-默认 -->
+	<model id="folder.items.more.ActiveContext"  action="com.bjsasc.plm.operate.more" callback="reload" target="popup">
+		<action id="com.bjsasc.adm.activedata.delete" target="ajax" callback="tipsuccess"/>
+		<action id="com.bjsasc.plm.cut.adm"/>
+		<action id="com.bjsasc.plm.copy.adm"/>
+		<action id="com.bjsasc.plm.paste.adm" callback="refreshTheTwoNode"/>
+		<action id="com.bjsasc.plm.rename.adm"/>
+		<action id="com.bjsasc.plm.reasignLifeCycleTemplate.adm"/>
+		<action id="com.bjsasc.plm.domain.author.adm"/>
+	</model>
+	<model id="ActiveContext.foldermenu"  action="com.bjsasc.plm.operate" callback="reload" target="popup">
+		<action id="com.bjsasc.plm.cut.adm"/>
+		<action id="com.bjsasc.plm.copy.adm"/>
+		<action id="com.bjsasc.plm.paste.adm"/>
+		<action id="com.bjsasc.plm.folder.edit"/>
+		<action id="com.bjsasc.plm.domain.author.adm" />
+	</model>
+	<model id="ActiveContext.ListFolderContents.com.bjsasc.plm.core.folder.SubFolder" action="com.bjsasc.plm.operate" callback="reload" target="popup">
+		<!-- <action id="com.bjsasc.plm.delete" target="ajax" callback="reloadTable"/> -->
+		<action id="com.bjsasc.adm.activedata.delete" target="ajax" callback="tipsuccess"/>
+		<action id="com.bjsasc.plm.folder.view" />
+		<action id="com.bjsasc.plm.folder.edit" callback="refreshpage3"/>
+		<action id="com.bjsasc.plm.cut.adm"/>
+		<action id="com.bjsasc.plm.copy.adm"/>
+		<action id="com.bjsasc.plm.paste.adm"/>
+		<action id="com.bjsasc.plm.domain.author.adm"/>
+	</model>
+	<!-- 现行子文件夹 右键菜单 -->
+	<model id="ActiveContext.ListFolderContents.com.bjsasc.adm.active.model.activefolder.ActiveSubFolder" action="com.bjsasc.plm.operate" callback="reload" target="popup">
+		<action id="com.bjsasc.adm.activedata.delete" target="ajax" callback="tipsuccess"/>
+		<action id="com.bjsasc.plm.folder.view" />
+		<action id="com.bjsasc.plm.folder.edit" callback="refreshpage3"/>
+		<action id="com.bjsasc.plm.move.adm"/>
+		<action id="com.bjsasc.plm.domain.author.adm" />
+	</model>
+	<!-- 现行模型文件夹 右键菜单 -->
+	<model id="ActiveContext.ListFolderContents.com.bjsasc.adm.active.model.activefolder.ActiveModelFolder" action="com.bjsasc.plm.operate" callback="reload" target="popup">
+		<action id="com.bjsasc.plm.domain.author.adm" />
+		<action id="com.bjsasc.plm.folder.edit.adm" callback="refreshpage3"/>
+	</model>
+	<!-- 
+	<model id="rightmenu.ActiveContext.com.bjsasc.plm.core.folder.SubFolder" action="com.bjsasc.plm.operate" callback="reload" target="popup">
+		<action id="com.bjsasc.adm.activedata.delete" target="ajax" callback="tipsuccess"/>
+		<action id="com.bjsasc.plm.folder.view" />
+	</model>
+	 -->
+	<model id="rightmenu.ActiveContext.com.bjsasc.adm.active.model.activefolder.ActiveModelFolder" action="com.bjsasc.plm.operate" callback="reload" target="popup">
+		<action id="com.bjsasc.adm.activetree.rightmenu.root" />
+	</model>
+	<!-- 
+	<model id="rightmenu.ActiveContext.com.bjsasc.adm.active.model.activefolder.ActiveSubFolder" action="com.bjsasc.plm.operate" callback="reload" target="popup">
+		<action id="com.bjsasc.adm.activetree.rightmenu.root" />
+	</model>
+	 -->
+</config>

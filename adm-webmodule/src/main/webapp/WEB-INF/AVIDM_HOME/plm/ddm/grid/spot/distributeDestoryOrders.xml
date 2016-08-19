@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<spot id="ListDistributeDestoryOrders" filter="false">
+		<types>
+			<type id="DistributePaperTask" />
+			<type id="RecDesPaperTask" />
+			<!-- <type id="DistributeInfo" /> -->
+		</types>
+		<default>
+			<column id="NUMBER" />
+			<column id="NAME" />
+			<column id="TASKTYPE"/>
+			<column id="LIFECYCLE_STATE"/>
+			<column id="LIFECYCLE_TEMPLATE"/>
+			<column id="DISURGENT" />
+			<column id="DDMCONTEXT" />
+			<column id="DISOPERATE" />
+		</default>
+	</spot>
+	<spot id="ListDistributeDestoryDetails" filter="false">
+		<types>
+			<type id="DistributeInfo" />
+			<type id="DistributeObject" />
+		</types>
+		<default>
+			<column id="NUMBER" />
+			<column id="NAME" />
+			<column id="DISINFONUM" />
+			<column id="RECOVERDESTROYNUM" />
+			<column id="DESTROYNUM" />
+		</default>
+	</spot>
+	<spot id="ListDistributeDestoryBathDetail" filter="false">
+		<types>
+			<type id="DistributeInfo" />
+			<type id="DistributeObject" />
+		</types>
+		<default>
+			<column id="NUMBER" />
+			<column id="NAME" />
+			<column id="DISINFONUM" />
+			<column id="RECOVERDESTROYNUM" />
+			<column id="DESTROYNUM" />
+			<column id="TASKNAME" />
+		</default>
+	</spot>	
+</config>

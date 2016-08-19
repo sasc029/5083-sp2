@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<type id="DistributeOrderObjectLink" name="发放单与分发数据link" alias="distributeOrderObjectLink"
+	icon="/plm/images/prop/prop.gif">
+	<attr id="CLASSID" visible="false"/>
+	<attr id="INNERID" visible="false"/>
+	<attr id="OID" visible="false"/>
+	<attr id="FROMOBJECTID" visible="false"/>
+	<attr id="FROMOBJECTCLASSID" visible="false"/>
+	<attr id="TOOBJECTID" visible="false"/>
+	<attr id="TOOBJECTCLASSID" visible="false"/>
+	<attr id="ISPARENT" visible="false"/>
+	<attr id="ISMASTER" />
+	<attr id="LIFECYCLE_STATE" />
+	<attr id="LIFECYCLE_STATEID"/>
+	<attr id="LIFECYCLE_TEMPLATE"/>
+	<attr id="DISDEADLINE" />
+	<attr id="DISURGENT" />
+	<attr id="DISTRIBUTEORDEROBJECTLINKOID" visible="false"/>
+</type>

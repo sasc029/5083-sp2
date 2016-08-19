@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="GBK"?>
+<acls>
+	<acl category="DOM" dn="LC_ALLLIFECYCLESTATE" typeId="DistributeOrder" pClass="role" pValue="plm_teamMember" accept="plm_create" reject=""/>
+	<acl category="DOM" dn="new" typeId="DistributeOrder" pClass="owner" pValue="owner" accept="access,plm_create,plm_modify,plm_modify_content,plm_delete,plm_promote,plm_set_state" reject=""/>
+	<acl category="DOM" dn="scheduling" typeId="DistributeOrder" pClass="role" pValue="plm_schedule" accept="access,plm_create,plm_modify,plm_promote,plm_set_state" reject=""/>
+
+	<acl category="DOM" dn="LC_ALLLIFECYCLESTATE" typeId="DistributePaperTask" pClass="role" pValue="plm_schedule" accept="plm_create" reject=""/>
+	<acl category="DOM" dn="LC_ALLLIFECYCLESTATE" typeId="DistributePaperTask" pClass="role" pValue="plm_file_keeper" accept="access,plm_promote,plm_set_state" reject=""/>	
+
+    <!-- 套对象 -->
+	<acl category="DOM" dn="LC_ALLLIFECYCLESTATE" typeId="ATSuit" pClass="role" pValue="plm_teamMember" accept="plm_create" reject=""/>
+</acls>

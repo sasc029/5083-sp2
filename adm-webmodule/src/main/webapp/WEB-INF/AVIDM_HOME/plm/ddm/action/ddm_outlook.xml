@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>	    
+	<model id="com.bjsasc.ddm.distribute">
+		<action id="com.bjsasc.ddm.distribute.distributeOrder"/>
+		<action id="com.bjsasc.ddm.distribute.dispatchManager"/>
+		<action id="com.bjsasc.ddm.distribute.distributePaperTask"/>
+		<action id="com.bjsasc.ddm.distribute.duplicate"/>
+		<action id="com.bjsasc.ddm.distribute.distributeInside"/>
+		<action id="com.bjsasc.ddm.distribute.distributeOutside"/>
+		<action id="com.bjsasc.ddm.distribute.commonSearch"/>
+		<action id="com.bjsasc.ddm.distribute.workloadCount"/>
+		<model id="RecoverDestroy" action="com.bjsasc.ddm.distribute.RecoverDestroy">
+			<action id="com.bjsasc.ddm.distribute.RecoverDestroy.RecDesPaperTask"/>
+			<action id="com.bjsasc.ddm.distribute.RecoverDestroy.Recover"/>
+			<action id="com.bjsasc.ddm.distribute.RecoverDestroy.Destroy"/>
+		</model>
+		<action id="com.bjsasc.ddm.distribute.graftManageCenter"/>
+	</model>
+	<model id="com.bjsasc.plm.core.Desktop">
+		<action id="com.bjsasc.ddm.distribute.elePaperReceive"/>
+	</model>	
+</config>

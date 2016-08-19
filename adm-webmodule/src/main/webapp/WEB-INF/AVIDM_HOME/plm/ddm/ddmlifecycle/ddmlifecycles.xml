@@ -1,0 +1,58 @@
+﻿<ddmLifecycle updateStateInWorkflow="false">
+	<!-- 纸质任务生命周期 -->
+	<ddmObject class="com.bjsasc.ddm.distribute.model.distributepapertask.DistributePaperTask">
+		<state name="processing"     nextStateName="duplicate_process_not_received" />
+		<state name="duplicate_process_not_received" nextStateName="duplicate_process_received"  rejectiveStateName="processing_backoff"/>
+		<state name="duplicate_process_received"     nextStateName="duplicated" />
+		<state name="duplicated"   nextStateName="distributing"  rejectiveStateName="duplicate_backoff" />
+		<state name="distributing"     nextStateName="distributed"/>
+		<state name="distributed"     rejectiveStateName="destroyed"/>
+		<state name="destroyed" />
+		<state name="processing_backoff" nextStateName="duplicate_process_not_received" />
+		<state name="duplicate_backoff" nextStateName="duplicated" />
+	</ddmObject>
+	<!-- 发放单生命周期 -->
+	<ddmObject class="com.bjsasc.ddm.distribute.model.distributeorder.DistributeOrder">
+		<state name="new"   nextStateName="scheduling" />
+		<state name="scheduling" nextStateName="distributing" />
+		<state name="distributing" nextStateName="distributed"      rejectiveStateName="backoff" />
+		<state name="backoff" nextStateName="distributing" />
+		<state name="distributed"/>
+	</ddmObject>
+	<!-- 分发对象生命周期 -->
+	<ddmObject class="com.bjsasc.ddm.distribute.model.distributeorderobjectlink.DistributeOrderObjectLink">
+		<state name="distributing" nextStateName="completed" />
+		<state name="completed" />
+	</ddmObject>
+	<!-- 分发信息生命周期 -->
+	<ddmObject class="com.bjsasc.ddm.distribute.model.distributeinfo.DistributeInfo">
+		<state name="not_distribute" nextStateName="distributed" />
+		<state name="distributed" rejectiveStateName="destroyed" />
+		<state name="destroyed" />
+	</ddmObject>
+	<!-- 电子任务生命周期 -->
+	<ddmObject class="com.bjsasc.ddm.distribute.model.distributeelectask.DistributeElecTask">
+		<state name="not_sign" nextStateName="signed" rejectiveStateName="refuse_signed" />
+		<state name="signed" nextStateName="completed" />
+		<state name="destroyed" />
+		<state name="completed" />
+	</ddmObject>
+	<!-- 回收销毁信息生命周期 -->
+	<ddmObject class="com.bjsasc.ddm.distribute.model.recdesinfo.RecDesInfo">
+		<state name="not_distribute" nextStateName="distributing" />
+		<state name="distributing" nextStateName="completed" />
+		<state name="completed" />
+	</ddmObject>
+	<!-- 回收销毁纸质任务生命周期 -->
+	<ddmObject class="com.bjsasc.ddm.distribute.model.recdespapertask.RecDesPaperTask">
+		<state name="distributing" nextStateName="completed" />
+		<state name="completed" />
+	</ddmObject>
+	<!-- 纸质签收任务生命周期 -->
+	<ddmObject class="com.bjsasc.ddm.distribute.model.distributepapersigntask.DistributePaperSignTask">
+		<state name="not_sign" nextStateName="signed" rejectiveStateName="refuse_signed" />
+		<state name="signed" nextStateName="completed" />
+		<state name="destroyed" />
+		<state name="completed" />
+	</ddmObject>
+</ddmLifecycle>

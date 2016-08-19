@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="GBK"?>
+<acls>
+	<acl category="DOM" dn="LC_ALLLIFECYCLESTATE" typeId="ATObject" pClass="role" pValue="plm_sharedTeam_administrator" accept="FullControl" reject=""/>
+	<acl category="DOM" dn="LC_ALLLIFECYCLESTATE" typeId="ATObject" pClass="role" pValue="ActiveContext_administrator" accept="FullControl" reject=""/>
+
+	<acl category="DOM" dn="LC_ALLLIFECYCLESTATE" typeId="ActiveDocument" pClass="role" pValue="plm_teamMember" accept="plm_create" reject=""/>
+	<acl category="DOM" dn="LC_ALLLIFECYCLESTATE" typeId="ActiveOrder" pClass="role" pValue="plm_teamMember" accept="plm_create" reject=""/>
+	
+	<acl category="DOM" dn="LC_ALLLIFECYCLESTATE" typeId="Cabinet" pClass="role" pValue="plm_teamMember" accept="access,plm_modify" reject=""/>
+	<acl category="DOM" dn="LC_ALLLIFECYCLESTATE" typeId="ATObject" pClass="owner" pValue="owner" accept="access,plm_create,plm_download,plm_modify,plm_modify_content,plm_promote,plm_rename,setPermission" reject=""/>
+	<acl category="DOM" dn="design" typeId="ATObject" pClass="owner" pValue="owner" accept="access,plm_create,plm_download,plm_modify,plm_modify_content,plm_delete,plm_promote,plm_rename,setPermission" reject=""/>
+</acls>
+

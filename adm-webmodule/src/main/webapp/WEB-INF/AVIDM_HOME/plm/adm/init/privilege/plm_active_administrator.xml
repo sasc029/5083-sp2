@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="GBK"?>
+<authorization domain="plm" role="ActiveContext_administrator">
+	<!-- 工作台面 -->
+	<module id="workflow_platform1"/>
+	<!-- 发放管理 -->
+	<module id="plm_distribute_manager"/>
+	<!-- 系统管理 -->
+	<module id="plm_system_manager"/>
+</authorization>
+
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<spot id="ListDistributeReturn" filter="false">
+		<types>
+			<type id="DistributeOrder" />
+			<type id="ReturnReason" />
+		</types>
+		<default>
+			<!-- <column id="OPENID" /> -->
+			<column id="NUMBER" />
+			<column id="NAME" />
+			<column id="ORDERTYPE" />
+			<column id="CREATE_TIME"/>
+			<column id="CREATOR" />
+			<column id="DDMCONTEXT" />
+			<column id="RETURNREASON" />
+			<column id="OPENCOUNT" />
+			<column id="NOTE" />
+			<column id="SUBMITUSERNAME" />
+			<column id="SITENAME" />
+		</default>
+	</spot>
+</config>

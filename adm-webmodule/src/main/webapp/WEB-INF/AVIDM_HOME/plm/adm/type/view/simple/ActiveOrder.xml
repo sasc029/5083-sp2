@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<type id="ActiveOrder" alias="activeorder" name="现行单据" icon="/plm/images/prop/prop.gif">
+	<attr id="CLASSID" />
+	<attr id="INNERID" />
+	<attr id="OID" />
+	<attr id="TYPE"/>
+	<attr id="NUMBER" queryAlias="master" queryFieldId="master.number">
+		<src>master.number</src>
+	</attr>
+	<attr id="NAME" queryAlias="master" queryFieldId="master.name">
+		<src>master.name</src>
+	</attr>
+	<attr id="TITLE" visible="false" formater="TitleFormater">
+		<src>master.number</src>
+		<src>master.name</src>
+		<src>iterationInfo.versionNo</src>
+		<src>iterationInfo.iterationNo</src>
+	</attr>
+	<attr id="DATASOURCE" />
+	<attr id="ACTIVEDOCUMENTNUMBER" />
+	<attr id="PAGES" />
+	<attr id="ADM_COUNT" />
+	<attr id="AUTHORNAME" />
+	<attr id="AUTHORUNIT" />
+	<attr id="AUTHORTIME" />
+	<attr id="ACTIVECODE" />
+	<attr id="NOTE" />
+	<attr id="LIFECYCLE_STATE" />
+	<attr id="LIFECYCLE_STATEID" />
+	<attr id="LIFECYCLE_TEMPLATE" />
+	<attr id="CREATOR" />
+	<attr id="MODIFIER" />
+	<attr id="CREATE_TIME" />
+	<attr id="MODIFY_TIME" />
+	<attr id="UPDATE_TIME" />
+	<attr id="FOLDER" />
+	<attr id="FOLDER_OID" />
+	<attr id="FOLDER_CLASSID" />
+	<attr id="FOLDER_INNERID" />
+	<attr id="CONTEXT" />
+	<attr id="CONTEXT_OID" />
+	<attr id="CONTEXT_CLASSID" />
+	<attr id="CONTEXT_INNERID" />
+	<attr id="DOMAIN" />
+	<attr id="DOMAIN_OID" />
+	<attr id="DOMAIN_CLASSID" />
+	<attr id="DOMAIN_INNERID" />
+	<attr id="MASTER_OID" />
+	<attr id="MASTER_CLASSID" />
+	<attr id="MASTER_INNERID" />
+	<attr id="SECLEVEL">
+		<src>master.securityLevelInfo.securityLevelRef.object.name</src>
+	</attr>
+	<attr id="VERSION">
+		<src>iterationInfo.versionNo</src>
+	</attr>
+</type>

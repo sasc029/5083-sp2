@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="GBK"?>
+<principal id="virtual_OrgSecurityAdmin_3" name="组织的安全管理员" type="">
+	<function id="plm_global_org_context">
+		<function id="plm_org_context_tool">
+			<function id="plm_org_context_business_manager">
+				<function id="plm_org_context_manager_distribute"/>
+			</function>
+		</function>
+	</function>
+</principal>

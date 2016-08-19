@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<!-- 待分发列表-->
+	<model id="ddm.distributeorder.list.toolbar" callback="reload" target="popup">
+	   <!-- 
+		<action id="com.bjsasc.ddm.distributeorder.delete" target="popup"/>
+	  -->
+		<action id="com.bjsasc.ddm.distributeorder.addUser"/>
+		<action id="com.bjsasc.ddm.distributeorder.addOrg"/>
+		<action id="com.bjsasc.ddm.distributeorder.addOutSignUser"/>
+		<action id="com.bjsasc.ddm.distributeorder.submit"/>
+	 </model>
+	 
+	 
+	<!-- 分发被回退列表-->
+	 <model id="ddm.distributeordersReturn.list.toolbar" callback="reload" target="popup">
+		<action id="com.bjsasc.ddm.distributeorder.delete" target="popup"/>
+		<action id="com.bjsasc.ddm.distributeorder.addUser"/>
+		<action id="com.bjsasc.ddm.distributeorder.addOrg"/>
+		<action id="com.bjsasc.ddm.distributeorder.addOutSignUser"/>
+		<action id="com.bjsasc.ddm.distributeorder.submit"/>
+	</model>
+	
+	 <!-- 发放单发放中选项卡【删除】-->
+	 <model id="ddm.distributeorderSending.list.toolbar" callback="reload" target="popup">
+		<action id="com.bjsasc.ddm.distributeorder.delete" target="popup"/>
+	</model>
+	 <!-- 发放单已分发选项卡【补发】-->
+	 <model id="ddm.distributeorderSend.list.toolbar" callback="reload" target="popup">
+		<action id="com.bjsasc.ddm.commonsearch.redistribute" target="popup"/>
+		<action id="com.bjsasc.ddm.commonsearch.addRecInfo" target="popup"/>
+		<action id="com.bjsasc.ddm.commonsearch.addDesInfo" target="popup"/>
+		<action id="com.bjsasc.ddm.distributeorderSend.hanhaiExportXml" target="popup"/>
+	</model>
+
+	  <!-- 发放单的属性信息-->
+	<model id="ddm.OrderPropterty.list.toolbar" callback="reload" target="popup">
+		<!-- <action id="com.bjsasc.ddm.distributeorder.submit" target="ajax"/>  -->
+		<action id="com.bjsasc.ddm.OrderPropterty.submitToWorkflow" target="popup"/>
+		<action id="com.bjsasc.ddm.distributeorder.edit" target="popup"/>
+		<action id="com.bjsasc.ddm.distributeorder.deleteorder" target="ajax"/>
+	 </model>
+
+	<!-- 分发数据工具栏菜单 -->
+	<model id="ddm.distributeobject.list.toolbar" callback="reload" target="popup">
+		<!-- <action id="com.bjsasc.ddm.distributeobject.create" target="popup"/>
+		<action id="com.bjsasc.ddm.distributeobject.edit" target="popup"/> -->
+		<action id="com.bjsasc.ddm.distributeobject.add" callback="gatherAffectobjects"/>
+		<action id="com.bjsasc.ddm.distributeobject.delete" target="ajax"/>
+		<action id="com.bjsasc.ddm.distributeobject.gather" callback="gatherAffectobjects"/>
+		<action id="com.bjsasc.ddm.distributeobject.master" target="ajax"/>
+		<action id="com.bjsasc.ddm.distributeobject.downloadByOrder" target="ajax"/>
+	</model>
+	<model id="ddm.distributeobject.list.toolbar2" callback="reload" target="popup">
+		<action id="com.bjsasc.ddm.distributeobject.downloadByOrder" target="ajax"/>
+	</model>
+	<model id="ddm.distributeobject.list.toolbar3" callback="reload" target="popup">
+		<action id="com.bjsasc.ddm.distributeobject.downloadByOrder" target="ajax"/>
+		<action id="com.bjsasc.ddm.distributeobject.signPrint" target="ajax"/>
+	</model>
+	
+	<model id="ddm.distributeinfo.list.toolbar" callback="reload" target="popup">
+<!-- 		<action id="com.bjsasc.ddm.distributeinfo.list.submit" target="ajax"/> -->
+		<action id="com.bjsasc.ddm.distributeinfo.list.addUser"/>
+		<action id="com.bjsasc.ddm.distributeinfo.list.addOrg"/>
+		<action id="com.bjsasc.ddm.distributeinfo.list.addOutSignUser"/>
+		<action id="com.bjsasc.ddm.distributeinfo.list.delete"/>
+		<action id="com.bjsasc.ddm.distributeinfo.list.edit"/>
+		<action id="com.bjsasc.ddm.distributeinfo.list.editIsTrack"/>
+		 <action id="com.bjsasc.ddm.distributeinfo.list.history"/>
+	</model>
+	
+	<!-- 纸质签收任务和电子任务专用 -->
+		<model id="ddm.distributetaskinfo.list.toolbar" callback="reload" target="popup">
+		<action id="com.bjsasc.ddm.distributeinfo.list.addUser"/>
+		<action id="com.bjsasc.ddm.distributeinfo.list.addOrg"/>
+		<action id="com.bjsasc.ddm.distributeinfo.list.addOutSignUser"/>
+		<action id="com.bjsasc.ddm.distributeinfo.list.delete"/>
+		<action id="com.bjsasc.ddm.distributeinfo.list.edit"/>
+		<action id="com.bjsasc.ddm.distributeinfo.list.editIsTrack"/>
+	</model>
+	
+
+	<!-- 回收单工具栏菜单 -->
+	<model id="ddm.recinfo.list.toolbar" callback="reload" target="popup">
+		<action id="com.bjsasc.ddm.distributeinfo.list.addrecinfo"/>
+		<action id="com.bjsasc.ddm.distributeinfo.list.deleterecinfo"/>
+		<action id="com.bjsasc.ddm.distributeinfo.list.editrecinfo"/>
+		<action id="com.bjsasc.ddm.distributeinfo.list.history"/>
+	</model>
+
+	<!-- 销毁单工具栏菜单 -->
+	<model id="ddm.desinfo.list.toolbar" callback="reload" target="popup">
+		<action id="com.bjsasc.ddm.distributeinfo.list.adddesinfo"/>
+		<action id="com.bjsasc.ddm.distributeinfo.list.deletedesinfo"/>
+		<action id="com.bjsasc.ddm.distributeinfo.list.editdesinfo"/>
+		<action id="com.bjsasc.ddm.distributeinfo.list.history"/>
+	</model>
+
+	<!-- 分发信息树工具栏菜单 -->
+	<model id="ddm.distributeinfo.tree.toolbar" callback="reload" target="popup">
+		<action id="com.bjsasc.ddm.distributeinfo.tree.refresh" target="ajax"/>
+		<action id="com.bjsasc.ddm.distributeinfo.tree.checkall" target="ajax"/>
+		<action id="com.bjsasc.ddm.distributeinfo.tree.clearall" target="ajax"/>
+		<action id="com.bjsasc.ddm.distributeinfo.tree.expand" target="ajax"/>
+		<action id="com.bjsasc.ddm.distributeinfo.tree.collapse" target="ajax"/>
+	</model>
+	<model id="ddm.distributeinfo.edit.toolbar" callback="reload" target="popup">
+		<action id="com.bjsasc.ddm.distributeinfo.edit.submit"/>
+		<action id="com.bjsasc.ddm.distributeinfo.edit.cancel"/>
+	</model>
+	<model id="ddm.disinfoistrack.edit.toolbar" callback="reload" target="popup">
+		<action id="com.bjsasc.ddm.disinfoistrack.edit.submit"/>
+		<action id="com.bjsasc.ddm.distributeinfo.edit.cancel"/>
+	</model>
+	<!-- 纸质任务工具栏菜单 -->
+	<model id="ddm.distributepapertask.list.toolbar" callback="reload" target="popup">
+		<action id="com.bjsasc.ddm.distributepapertask.submit" target="popup"/>
+		<action id="com.bjsasc.ddm.distributepapertask.rollback" target="popup"/>
+	</model>
+	<model id="ddm.distributetasksubmit.list.toolbar" callback="reload" target="popup">
+		<action id="com.bjsasc.ddm.distributetasksubmit.submit" target="popup"/>
+		<action id="com.bjsasc.ddm.distributereturn.rollback" target="popup"/>
+	</model>
+	<!-- 复制加工工具栏菜单 -->
+	<model id="ddm.duplicatenoreceive.list.toolbar" callback="reload" target="popup">
+		<action id="com.bjsasc.ddm.duplicatenoreceive.receive" target="popup"/>
+		<action id="com.bjsasc.ddm.duplicatenoreceive.rollback" target="popup"/>
+	</model>
+	<model id="ddm.duplicatereceive.list.toolbar" callback="reload" target="popup">
+		<action id="com.bjsasc.ddm.duplicatereceive.submit" target="popup"/>
+		<action id="com.bjsasc.ddm.duplicatereceive.duplicatepersion" target="popup"/>
+	</model>
+	<model id="ddm.duplicateprocess.list.toolbar" callback="reload" target="popup">
+		<action id="com.bjsasc.ddm.duplicateprocess.submit" target="popup"/>
+		<action id="com.bjsasc.ddm.duplicateprocess.addCollator" target="popup"/>
+		<action id="com.bjsasc.ddm.duplicateprocess.addContractor" target="popup"/>
+	</model>
+	<model id="ddm.duplicateprocessInfo.list.toolbar" callback="reload" target="popup">
+		<action id="com.bjsasc.ddm.duplicateprocess.agree" target="popup"/>
+		<action id="com.bjsasc.ddm.duplicateprocess.disagree" target="popup"/>
+		<action id="com.bjsasc.ddm.duplicateprocess.addCollator" target="popup"/>
+		<action id="com.bjsasc.ddm.duplicateprocess.addContractor" target="popup"/>
+	</model>
+	<!-- 综合查询工具栏菜单 -->
+	<model id="ddm.commonsearch.list.toolbar" callback="reload" target="popup">
+		<!-- <action id="com.bjsasc.ddm.commonsearch.return"/> -->
+		<action id="com.bjsasc.ddm.commonsearch.redistribute"/>
+		<!--<action id="com.bjsasc.ddm.commonsearch.dataprint"/> -->
+		
+		<action id="com.bjsasc.ddm.commonsearch.dataexport"/>
+	</model>
+	<!-- 内发单工具栏菜单 -->
+	<model id="ddm.distributeinsideOrder.list.toolbar" callback="reload" target="popup">
+		<action id="com.bjsasc.ddm.distributeinsideOrder.print"/>
+	</model>
+	
+	<!-- 电子任务未签收工具栏菜单 -->
+	<model id="ddm.distributeelectasknosigned.list.toolbar" callback="reload" target="popup">
+		<action id="com.bjsasc.ddm.distributeelectasknosigned.list.submit"/>
+		<action id="com.bjsasc.ddm.distributeelectasknosigned.rollback"/>
+	</model>
+	
+	<!--电子任务内部操作按钮-->
+	<model id="ddm.distributeelectaskoperate.list.toolbar" callback="reload" target="popup">
+		<action id="com.bjsasc.ddm.distributeelectaskoperate.list.sign"/>
+		<action id="com.bjsasc.ddm.distributeelectaskoperate.list.refusesign"/>
+		<action id="com.bjsasc.ddm.distributeforwardoperate.list.forward"/>
+		<action id="com.bjsasc.ddm.distributeforwardoperate.list.submit"/>
+	</model>
+	
+	<!-- 纸质签收任务内部操作按钮 -->
+	<model id="ddm.papersigntaskoperate.list.toolbar" callback="reload" target="popup">
+		<action id="com.bjsasc.ddm.papersigntaskoperate.list.sign"/>
+		<action id="com.bjsasc.ddm.papersigntaskoperate.list.refusesign"/>
+		<action id="com.bjsasc.ddm.paperforwardoperate.list.forward"/>
+		<action id="com.bjsasc.ddm.paperforwardoperate.list.submit"/>
+	</model>
+
+	<!-- 电子任务转发信息工具栏 -->
+	<model id="ddm.distributeforwardinfo.list.toolbar" callback="reload" target="popup">
+		<action id="com.bjsasc.ddm.distributeforwardinfo.list.submit"/>
+		<action id="com.bjsasc.ddm.distributeforwardinfo.list.addUser"/>
+		<!-- <action id="com.bjsasc.ddm.distributeorder.addOrg"/> -->
+		<action id="com.bjsasc.ddm.distributeforwardinfo.list.edit"/>
+		<action id="com.bjsasc.ddm.distributeforwardinfo.list.delete"/>
+	</model>
+	<!-- 回收销毁详细页面工具栏菜单 -->
+	<model id="ddm.distributeDestroyOrder.list.toolbar" callback="reload" target="popup">
+		<action id="com.bjsasc.ddm.distributeinsideOrder.print"/>
+	</model>
+	<!-- 已签收电子任务 -->
+	<model id="ddm.distributeExecttask.list.toolbar" callback="reload" target="popup">
+		<action id="com.bjsasc.ddm.distributeelectask.submit" target="popup"/>
+	</model>
+	
+	<!-- 电子任务相关分发数据 -->
+	<model id="ddm.distributeTaskObject.list.toolbar" callback="reload" target="popup">
+		<action id="com.bjsasc.ddm.distributetaskobject.articulate" target="popup"/>
+	</model>
+	<!-- 电子任务 -->
+	<group id="distribute.electask.tab" defaultChild="approveElectask.visit.normal">
+		<model id="approveElectask.visit.normal" action="com.bjsasc.bbm.normal" callback="reload" target="popup" >
+			<action id="com.bjsasc.ddm.approvetask.attribute" callback="reload" target="self" default="true"/> 
+			<action id="com.bjsasc.ddm.approveElectask.showobject" target="self"/>
+			<action id="com.bjsasc.ddm.approveElectask.showsontask" target="self"/>	
+		</model>
+		<model id="approveElectask.visit.object" action="com.bjsasc.bbm.aboutobject" callback="reload" target="popup" >
+			<action id="com.bjsasc.ddm.approvetask.sendorder" callback="reload" target="self" default="true"/>
+			<!-- <action id="com.bjsasc.ddm.approvetask.info" callback="reload" target="self"/> -->
+			<action id="com.bjsasc.ddm.approvetask.info" target="self"/>
+		</model>
+	</group>
+	
+	<!-- 纸质签收任务 -->
+	<group id="distribute.papersigntask.tab" defaultChild="approvePaperSigntask.visit.normal">
+		<model id="approvePaperSigntask.visit.normal" action="com.bjsasc.bbm.normal" callback="reload" target="popup" >
+			<action id="com.bjsasc.ddm.approvetask.attribute" callback="reload" target="self" default="true"/> 
+			<action id="com.bjsasc.ddm.approvePaperSigntask.showobject" target="self"/>	
+		</model>
+		<model id="approvePaperSigntask.visit.object" action="com.bjsasc.bbm.aboutobject" callback="reload" target="popup" >
+			<action id="com.bjsasc.ddm.approvetask.sendorder" callback="reload" target="self" default="true"/>
+			<!-- <action id="com.bjsasc.ddm.approvetask.info" callback="reload" target="self"/> -->
+			<action id="com.bjsasc.ddm.approvepapersigntask.info" target="self"/>
+		</model>
+	</group>
+	
+	<!-- 纸质任务 -->
+	<group id="distribute.papertask.tab" defaultChild="approvePapertask.visit.normal">
+		<model id="approvePapertask.visit.normal" action="com.bjsasc.bbm.normal" callback="reload" target="popup" >
+			<action id="com.bjsasc.ddm.approvetask.attribute" callback="reload" target="self" default="true"/>
+			<action id="com.bjsasc.ddm.approvePapertask.showobject" target="self"/>	 
+			<action id="com.bjsasc.ddm.approvePapertask.showsontask" target="self"/>	
+		</model>
+		<model id="approvePapertask.visit.object" action="com.bjsasc.bbm.aboutobject" callback="reload" target="popup" >
+			<action id="com.bjsasc.ddm.approvetask.sendorder" callback="reload" target="self" default="true"/> 
+			<action id="com.bjsasc.ddm.approvetask.processinfo" callback="reload" target="self"/> 
+		</model>
+	</group>
+
+	<!-- 回收销毁纸质任务 -->
+	<group id="recdes.papertask.tab" defaultChild="approvePapertask.visit.normal">
+		<model id="approvePapertask.visit.normal" action="com.bjsasc.bbm.normal" callback="reload" target="popup" >
+			<action id="com.bjsasc.ddm.approvetask.attribute" callback="reload" target="self" default="true"/>
+			<action id="com.bjsasc.ddm.approveRecDesPapertask.showobject" target="self"/>	 
+			<action id="com.bjsasc.ddm.approveRecDesPapertask.showsontask" target="self"/>	
+		</model>
+		<model id="approvePapertask.visit.object" action="com.bjsasc.bbm.aboutobject" callback="reload" target="popup" >
+			<action id="com.bjsasc.ddm.approvetask.sendrecdesorder" callback="reload" target="self" default="true"/> 
+		</model>
+	</group>
+
+	<!-- 发放单页面 -->
+	<group id="ddm.distribute.sendorder.group" defaultChild="ddm.distributeorder.ordergroup.convention">
+
+		<model id="distribute.ordergroup.convention" action="ddm.distributeorder.ordergroup.convention" callback="reload" target="popup">
+			<action id="com.bjsasc.ddm.distributeorder.ordergroup.property" callback="reload" target="self" default="true" refresh="true" />
+			<action id="com.bjsasc.ddm.distributeorder.ordergroup.datas" target="self" refresh="true" />
+			<action id="com.bjsasc.ddm.distributeorder.ordergroup.info" target="self" refresh="true"/>
+		</model>
+
+		<model id="distribute.ordergroup.findobject" action="ddm.distributeorder.ordergroup.findobject" callback="reload" target="popup">
+			<action id="ddm.distributeorder.ordergroup.sendtask" callback="reload" target="self" default="true"/>
+		</model>
+		
+		<model id="distribute.ordergroup.site" action="ddm.distributeorder.ordergroup.site" callback="reload" target="popup" >
+			<action id="com.bjsasc.ddm.distributeorder.ordergroup.centerTask" callback="reload" target="self" default="true" refresh="true" />
+			<action id="com.bjsasc.ddm.distributeorder.ordergroup.receiveTask" callback="reload" target="self" refresh="true"/>
+			<action id="com.bjsasc.ddm.distributeorder.ordergroup.signatureTrace" callback="reload" target="self" refresh="true"/>
+		</model>
+	</group>
+	
+	<!-- 对象模型配置(一览显示画面) -->
+	<model id="ddm.distributeobjecttype.list.toolbar" callback="reload" target="popup">
+		<action id="com.bjsasc.ddm.distributeobjecttype.adddata" callback="reload" target="self" refresh="true"/>
+		<action id="com.bjsasc.ddm.distributeobjecttype.edit" callback="reload" target="self" refresh="true"/>
+		<action id="com.bjsasc.ddm.distributeobjecttype.delete" callback="reload" target="self" refresh="true"/>
+	 </model>
+	<!-- 对象模型配置(添加角色/成员) -->
+	<model id="ddm.distributeobjecttype.adddata.toolbar" callback="reload" target="popup">
+		<action id="com.bjsasc.ddm.distributeobjecttype.adddata.addrole" callback="reload" target="self" refresh="true"/>
+		<action id="com.bjsasc.ddm.distributeobjecttype.adddata.adduser" callback="reload" target="self" refresh="true"/>
+		<action id="com.bjsasc.ddm.distributeobjecttype.adddata.delete" callback="reload" target="self" refresh="true"/>
+	 </model>
+	<!-- 对象模型配置(添加类型) -->
+	<model id="ddm.distributeobjecttype.addtype.toolbar" callback="reload" target="popup">
+		<action id="com.bjsasc.ddm.distributeobjecttype.addtype.addtype" callback="reload" target="self" refresh="true"/>
+		<action id="com.bjsasc.ddm.distributeobjecttype.addtype.delete" callback="reload" target="self" refresh="true"/>
+	 </model>
+	 
+	 
+	 <!-- 默认分发信息配置(一览显示画面) -->
+	<model id="ddm.distributeinfoconfig.list.toolbar" callback="reload" target="popup">
+		<action id="com.bjsasc.ddm.distributeinfoconfig.list.addUser"/>
+		<action id="com.bjsasc.ddm.distributeinfoconfig.list.addOrg"/>
+		<action id="com.bjsasc.ddm.distributeinfoconfig.list.delete"/>
+		<action id="com.bjsasc.ddm.distributeinfoconfig.list.edit"/>
+	 </model>
+
+	<!-- 发放管理配置-发放管理通用配置 -->
+	<model id="ddm.distributecommonconfig.toolbar" face="com.bjsasc.plm.operate" target="self" callback="reload">
+		<action id="com.bjsasc.ddm.distributecommonconfig.list.new" target="popup"/>
+		<action id="com.bjsasc.ddm.distributecommonconfig.list.del"/>
+		<action id="com.bjsasc.ddm.distributecommonconfig.list.recover"/>
+	</model> 
+	
+	<!-- 各个业务对象的相关对象的发放单页面工具栏 -->
+	<model id="ddm.relateddistributeorder.list.toolbar" callback="reload" target="popup">
+		<action id="com.bjsasc.ddm.distributeinfo.list.history"/>
+	</model>
+	
+</config>
+

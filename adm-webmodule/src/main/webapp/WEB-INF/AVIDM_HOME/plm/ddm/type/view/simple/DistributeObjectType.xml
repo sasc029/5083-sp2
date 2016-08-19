@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<type id="DistributeObjectType" name="对象模型配置" alias="distributeObjectType"
+	icon="/plm/images/prop/prop.gif">
+	<attr id="CLASSID"/>
+	<attr id="INNERID"/>
+	<attr id="OID" visible="false"/>
+	<attr id="DOT_DATA_OID" visible="false"/>
+	<attr id="DOT_DATA" />
+	<attr id="DOT_STATE" />
+	<attr id="CONTEXT" />
+	<attr id="CONTEXT_OID" />
+	<attr id="CONTEXT_CLASSID" />
+	<attr id="CONTEXT_INNERID" />
+	<attr id="DOMAIN" />
+	<attr id="DOMAIN_OID" />
+	<attr id="DOMAIN_CLASSID" />
+	<attr id="DOMAIN_INNERID" />
+	<attr id="CREATOR"/>
+	<attr id="MODIFIER"/>
+	<attr id="CREATE_TIME"/>
+	<attr id="MODIFY_TIME"/>
+	<attr id="TITLE" visible="false" formater="TitleFormater">	
+		<src>typeName</src>
+	</attr>
+</type>

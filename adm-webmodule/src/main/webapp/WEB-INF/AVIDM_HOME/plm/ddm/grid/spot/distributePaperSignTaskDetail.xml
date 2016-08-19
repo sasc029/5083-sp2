@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<spot id="ListDistributePaperSignObjects" filter="false">
+		<types>
+			<type id="DistributeObject"/>
+		</types>
+		<default>
+			<column id="DATATYPEIMG" />	
+            <column id="NUMBER" />
+            <column id="NAME" />
+            <column id="VERSION" />
+            <column id="LIFECYCLE_STATE"/>
+            <column id="DATAFROM" />
+            <column id="DDMCONTEXT" />
+            <column id="MODIFIER"/>
+            <column id="MODIFY_TIME"/>
+		</default>
+	</spot>
+</config>

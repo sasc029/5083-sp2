@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="GBK"?>
+<type id="ActiveSet">
+	<attr id="NAME">
+		<validators>
+			<validator id="EmptyValidator"></validator>
+		</validators>
+	</attr>
+	<attr id="NUMBER">
+		<validators>
+			<validator id="EmptyValidator"></validator>
+			<validator id="NumberUniqueValidator"><param id="className">com.bjsasc.adm.active.model.activeset.ActiveSetMaster</param></validator>
+		</validators>
+	</attr>
+	<attr id="NOTE" max="1000">
+		<validators>
+			<validator id="StringMaxLengthValidator" />
+		</validators>
+	</attr>
+	<attr id="DATASOURCE" >
+		<validators>
+			<validator id="EmptyValidator" />
+		</validators>
+	</attr>
+	<attr id="PAGES" >
+		<validators>
+			<validator id="IntegerValidator" />
+		</validators>
+	</attr>
+	<attr id="COUNT" >
+		<validators>
+			<validator id="IntegerValidator" />
+		</validators>
+	</attr>
+</type>

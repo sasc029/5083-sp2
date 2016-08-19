@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<type id="ActiveModels" name="现行文件模型">
+    <attr id="id" name="编号" type="String" />
+    <attr id="name" name="名称" type="String" />
+    <attr id="slName" name="密级" type="String" />
+    <attr id="activeCodeName" name="代号" type="String" />
+    <attr id="dataSource" name="数据源来源" type="String" />
+	<attr id="create_Time" name="创建时间" type="Char" />
+	<attr id="modify_Time" name="修改时间" type="Char" />
+	<attr id="createBy" name="创建人" type="String" />
+	<attr id="modifyBy" name="修改人" type="String" />
+	<attr id="stateName" name="生命周期状态" type="String" />
+	<attr id="authorName" name="作者名称" type="String" />
+	<attr id="authorTime" name="文件编制时间" type="Char"     />
+	<attr id="authorUnit" name="作者所属单位" type="String" />
+	<attr id="pages" name="页数" type="long" />
+	<attr id="count" name="份数" type="long" />
+	<attr id="note" name="备注" type="String" />
+</type>

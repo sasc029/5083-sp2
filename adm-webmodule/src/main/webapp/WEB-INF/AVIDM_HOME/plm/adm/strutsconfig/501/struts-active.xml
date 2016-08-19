@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<package name="adm.active" namespace="/adm/active" extends="struts-plm">
+		<action name="ActiveDocumentHandle" class="com.bjsasc.adm.active.action.activedocument.ActiveDocumentAction">
+			<result name="initPage">/adm/activedocument/listActiveDocument.jsp</result>
+			<result name="editMulti">/adm/activedocument/editMulti.jsp</result>
+			<result name="initpageCondition">/adm/activedocument/listActiveDocumentConditions.jsp</result>
+		</action>
+		<action name="ActiveOrderHandle" class="com.bjsasc.adm.active.action.activeorder.ActiveOrderAction">
+			<result name="initPage">/adm/activeorder/listActiveOrder.jsp</result>
+		</action>
+		<action name="ActiveSetHandle" class="com.bjsasc.adm.active.action.activeset.ActiveSetAction">
+			<result name="initPage">/adm/activeset/listActiveSet.jsp</result>
+		</action>
+		<action name="ActiveModelHandle" class="com.bjsasc.adm.active.action.activemodel.ActiveModelAction">
+		</action>
+		
+		<action name="ActiveRecycleHandle" class="com.bjsasc.adm.active.action.activerecycle.ActiveRecycleAction">
+			<result name="initPage">/adm/activerecycle/listActiveRecycles.jsp</result>
+		</action>
+		
+		<action name="ActiveStatisticsHandle" class="com.bjsasc.adm.active.action.admstatistics.ActiveStatisticsAction">
+			<result name ="initPage">/adm/admstatistics/listStatistics.jsp</result>
+		</action>
+		
+		<action name="ModelViewHandle" class="com.bjsasc.adm.active.action.modelview.ModelViewAction">
+			<result name ="content">/adm/modelview/listActiveDocuments.jsp</result>
+		</action>
+		
+		<!-- 校验 -->
+        <action name="activeOperateValidationHandle" class="com.bjsasc.adm.active.action.activeoptvalidation.ActiveOptValidationAction">
+        </action>
+	</package>
+
+</struts>
+ 

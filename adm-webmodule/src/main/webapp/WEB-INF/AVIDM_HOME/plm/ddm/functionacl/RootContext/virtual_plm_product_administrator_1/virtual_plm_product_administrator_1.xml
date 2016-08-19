@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="GBK"?>
+<principal id="virtual_ProductAdministrator_1" name="产品管理员">
+	<function id="plm_global_product_context">
+		<function id="plm_product_context_tool">
+			<function id="plm_product_context_manager_distribute" />
+		</function>
+		<function id="plm_product_context_operate">
+			<function id="plm_product_context_distributeOperate" />
+		</function>
+		<function id="plm_product_context_visit">
+			<function id="plm_product_context_related">
+				<function id="plm_product_context_relatedDistribute" />
+			</function>
+		</function>
+	</function>
+</principal>

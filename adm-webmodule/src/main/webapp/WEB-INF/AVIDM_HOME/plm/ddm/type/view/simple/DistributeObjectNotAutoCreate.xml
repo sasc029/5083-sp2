@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<type id="DistributeObjectNotAutoCreate" name="对象模型不自动发放配置" alias="distributeObjectNotAutoCreate"
+	icon="/plm/images/prop/prop.gif">
+	<attr id="CLASSID"/>
+	<attr id="INNERID"/>
+	<attr id="OID" visible="false"/>
+	<attr id="DOT_TYPE_ID" />
+	<attr id="DOT_TYPE_NAME" />
+	<attr id="CONTEXT" />
+	<attr id="CONTEXT_OID" />
+	<attr id="CONTEXT_CLASSID" />
+	<attr id="CONTEXT_INNERID" />
+	<attr id="DOMAIN" />
+	<attr id="DOMAIN_OID" />
+	<attr id="DOMAIN_CLASSID" />
+	<attr id="DOMAIN_INNERID" />
+	<attr id="CREATOR"/>
+	<attr id="MODIFIER"/>
+	<attr id="CREATE_TIME"/>
+	<attr id="MODIFY_TIME"/>
+	<attr id="TITLE" visible="false" formater="TitleFormater">	
+		<src>typeName</src>
+	</attr>
+</type>

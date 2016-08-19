@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OM-file>
+	<sessionFactory poolName="AvidmSystemDB">
+		<list>
+			<value>com/bjsasc/ddm/distribute/model/distributeinfo/DistributeInfo.xml</value>
+			<value>com/bjsasc/ddm/distribute/model/distributeorder/DistributeOrder.xml</value>
+			<value>com/bjsasc/ddm/distribute/model/distributeobject/DistributeObject.xml</value>
+			<value>com/bjsasc/ddm/distribute/model/distributeelectask/DistributeElecTask.xml</value>
+			<value>com/bjsasc/ddm/distribute/model/distributepapertask/DistributePaperTask.xml</value>
+			<value>com/bjsasc/ddm/distribute/model/distributepapertask/DistributeSeriaNo.xml</value>
+			<value>com/bjsasc/ddm/distribute/model/distributetaskinfolink/DistributeTaskInfoLink.xml</value>
+			<value>com/bjsasc/ddm/distribute/model/distributeorderobjectlink/DistributeOrderObjectLink.xml</value>
+			<value>com/bjsasc/ddm/distribute/model/duplicateprocess/DuplicateProcess.xml</value>
+			<value>com/bjsasc/ddm/distribute/model/returnreason/ReturnReason.xml</value>
+			<value>com/bjsasc/ddm/distribute/model/distributetasksite/DistributeTaskSite.xml</value>
+			<value>com/bjsasc/ddm/distribute/model/distributetasksyn/DistributeTaskSyn.xml</value>
+			<value>com/bjsasc/ddm/distribute/model/distributetaskdomainlink/DistributeTaskDomainLink.xml</value>
+			<!-- 工作量统计 -->
+			<value>com/bjsasc/ddm/distribute/model/distributeworkload/DistributeWorkload.xml</value>
+			<value>com/bjsasc/ddm/distribute/model/disinfoistrack/DisInfoIsTrack.xml</value>
+			<value>com/bjsasc/ddm/distribute/model/distributeobjecttype/DistributeObjectType.xml</value>
+			<value>com/bjsasc/ddm/distribute/model/distributeobjectprint/DistributeObjectPrint.xml</value>
+			<value>com/bjsasc/ddm/distribute/model/distributeconfigparameter/DistributeConfigParameter.xml</value>
+			<!-- 默认分发信息配置 -->
+			<value>com/bjsasc/ddm/distribute/model/distributeinfoconfig/DistributeInfoConfig.xml</value>
+			<!-- 发放管理通用配置 -->
+			<value>com/bjsasc/ddm/distribute/model/distributecommonconfig/DistributeCommonConfig.xml</value>
+			<!-- 按对象模型配置不自动发放 -->
+			<value>com/bjsasc/ddm/distribute/model/distributeobjectnotautocreate/DistributeObjectNotAutoCreate.xml</value>
+			<!-- 回收销毁单 -->
+			<value>com/bjsasc/ddm/distribute/model/recdesinfo/RecDesInfo.xml</value>
+			<!-- 回收销毁任务 -->
+			<value>com/bjsasc/ddm/distribute/model/recdespapertask/RecDesPaperTask.xml</value>
+			<!-- 纸质签收任务 -->
+			<value>com/bjsasc/ddm/distribute/model/distributepapersigntask/DistributePaperSignTask.xml</value>
+			<!-- 跨版本任务签署信息 -->
+			<value>com/bjsasc/ddm/distribute/model/convertversion/DcA3TaskSignature.xml</value>
+			<!-- 跨版本任务签署信息与分发业务对象link -->
+			<value>com/bjsasc/ddm/distribute/model/convertversion/DcA3SigObjectLink.xml</value>
+		</list>
+	</sessionFactory>
+</OM-file>

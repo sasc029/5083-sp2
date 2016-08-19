@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="GBK"?>
+<!-- 系统内置角色配置，name：名称，不能重名。id：编号，不能重名。describe：描述。 -->
+<root>
+	<roles>
+		<role name="调度" id="plm_schedule" describe="plm系统内置角色"></role>
+		<role name="资料员" id="plm_file_keeper" describe="plm系统内置角色"></role>
+	</roles>
+</root>

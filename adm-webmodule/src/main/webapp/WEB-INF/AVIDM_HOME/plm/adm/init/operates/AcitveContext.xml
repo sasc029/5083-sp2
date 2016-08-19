@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="GBK"?>
+<package id="ActiveContext" name="现行上下文">
+	<operate id="access">
+		<operate id="plm_modify"/>
+		<operate id="plm_delete"/>
+		<operate id="plm_rename"/>
+	</operate>
+	<operate id="setPermission"/>
+	<operate id="FullControl"/>
+	<operate id="plm_create"/>
+</package>

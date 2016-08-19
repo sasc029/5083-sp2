@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<spot id="ListDistributeInfoConfig" filter="false">
+		<types>
+			<type id="DistributeInfoConfig" />
+		</types>
+		<default>
+			<column id="DISINFONAME" />
+            <column id="DISINFOTYPE" />
+			<column id="DISINFONUM" />
+			<column id="DISMEDIATYPE" />
+			<column id="NOTE" />
+		</default>
+	</spot>	
+</config>
+
+
+ 

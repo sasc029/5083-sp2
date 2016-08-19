@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="GBK"?>
+<group id="plm_modules">
+	<module id="plm_global_root_context" name="站点"
+		url="/plm/context/listRootContexts.jsp" childUrl="/plm/context/outlook/listRootContexts.jsp">
+		<module id="plm_root_context_tool" name="管理工具">
+			<module id="plm_root_context_business_manager" name="业务管理">
+				<module id="plm_root_context_manager_distribute" name="发放管理配置" />
+			</module>
+		</module>
+	</module>
+</group>

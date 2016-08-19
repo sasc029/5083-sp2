@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="GBK"?>
+<type id="ReturnReason">
+	<attr id="returnReason" max="1000">
+		<validators>
+			<validator id="StringMaxLengthValidator"/>
+		</validators>
+	</attr>
+</type>

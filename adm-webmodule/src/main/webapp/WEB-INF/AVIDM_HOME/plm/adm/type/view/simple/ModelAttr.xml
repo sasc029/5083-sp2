@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<type id="ModelAttr" name="模型显示列" icon="/plm/images/prop/prop.gif">
+	<attr id="CLASSID" />
+	<attr id="INNERID" />
+	<attr id="OID" />
+	<attr id="TITLE" visible="false" formater="TitleFormater">
+		<src>number</src>
+		<src>name</src>
+	</attr>
+	<attr id="NUMBER" />
+	<attr id="NAME" />
+	<attr id="NOTE" />
+	<attr id="DATALENGTH" />
+	<attr id="DATATYPE" />
+</type>

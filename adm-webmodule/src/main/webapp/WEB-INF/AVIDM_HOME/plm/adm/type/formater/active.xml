@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="GBK"?>
+<formaters>
+	<!-- 自定义JavaScript方法调用 -->
+	<formater id="javaScriptOpenFormatImpl" clazz="com.bjsasc.adm.common.JavaScriptOpenFormatImpl">
+	</formater>
+	
+	<formater id="activeSubFolderNameFormater" clazz="com.bjsasc.adm.common.ActiveSubFolderNameFormaterImpl">
+	</formater>
+	
+	<!-- 代号 -->
+	<formater id="activeCodeLookupFormatter" clazz="com.bjsasc.plm.type.formater.impl.LookupFormatImpl">
+		<param id="lookupId">activeCode</param>
+	</formater>
+</formaters>

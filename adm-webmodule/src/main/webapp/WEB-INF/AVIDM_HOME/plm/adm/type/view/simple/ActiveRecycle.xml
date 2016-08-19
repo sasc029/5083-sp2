@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<type id="ActiveRecycle" name="回收站" icon="/plm/images/prop/prop.gif">
+	<attr id="CLASSID" />
+	<attr id="INNERID" />
+	<attr id="TYPE"/>
+	<attr id="OID" />
+	<attr id="TITLE" visible="false" formater="TitleFormater">
+		<src>number</src>
+		<src>name</src>
+	</attr>
+	<attr id="NAME" formater="javaScriptOpenFormatImpl" link=""/>
+	<attr id="NUMBER" formater="javaScriptOpenFormatImpl" link=""/>
+	<attr id="ITEMID" visible="false" />
+	<attr id="ITEMCLASSID" visible="false" />
+	<attr id="ITEMPROPERTIESURL" visible="false" />
+	<attr id="RECYCLEVERSIONNO" />
+	<attr id="FOLDERPATH" />
+	<attr id="MODELNAME" />
+	<attr id="SECURITYLEVEL" />
+</type>

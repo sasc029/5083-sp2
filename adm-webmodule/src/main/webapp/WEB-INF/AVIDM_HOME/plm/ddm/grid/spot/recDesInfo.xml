@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<spot id="ListRecInfos" filter="false">
+		<types>
+			<type id="RecDesInfo" />
+		</types>
+		<default>
+			<column id="DISINFONAME" />
+			<column id="DISMEDIATYPE" />
+			<column id="NEEDRECOVERNUM" />
+			<column id="LIFECYCLE_STATE" />
+			<column id="SENDTIME" />
+			<column id="NOTE" />
+			<column id="LIFECYCLE_TEMPLATE" />
+			<column id="MODIFIER" />
+			<column id="MODIFY_TIME" />	
+		</default>
+	</spot>	
+	<spot id="ListDesInfos" filter="false">
+		<types>
+			<type id="RecDesInfo" />
+		</types>
+		<default>
+			<column id="DISINFONAME" />
+			<column id="DISMEDIATYPE" />
+			<column id="NEEDDESTROYNUM" />
+			<column id="LIFECYCLE_STATE" />
+			<column id="SENDTIME" />
+			<column id="NOTE" />
+			<column id="LIFECYCLE_TEMPLATE" />
+			<column id="MODIFIER" />
+			<column id="MODIFY_TIME" />	
+		</default>
+	</spot>	
+	<spot id="ListRecDesInfos" filter="false">
+		<types>
+			<type id="RecDesInfo" />
+		</types>
+		<default>
+			<column id="DISINFONAME" />
+			<column id="DISMEDIATYPE" />
+			<column id="NEEDDESTROYNUM" />
+			<column id="NEEDRECOVERNUM" />
+			<column id="LIFECYCLE_STATE" />
+			<column id="SENDTIME" />
+			<column id="NOTE" />
+			<column id="LIFECYCLE_TEMPLATE" />
+			<column id="MODIFIER" />
+			<column id="MODIFY_TIME" />	
+		</default>
+	</spot>	
+</config>

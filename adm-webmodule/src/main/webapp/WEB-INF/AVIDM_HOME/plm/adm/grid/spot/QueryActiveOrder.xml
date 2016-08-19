@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<spot id="QUERYACTIVEORDER"  filter="true" sort="false" page="true">
+		<types>
+			<type id="ActiveOrder" />
+		</types>
+		<default>
+			<column id="TYPE"/>
+			<column id="NUMBER" />
+			<column id="NAME" />
+			<column id="VERSION"/>
+			<column id="CONTEXT" />
+	        <column id="LIFECYCLE_STATE" />
+	        <column id="CREATOR" />
+	        <column id="CREATE_TIME"/>
+		</default>
+	</spot>
+</config>

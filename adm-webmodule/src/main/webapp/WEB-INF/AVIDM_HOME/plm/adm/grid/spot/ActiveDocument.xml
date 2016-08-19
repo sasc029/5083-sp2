@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<spot id="ACTIVEDOCUMENT" filter="false">
+		<types>
+			<type id="ActiveDocument"/>
+		</types>
+		<default>
+			<column id="TYPE"/>
+			<column id="NUMBER" />
+			<column id="NAME" />
+			<column id="DATASOURCE" />
+			<column id="VERSION"/>
+		</default>
+	</spot>
+	<spot id="ActiveDocumentView" filter="false">
+		<types>
+			<type id="ActiveDocument"/>
+		</types>
+		<default>
+			<column id="TYPE"/>
+			<column id="NUMBER" />
+			<column id="NAME" />
+			<column id="DATASOURCE" />
+			<column id="VERSION"/>
+		</default>
+	</spot>
+	<spot id="vc_browse_ActiveDocument" filter="true">
+		<types>
+			<type id="ActiveDocument" />
+		</types>
+		<default>
+			<column id="NEW_MARK" />
+			<column id="TYPE" />
+			<column id="NAME" />
+			<column id="VERSION"/>
+			<column id="LIFECYCLE_STATE" />
+			<column id="MODIFIER" />
+			<column id="MODIFY_TIME" />
+			<column id="CONTEXT" />
+		</default>
+	</spot>
+	<spot id="RelatedObject_ActiveDocument" filter="false">
+		<types>
+			<type id="ActiveDocument"/>
+		</types>
+		<default>
+			<column id="TYPE"/>
+			<column id="NUMBER" />
+			<column id="NAME" />
+		</default>
+	</spot>
+</config>

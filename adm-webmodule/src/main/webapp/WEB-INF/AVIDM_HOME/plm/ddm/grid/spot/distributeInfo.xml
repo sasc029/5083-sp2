@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<spot id="ListDistributeInfos" filter="false">
+		<types>
+			<type id="DistributeInfo" />
+		</types>
+		<default>
+			<column id="DISINFONAME" />
+			<column id="OUTSIGNNAME" />
+            <column id="DISMEDIATYPE" />
+			<column id="DISINFONUM" />
+			<column id="LIFECYCLE_STATE" />
+			<column id="SENDTIME" />
+			<column id="DISTYPE" />
+			<column id="NOTE" />
+			<column id="LIFECYCLE_TEMPLATE" />
+			<column id="MODIFIER" />
+			<column id="MODIFY_TIME" />	
+		</default>
+	</spot>	
+	<spot id="ListNeedRecDisInfoNum" filter="false">
+		<types>
+			<type id="DistributeInfo" />
+		</types>
+		<default>
+			<column id="DISINFONAME" />
+			<column id="DISINFOID" />
+			<column id="DISORDEROBJLINKID" />
+			<column id="DISORDEROBJLINKCLASSID" />
+			<column id="DISINFONUM" />
+			<column id="RECOVERNUM" />
+			<column id="NEEDRECOVERNUM" />
+			<column id="DISMEDIATYPE" />
+			<column id="DISOBJID" />
+			<column id="DISOBJNAME" />
+		</default>
+	</spot>	
+	<spot id="ListNeedDesDisInfoNum" filter="false">
+		<types>
+			<type id="DistributeInfo" />
+		</types>
+		<default>
+			<column id="DISINFONAME" />
+			<column id="DISINFOID" />
+			<column id="DISORDEROBJLINKID" />
+			<column id="DISORDEROBJLINKCLASSID" />
+			<column id="DISINFONUM" />
+			<column id="RECOVERNUM" />
+			<column id="DESTROYNUM" />
+			<column id="NEEDDESTROYNUM" />
+			<column id="DISMEDIATYPE" />
+			<column id="DISOBJID" />
+			<column id="DISOBJNAME" />
+		</default>
+	</spot>	
+</config>

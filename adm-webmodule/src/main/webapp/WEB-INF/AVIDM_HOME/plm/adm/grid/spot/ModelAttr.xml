@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<spot id="ListModelAttrs" filter="false">
+		<types>
+			<type id="ModelAttr"/>
+		</types>
+		<default>
+			<column id="NUMBER" />
+			<column id="NAME" />
+			<column id="NOTE" />
+			<column id="DATALENGTH" />
+			<column id="DATATYPE" />
+		</default>
+	</spot>
+</config>

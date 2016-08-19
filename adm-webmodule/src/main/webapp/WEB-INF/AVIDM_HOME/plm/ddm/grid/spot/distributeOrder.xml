@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<spot id="ListDistributeOrders" filter="false">
+		<types>
+			<type id="DistributeOrder" />
+		</types>
+		<default>
+			<!-- <column id="OPENID" /> -->
+			<column id="NUMBER"/>
+			<column id="NAME" />
+			<column id="ORDERTYPE" />
+			<column id="CREATOR" />
+		    <column id="CREATE_TIME"/>
+			<column id="DDMCONTEXT" />
+			<column id="STATENAME" />
+			<column id="NOTE" />
+			
+		</default>
+	</spot>
+	<spot id="ListDistributeSendOrders" filter="false">
+		<types>
+			<type id="DistributeOrder" />
+		</types>
+		<default>
+			<!-- <column id="OPENID" /> -->
+			<column id="NUMBER"/>
+			<column id="NAME" />
+			<column id="ORDERTYPE" />
+			<column id="CREATOR" />
+		    <column id="CREATE_TIME"/>
+			<column id="DDMCONTEXT" />
+			<column id="STATENAME" />
+			<column id="NOTE" />
+			
+		</default>
+	</spot>
+</config>

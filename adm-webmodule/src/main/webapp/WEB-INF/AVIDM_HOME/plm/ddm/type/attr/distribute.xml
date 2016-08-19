@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="GBK"?>
+<attrs>
+	<attr id="ORDERTYPE" name="单据类型" formater="orderTypeFormater">
+		<src>orderType</src>
+	</attr>
+	<attr id="OPENID" name="编号" formater="javaScriptFormatImpl">
+		<src>number</src>
+	</attr>
+	<attr id="DDMDETAILID" name="编号" formater="javaScriptLinkFormatImpl">
+		<src>number</src>
+	</attr>
+	<attr id="OIDS" name="编号" visible="false">
+		<src>oids</src>
+	</attr>
+	<attr id="DATAINNERID" name="分发数据源内部标识" visible="false">
+		<src>dataInnerId</src>
+	</attr>
+	<attr id="DATACLASSID" name="分发数据源类名" visible="false">
+		<src>dataClassId</src>
+	</attr>
+	<attr id="DISTRIBUTEDATA" name="分发数据" link="distributeData" queryFieldId="distributeData.innerId" queryFieldType="string" queryComparor="Equal,NotEqual" >
+		<src>distributeData.classId</src>
+	</attr>
+	<attr id="LINKID" name="编号" link="distributeData" queryFieldId="distributeData.innerId" queryFieldType="string" queryComparor="Equal,NotEqual" >
+		<src>number</src>
+	</attr>
+	<attr id="DATAFROM" name="分发数据源来源">
+		<src>dataFrom</src>
+	</attr>
+	<attr id="ISPRINT" name="是否打印">
+		<src>isprint</src>
+	</attr>
+	<attr id="DISTRIBUTEORDEROBJECTLINKOID" name="OID" visible="false">
+		<src>distributeOrderObjectLinkOid</src>
+	</attr>
+	<attr id="DISORDEROBJLINKID" name="发放单与分发数据LINK内部标识" visible="false">
+		<src>distributeOrderObjectLink.innerId</src>
+	</attr>
+	<attr id="DISORDEROBJLINKCLASSID" name="发放单与分发数据LINK类标识" visible="false">
+		<src>distributeOrderObjectLink.classId</src>
+	</attr>
+	<attr id="SENDTIME" name="发送时间" formater="DateFormater">
+		<src>sendTime</src>
+	</attr>
+	<attr id="DISINFONAME" name="接收单位/人员">
+		<src>disInfoName</src>
+	</attr>
+	<attr id="DISINFOTYPE" name="分发信息类型" formater="disInfoTypeFormater">
+		<src>disInfoType</src>
+	</attr>
+	<attr id="DISINFONUM" name="份数">
+		<src>disInfoNum</src>
+	</attr>
+	<attr id="DESTROYNUM" name="销毁份数">
+		<src>destroyNum</src>
+	</attr>
+	<attr id="DISMEDIATYPE" name="分发类型" formater="disMediaTypeFormater">
+		<src>disMediaType</src>
+	</attr>
+	<attr id="DISTYPE" name="分发方式" formater="disTypeFormater">
+		<src>disType</src>
+	</attr>
+	<attr id="DISDEADLINE" name="完工期限" formater="DateFormater">
+		<src>disDeadLine</src>
+	</attr>
+	<attr id="DISURGENT" name="紧急程度" formater="disUrgentFormater">
+		<src>disUrgent</src>
+	</attr>
+	<attr id="DISOPERATE" name="操作" formater="javaScriptFormatImpl">
+		<src>operate</src>
+	</attr>
+	<attr id="OPERATES" name="操作" formater="javaScriptFormatManyImpl">
+		<src>operates</src>
+	</attr>
+	<attr id="TASKTYPE" name="任务类型" formater="taskTypeFormater">
+		<src>taskType</src>
+	</attr>
+	<attr id="INFOCREATOR" name="创建人">
+		<src>infoCreator</src>
+	</attr>
+	<attr id="COLLATOR" name="整理人">
+		<src>collator</src>
+	</attr>
+	<attr id="CONTRACTOR" name="复印人">
+		<src>contractor</src>
+	</attr>
+	<attr id="FINISHTIME" name="完成时间" formater="DateFormater">
+		<src>finishTime</src>
+	</attr>
+	<attr id="RETURNREASON" name="回退原因">
+		<src>returnReason</src>
+	</attr>
+	<attr id="OPENCOUNT" name="回退次数" formater="javaScriptFormatImpl">
+		<src>returnCount</src>
+	</attr>
+	<attr id="LIFECYCLE_TEMPLATE_NAME" name="生命周期模板">
+		<src>lifeCycleTemplateName</src>
+	</attr>
+
+	<attr id="OBJECTID" name="对象标识">
+		<src>objectId</src>
+	</attr>
+	<attr id="OBJECTCLASSID" name="对象类标识">
+		<src>objectClassId</src>
+	</attr>
+
+	<attr id="FROMSTATEID" name="原状态ID" visible="false">
+		<src>fromStateId</src>
+	</attr>
+	<attr id="TOSTATEID" name="现状态ID" visible="false">
+		<src>toStateId</src>
+	</attr>
+	<attr id="FROMSTATENAME" name="原状态">
+		<src>fromStateName</src>
+	</attr>
+	<attr id="TOSTATENAME" name="现状态">
+		<src>toStateName</src>
+	</attr>
+	<attr id="FROMLIFECYCLETEMPLATE" name="原生命周期模板">
+		<src>fromLifeCycleTemplateName</src>
+	</attr>
+	<attr id="TOLIFECYCLETEMPLATE" name="现生命周期模板">
+		<src>toLifeCycleTemplateName</src>
+	</attr>
+	<attr id="LIFECYCLE_STATE_ALL2" name="状态">
+		<src>stateNameAll</src>
+	</attr>
+	<attr id="LIFECYCLE_STATE_ALL" formater="LifeCycleStateFormater">
+		<src>this</src>
+	</attr>
+	<attr id="DDMCONTEXT" name="上下文"  group="系统" queryFieldId="contextInfo.contextRef.innerId" queryFieldType="string" queryComparor="Equal,NotEqual" editor="ContextSelectEditor">
+		<src>contextInfo.contextRef.object.name</src>
+	</attr>
+	<!-- <attr id="RECEIVER" name="接收者"  group="系统" link="modifyByRef" queryFieldId="modifyByRef.innerId">
+		<src>receiveByRef.object.name</src>
+	</attr> -->
+	<attr id="RECEIVER" name="接收者">
+		<src>receiveByName</src>
+	</attr>
+	<attr id="RECEIVE_TIME" name="接收时间" formater="DateFormater" group="系统" queryFieldId="manageInfo.createTime" queryFieldType="date" queryComparor="Bigger,Smaller,Equal,NotEqual" editor="TimeEditor">
+		<src>receiveTime</src>
+	</attr>
+	<attr id="TASKNAME" name="所属任务">
+		<src>taskName</src>
+	</attr>
+	<attr id="RECOVERDESTROYNUM" name="回收/销毁份数">
+		<src>recoverDestroyNum</src>
+	</attr>
+	<attr id="DISTRIBUTENAME" name="名称" link="distributeData" queryFieldId="distributeData.innerId" queryFieldType="string" queryComparor="Equal,NotEqual" >
+		<src>name</src>
+	</attr>
+	<attr id="LIFTCYCLETYPE" name="状态" formater="lifeCycleTypeFormater">
+		<src>lifeCycleType</src>
+	</attr>
+	<attr id="RETURNUSER" name="回退人" >
+		<src>userName</src>
+	</attr>
+	<attr id="RETURNTIME" name="回退时间" formater="DateFormater">
+		<src>persistInfo.updateTime</src>
+	</attr>
+	<attr id="DATATYPEIMG" name="" note="模型信息" formater="disTypeFormatImpl" group="常规">
+		<src>dataClassId</src>
+	</attr>
+	<attr id="DATATYPE" name="类型" note="模型信息" formater="TypeIconFormater" group="常规">
+		<src>dataClassId</src>
+	</attr>
+	<attr id="RECOVERNUM" name="回收份数" >
+		<src>recoverNum</src>
+	</attr>
+	<attr id="OUTSIGNNAME" name="外域接收人" >
+		<src>outSignName</src>
+	</attr>
+	<attr id="OUTSITETYPE" name="外域" formater="outSiteTypeFormater">
+		<src>outSiteType</src>
+	</attr>
+	<attr id="SUBMITUSERNAME" name="发起人" >
+		<src>submitUserName</src>
+	</attr>
+	<attr id="SUBMITSITENAME" name="发起站点" >
+		<src>siteName</src>
+	</attr>
+	<attr id="TASKFROMNAME" name="任务来源" >
+		<src>sourceSiteName</src>
+	</attr>
+	<attr id="TARGETSITENAME" name="目的站点" >
+		<src>targetSiteName</src>
+	</attr>
+	<attr id="STATENAME" name="状态" >
+		<src>lifeCycleInfo.stateName</src>
+	</attr>
+	<attr id="DOT_DATA_OID" name="角色/成员" >
+		<src>dataOid</src>
+	</attr>
+	<attr id="DOT_DATA" name="角色/成员" >
+		<src>dataName</src>
+	</attr>
+	<attr id="DOT_TYPE_ID" name="类型ID" >
+		<src>typeId</src>
+	</attr>
+	<attr id="DOT_TYPE_NAME" name="类型名称" >
+		<src>typeName</src>
+	</attr>
+	<attr id="DOT_STATE" name="类别" formater="dotStateFormater">
+		<src>state</src>
+	</attr>
+	<attr id="ISMASTER" name="主对象" formater="isMaster">
+		<src>isMaster</src>
+	</attr>
+	<attr id="ISMAINDATAIMG" name="" note="主对象" formater="IsMainDataImgFormater">
+		<src>isMaster</src>
+	</attr>
+	<attr id="SEALINFO" name="盖章信息" >
+		<src>sealInfo</src>
+	</attr>
+
+<!-- kangyanfei 2014-07-08-->	
+	<!-- 需要回收份数 -->
+	<attr id="NEEDRECOVERNUM" name="需要回收份数">
+		<src>needRecoverNum</src>
+	</attr>
+	
+	<!-- 需要销毁份数 -->
+	<attr id="NEEDDESTROYNUM" name="需要销毁份数">
+		<src>needDestroyNum</src>
+	</attr>
+	<!-- 分发信息IID（人员或组织的内部标识 -->
+	<attr id="DISINFOID" name="分发信息IID（人员或组织的内部标识）" visible="false">
+		<src>disInfoId</src>
+	</attr>
+	<!-- 分发数据IID -->
+	<attr id="DISOBJID" name="分发数据IID" visible="false">
+		<src>disObjId</src>
+	</attr>
+	<!-- 分发数据名称 -->
+	<attr id="DISOBJNAME" name="分发数据名称" visible="false">
+		<src>disObjName</src>
+	</attr>
+	<!-- 回收销毁单与分发数据LINK内部标识 -->
+	<attr id="DISORDEROBJECTLINKID" name="回收销毁单与分发数据LINK内部标识" visible="false">
+		<src>disOrderObjectLinkId</src>
+	</attr>
+	<!-- 回收销毁单与分发数据LINK类标识 -->
+	<attr id="DISORDEROBJECTLINKCLASSID" name="回收销毁单与分发数据LINK类标识" visible="false">
+		<src>disOrderObjectLinkClassId</src>
+	</attr>
+	<!-- 纸质任务的发放单创建者 -->
+	<attr id="DISORDERCREATOR" name="发放单创建者" >
+		<src>disOrderCreator</src>
+	</attr>
+	
+	<!-- A3签署信息跟踪相关属性定义  start-->
+	<attr id="SIGTRACE_DEALUSERIID" name="签署人标识" >
+		<src>dealUserIID</src>
+	</attr>
+	<attr id="SIGTRACE_DEALUSERID" name="签署人编号" >
+		<src>dealUserID</src>
+	</attr>
+	<attr id="SIGTRACE_DEALUSERNAME" name="签署人" >
+		<src>dealUserName</src>
+	</attr>
+	<attr id="SIGTRACE_DEALDEVISIONIID" name="签署单位标识" >
+		<src>dealDevisionIID</src>
+	</attr>
+	<attr id="SIGTRACE_DEALDEVISIONID" name="签署单位编号" >
+		<src>dealDevisionID</src>
+	</attr>
+	<attr id="SIGTRACE_DEALDEVISIONNAME" name="签署单位" >
+		<src>dealDevisionName</src>
+	</attr>
+	<attr id="SIGTRACE_DEALROLE" name="签署人角色" >
+		<src>dealRole</src>
+	</attr>
+	<attr id="SIGTRACE_ISAGREE" name="是否同意" formater="isAgreeFormater">
+		<src>isAgree</src>
+	</attr>
+	<attr id="SIGTRACE_DEALMIND" name="签署意见" >
+		<src>dealMind</src>
+	</attr>
+	<attr id="SIGTRACE_MINDTYPE" name="签署意见类型" >
+		<src>mindType</src>
+	</attr>
+	<attr id="SIGTRACE_ISNEEDDEVISIONMIND" name="是否需要单位意见" >
+		<src>isNeedDevisionMind</src>
+	</attr>
+	<attr id="SIGTRACE_STARTTIME" name="任务创建时间" formater="DateFormater">
+		<src>startTime</src>
+	</attr>
+	<attr id="SIGTRACE_SIGNATURETIME" name="签署时间" formater="DateFormater">
+		<src>signatureTime</src>
+	</attr>
+	<attr id="SIGTRACE_SIGNATURESTATE" name="签署状态" formater="signatureStateFormater">
+		<src>signatureState</src>
+	</attr>
+	<attr id="SIGTRACE_DOMAINIID" name="域标识" >
+		<src>domainIID</src>
+	</attr>
+	<attr id="SIGTRACE_ORDERIID" name="单据标识" >
+		<src>orderIID</src>
+	</attr>
+	<attr id="SIGTRACE_TASKIID" name="任务标识" >
+		<src>taskIID</src>
+	</attr>
+	<attr id="SIGTRACE_OBJLINK" name="签署对象分发数据" formater="javaScriptFormatImpl">
+		<src>signatureObjLink</src>
+	</attr>
+	
+	
+	<attr id="OBJINNERID" name="分发数据内部标识" visible="false">
+		<src>disObjId</src>
+	</attr>
+	
+	<attr id="TASKINNERID" name="发放单与分发数据LINK内部标识" visible="false">
+		<src>taskIID</src>
+	</attr>
+
+	<!-- A3签署信息跟踪相关属性定义  end-->
+	
+</attrs>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="GBK"?>
+<!-- type：根据对象的类型调用相应的类型转换XML -->
+<!-- 由于一个对象转换之后可能为多个对象，因此需要在配置中支持将一个对象转换为多个对象,只需要写多个transfer即可 -->
+<config type="TNO">
+	<!-- targetClassID即为目标对象的类型全路径 ，constructor即为类的构造方法，如果没有，则调用默认初始化方法 -->
+	<transfer id="com.bjsasc.plm.core.change.TNO"
+		targetClass="com.bjsasc.ddm.distribute.model.distributeobject.DistributeObject"
+		constructor="@com.bjsasc.ddm.distribute.helper.DistributeHelper@getDistributeObjectService().newDistributeObject()">
+
+		<!-- 数据源innerId和classId -->
+		<set value="#tar.setDataInnerId(#root.getInnerId())" />
+		<set value="#tar.setDataClassId(#root.getClassId())" />
+		<set value="#tar.setDataFrom('A5')" />
+		<!-- 编号和名称 -->
+		<test value="(#root.masterRef!=null)">
+			<set value="#tar.setNumber(#root.getMaster().getNumber())" />
+			<set value="#tar.setName(#root.getMaster().getName())" />
+		</test>
+		<!-- 备注 -->
+		<set value="#tar.setNote(#root.getNote())" />
+		<!-- 扩展属性 start -->
+		<!-- 版本 -->
+		<test value="(#root.iterationInfo!=null)">
+			<set value="#tar.setIterationInfo(#root.getIterationInfo())" />
+		</test>
+		<!-- 管理者信息 -->
+		<test value="(#root.manageInfo!=null)">
+			<set value="#tar.setManageInfo(#root.getManageInfo())" />
+		</test>
+		<!-- 所属上下文信息 -->
+		<test value="(#root.contextInfo!=null)">
+			<set value="#tar.setContextInfo(#root.getContextInfo())" />
+		</test>
+		<!-- 域信息 -->
+		<test value="(#root.domainInfo!=null)">
+			<set value="#tar.setDomainInfo(#root.getDomainInfo())" />
+		</test>
+		<!-- 部门信息
+		<test value="(#root.departmentRef!=null)">
+			<set value="#tar.setDepartmentRef(#root.getDepartmentRef())" />
+		</test> -->
+		<!-- 阶段信息  -->
+		<test value="(#root.phaseInfo!=null)">
+			<set value="#tar.setPhaseInfo(#root.getPhaseInfo())" />
+		</test>
+		<!-- 密集信息 -->
+		<test value="(#root.securityLevelInfo!=null)">
+			<set value="#tar.setSecurityLevelInfo(#root.getSecurityLevelInfo())" />
+		</test>
+		<!-- 专业信息 
+		<test value="(#root.getMaster().disciplineInfo!=null)">
+			<set value="#tar.setDisciplineInfo(#root.getMaster().getDisciplineInfo())" />
+		</test>-->
+		<!-- 扩展属性 end -->
+	</transfer>
+</config>

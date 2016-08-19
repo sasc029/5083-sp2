@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="GBK"?>
+<spot id="Default">
+	<type id="ATObject">
+		<type id="Document" />
+		<type id="Part" />
+		<type id="ChangeBase">
+			<type id="ECI" />
+			<type id="ECR" />
+			<type id="ECO" />
+			<type id="PPCO" />
+			<type id="TNR" />
+			<type id="TNO" />
+			<type id="VarianceReq" />
+			<type id="Variance" />
+		</type>
+		<type id="ApproveOrder" />
+		<type id="ManagedBaseline" />
+		<type id="ManagedReview" />
+		<type id="ATSuit" />
+		<group name="CAD文档">
+			<type id="CADDocument" />
+			<type id="DerivedImage" />
+			<type id="AVMarkUp" />
+		</group>
+		<group name="上下文">
+			<type id="RootContext" />
+			<type id="OrgContext" />
+			<type id="ProductContext" />
+			<type id="LibraryContext" />
+			<type id="Team" />
+		</group>
+		<group name="模板">
+			<type id="FileTemplate" />
+			<type id="WorkflowTemplate" />
+			<type id="LifeCycleTemplateMasterX" />
+		</group>
+		<group name="系统">
+			<type id="Cabinet" />
+			<type id="SubFolder" />
+			<type id="User" />
+			<type id="Group" />
+			<type id="Organization" />
+			<type id="Role" />
+			<type id="Domain" />
+			<type id="ATTask" />
+		</group>
+
+		<group name="发放管理">
+			<type id="DistributeOrder" />
+			<type id="DistributePaperTask" />
+			<type id="DistributeOrderObjectLink" />
+			<type id="DistributeInfo" />
+			<type id="DistributeElecTask" />
+		</group>
+		
+		<group name="现行数据管理">
+			<type id="ActiveDocument" />
+			<type id="ActiveOrder" />
+		</group>
+	</type>
+</spot>

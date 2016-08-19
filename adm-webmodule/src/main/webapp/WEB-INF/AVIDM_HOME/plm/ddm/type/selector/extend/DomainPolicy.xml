@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GBK"?>
+<spot id="DomainPolicy_plm">
+	<type id="ATObject">
+		<!-- 发放管理 -->
+		<type id="DistributeOrder" sort="业务" exp="(domainType=='default'&amp;&amp;(contextType=='ActiveContext' || contextType=='ProductContext'))"/><!-- 发放单 -->
+		<type id="DistributePaperTask" sort="全部" exp="(domainType=='default'&amp;&amp;(contextType=='ActiveContext' || contextType=='ProductContext'))"/><!-- 纸质任务 -->
+		<type id="RecDesPaperTask" sort="全部" exp="(domainType=='default'&amp;&amp;(contextType=='ActiveContext' || contextType=='ProductContext'))"/>
+		<!-- 现行数据管理 -->
+		<type id="ActiveContext" sort="全部" exp="(domainType=='system'&amp;&amp;(contextType=='RootContext'))"/><!-- 现行上下文 -->
+		<type id="ActiveModelFolder" sort="全部" exp="(domainType=='default'&amp;&amp;(contextType=='ActiveContext'))"/><!-- 门类 -->
+		<type id="ActiveSubFolder" sort="全部" exp="(domainType=='default'&amp;&amp;(contextType=='ActiveContext'))"/><!-- 现行文件夹 -->
+		<type id="ActiveDocument" sort="业务" exp="(domainType=='default'&amp;&amp;(contextType=='ActiveContext'))"/><!-- 现行文件 -->
+		<type id="ActiveOrder" sort="业务" exp="(domainType=='default'&amp;&amp;(contextType=='ActiveContext'))"/><!-- 现行单据 -->
+	</type>
+</spot>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="GBK"?>
+<principal id="virtual_Visitor" name="访客">
+	<function id="plm_global_product_context">
+		<function id="plm_product_context_visit">
+			<function id="plm_product_context_related">
+				<function id="plm_product_context_relatedDistribute" />
+			</function>
+		</function>
+	</function>
+	<function id="plm_global_library_context">
+		<function id="plm_library_context_visit">
+			<function id="plm_library_context_related">
+				<function id="plm_library_context_relatedDistribute" />
+			</function>
+		</function>
+	</function>
+</principal>

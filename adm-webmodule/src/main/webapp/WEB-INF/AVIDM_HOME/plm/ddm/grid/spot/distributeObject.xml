@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<spot id="ListDistributeObjects" filter="false">
+		<types>
+			<type id="DistributeObject"/>
+		</types>
+		<default>
+				<column id="ISMAINDATAIMG" />
+				<column id="DATATYPEIMG" />
+			    <column id="NUMBER" />
+			    <column id="NAME" />
+			    <column id="VERSION" />
+			     <column id="LIFECYCLE_STATE"/>
+			    <column id="DATAFROM" />
+			    <column id="DDMCONTEXT" />
+			    <column id="MODIFIER"/>
+			    <column id="MODIFY_TIME"/>
+		</default>
+	</spot>
+	
+	<spot id="ListDistributeDataObject" filter="true">
+		<types>
+			<type id="Part" view="true"/>
+			<type id="Document" view="true"/>
+		</types>
+		<default>
+			<column id="TYPE" />
+			<column id="NUMBER" />
+			<column id="NAME" />
+			<column id="VERSION" />
+			<column id="LIFECYCLE_STATE" />
+			<column id="MODIFY_TIME" />
+			<column id="MODIFIER" />	
+			<column id="CREATOR" />		
+		</default>
+	</spot>
+	
+	<spot id="DistributePartSearch" filter="false" singleSelect="true">
+		<types>
+			<type id="Part" />
+		</types>
+		<default>
+			<column id="TYPE" />
+			<column id="NUMBER" />
+			<column id="NAME" />
+			<column id="VERSION" />
+			<column id="FOLDER" />
+			<column id="CONTEXT" />
+			<column id="MODIFIER" />
+			<column id="MODIFY_TIME" />
+			<column id="LIFECYCLE_STATE" />
+		</default>
+	</spot>
+</config>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<type id="DistributeObject" name="分发数据对象" alias="distributeObject"
+	icon="/plm/images/prop/prop.gif">
+	<attr id="CLASSID"/>
+	<attr id="INNERID"/>
+	<attr id="OID" visible="false"/>
+	<attr id="DISTRIBUTEORDEROBJECTLINKOID" visible="false"/>
+	<attr id="DATAINNERID" visible="false"/>
+	<attr id="DATACLASSID" visible="false"/>
+	<attr id="ID" visible="false"/>
+	<attr id="LINKID" visible="false"/>
+	<attr id="NAME"/>
+	<attr id="ISMASTER"/>
+	<attr id="ISMAINDATAIMG"/>
+	<attr id="DATAFROM"/>
+	<attr id="TYPE" />
+	<attr id="VERSION" name="版本" formater="" link="">
+		<src>version</src>
+	</attr>
+	<attr id="NOTE" />
+	<attr id="DATATYPEIMG" />
+	<attr id="DDMCONTEXT" />
+	<attr id="NUMBER"/>
+	<attr id="CREATOR"/>
+	<attr id="MODIFIER"/>
+	<attr id="CREATE_TIME"/>
+	<attr id="MODIFY_TIME"/>
+	<attr id="LIFECYCLE_STATE"/>
+	<attr id="SECURITY_LEVEL_INFO">
+		<src>securityLevelInfo.securityLevel.name</src>
+	</attr>
+	<attr id="PHASE_NAME"/>
+	<attr id="TITLE" visible="false" formater="TitleFormater">	
+		<src>id</src>
+	</attr>
+	<attr id="DISOPERATE" visible="false"/>
+</type>

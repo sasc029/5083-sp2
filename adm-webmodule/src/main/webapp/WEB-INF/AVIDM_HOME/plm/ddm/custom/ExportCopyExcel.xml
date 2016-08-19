@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="GBK"?>
+<Config>
+	<!--调度前工作流名称-->
+	<BeforeWorkFlowName>test001</BeforeWorkFlowName>
+	<!--调度前工作流节点名称-->
+	<BeforeActivityName>送审</BeforeActivityName>
+	<!--调度后工作流名称后、-->
+	<AfterWorkFlowName>test002</AfterWorkFlowName>
+	<!--调度后工作流节点名称-->
+	<AfterActivityName>外部会签</AfterActivityName>
+</Config>

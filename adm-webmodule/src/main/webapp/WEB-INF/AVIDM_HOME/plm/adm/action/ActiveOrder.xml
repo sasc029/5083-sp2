@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<!-- 现行单据-操作菜单 -->
+	<model id="activeorder.operate" action="com.bjsasc.plm.operate" callback="reload">
+		<!-- 现行单据-操作菜单-删除，编辑-->
+		<action id="com.bjsasc.adm.activedata.delete"  target="popup"/>
+		<action id="com.bjsasc.adm.activeorder.edit"  target="popup"/>
+		<!-- 现行单据-操作菜单-(复制，移动，重命名,设置生命周期)共通 -->
+		<action id="com.bjsasc.plm.copy.adm" target="popup"/>
+		<action id="com.bjsasc.plm.move.adm" target="popup"/>
+		<action id="com.bjsasc.plm.rename.adm" target="popup"/>
+		<action id="com.bjsasc.plm.reasignLifeCycleTemplate.adm"/>
+		<!-- 审批页面启动 -->
+		<action id="com.bjsasc.plm.ApproveOrder.approve.adm" target="popup"/>
+		<action id="com.bjsasc.plm.domain.author.adm" target="popup"/>
+		<action id="adm.storage.operate" target="ajax"/>
+	</model>
+
+	<!-- 现行单据-操作菜单快捷方式 -->
+	<model id="activeorder.operate.shortcut" action="com.bjsasc.plm.operate" callback="reload">
+		<action id="com.bjsasc.adm.activeorder.create"  target="popup"/>
+	</model>
+	
+	<!-- 文件夹内容工具条-现行单据-新建 -->
+	<model id="activeorder.list.toolbar" extendFor="folder.items.toolbar.ActiveContext" callback="reload" target="popup">
+		<action id="com.bjsasc.adm.activeorder.create"  target="popup"/>
+	</model>
+
+	<!--  现行单据-TAB -->
+	<group id="activeorder.tab" defaultChild="activeorder.tab.normal">
+		<!--  现行单据-TAB-常规 -->
+		<model id="activeorder.tab.normal" action="com.bjsasc.plm.normal" callback="reload" target="popup" >
+			<!--  现行单据-TAB-常规-属性 -->
+			<action id="com.bjsasc.adm.activeorder.attribute" callback="reload" target="self" default="true"/>>
+		</model>
+		<!--  现行单据-TAB-相关对象 -->
+		<model id="activeorder.tab.relationobject" action="com.bjsasc.plm.related" callback="reload" target="popup">
+			<!--  现行单据-TAB-相关对象 -->
+			<!-- 更改前后对象 -->
+			<action id="com.bjsasc.adm.activeorder.activeorderchangelist" target="self" />
+		</model>
+		<!--  现行单据-TAB-历史记录 -->
+		<model id="activeorder.tab.historyLog" action="com.bjsasc.plm.history" callback="reload" target="self">
+			<action id="com.bjsasc.plm.history.rename" />
+		</model>
+	</group>
+
+	<!-- 现行单据-创建-相关对象-改前对象-工具条 -->
+	<model id="relatedactiveorder.create.before.toolbar" action="com.bjsasc.plm.operate" callback="reload" target="popup">
+		<action id="com.bjsasc.adm.activeorder.add.before" callback="addBeforeData"/>
+		<action id="com.bjsasc.adm.activeorder.remove.before"/>
+	</model>
+	<!-- 现行单据-创建-相关对象-改后对象-工具条 -->
+	<model id="relatedactiveorder.create.after.toolbar" action="com.bjsasc.plm.operate" callback="reload" target="popup">
+		<action id="com.bjsasc.adm.activeorder.add.after" callback="addAfterData"/>
+		<action id="com.bjsasc.adm.activeorder.remove.after"/>
+	</model>
+
+	<!-- 现行单据-浏览-相关对象-改前对象-工具条 -->
+	<model id="relatedactiveorder.browse.before.toolbar" action="com.bjsasc.plm.operate" callback="reload" target="popup">
+		<action id="com.bjsasc.adm.activeorder.browse.edit"/>
+	</model>
+	<!-- 现行单据-浏览-相关对象-改后对象-工具条 -->
+	<model id="relatedactiveorder.browse.after.toolbar" action="com.bjsasc.plm.operate" callback="reload" target="popup">
+		<action id="com.bjsasc.adm.activeorder.browse.edit"/>
+	</model>
+
+	<!-- 现行单据-编辑-相关对象-改前对象-工具条 -->
+	<model id="relatedactiveorder.edit.before.toolbar" action="com.bjsasc.plm.operate" callback="reload" target="popup">
+		<action id="com.bjsasc.adm.activeorder.add.before" callback="addBeforeData"/>
+		<action id="com.bjsasc.adm.activeorder.remove.before"/>
+	</model>
+	<!-- 现行单据-编辑-相关对象-改后对象-工具条 -->
+	<model id="relatedactiveorder.edit.after.toolbar" action="com.bjsasc.plm.operate" callback="reload" target="popup">
+		<action id="com.bjsasc.adm.activeorder.add.after" callback="addAfterData"/>
+		<action id="com.bjsasc.adm.activeorder.remove.after"/>
+	</model>
+	<!-- 历史记录 修订版本工具条 -->
+	<model id="vc_browse_ActiveOrder" action="" callback="reload" target="popup">
+		<action id="com.bjsasc.plm.compare"/>
+	</model>
+	
+	<!-- 现行文件.相关对象.现行单据 -->
+	<model id="adm.activeorder.activedocumnet.refrence" extendFor="activedocument.tab.relationobject" callback="reload" target="popup">
+		<action id="com.bjsasc.plm.adm.relatedactiveorder" target="self"/>
+	</model>
+	<!-- 现行套.相关对象.现行单据
+	<model id="adm.activeorder.activeset.refrence" extendFor="activeset.tab.relationobject" callback="reload" target="popup">
+		<action id="com.bjsasc.plm.adm.relatedactiveorder" target="self"/>
+	</model>
+	 -->
+</config>
+

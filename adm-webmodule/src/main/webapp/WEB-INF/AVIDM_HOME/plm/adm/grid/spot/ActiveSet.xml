@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<spot id="ACTIVESET" filter="false">
+		<types>
+			<type id="ActiveSet"/>
+		</types>
+		<default>
+			<column id="TYPE"/>
+			<column id="NUMBER" />
+			<column id="NAME" />
+			<column id="VERSI"/>
+		</default>
+	</spot>
+	<spot id="vc_browse_ActiveSet" filter="true">
+		<types>
+			<type id="ActiveSet" />
+		</types>
+		<default>
+			<column id="NEW_MARK" />
+			<column id="TYPE" />
+			<column id="NAME" />
+			<column id="VERSION"/>
+			<column id="LIFECYCLE_STATE" />
+			<column id="MODIFIER" />
+			<column id="MODIFY_TIME" />
+			<column id="CONTEXT" />
+		</default>
+	</spot>
+	<spot id="ActiveDocument_RelatedObject_ActiveSet" filter="true">
+		<types>
+			<type id="ActiveSet" />
+		</types>
+		<default>
+			<column id="NEW_MARK" />
+			<column id="TYPE" />
+			<column id="NAME" />
+			<column id="VERSION"/>
+			<column id="LIFECYCLE_STATE" />
+			<column id="MODIFIER" />
+			<column id="MODIFY_TIME" />
+			<column id="CONTEXT" />
+		</default>
+	</spot>
+</config>

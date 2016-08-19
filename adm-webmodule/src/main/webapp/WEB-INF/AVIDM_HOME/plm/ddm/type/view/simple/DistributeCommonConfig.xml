@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="GBK"?>
+<type id="DistributeCommonConfig" alias="DistributeCommonConfig">
+	<attr id="CLASSID"/>
+	<attr id="INNERID"/>
+	<attr id="OID"/>
+	<attr id="CONFIGID_R"/>
+	<attr id="CONFIGNAME_R" />
+	<attr id="CONFIGVALUE_R"/>
+	<attr id="CONFIGDEFAULTVALUE_R" />
+	<attr id="CONFIGUSER_R" />
+	<attr id="CREATETIME_R" />
+	<attr id="UPDATETIME_R" />
+	<attr id="ISPERMITDELETE_R" />
+</type>

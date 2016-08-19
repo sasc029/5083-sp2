@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<application id="plm" name="产品全生命周期管理" url="/plm/mainframe/index.jsp">
+		<!-- 发放管理 -->
+		<module id="plm_global_distribute_manager"/>
+	</application>
+</config>
+
+

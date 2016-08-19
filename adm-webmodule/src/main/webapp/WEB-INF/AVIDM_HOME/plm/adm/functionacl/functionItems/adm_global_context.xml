@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<group id="plm_functions">
+	<function id="plm_global_context" name="全局">
+		<function id="plm_global_adm_manager" name="现行数据管理" app="adm">
+			<function id="com.bjsasc.adm" name="著录管理" app="adm" >
+				<function id="com.bjsasc.adm.detail" name="详细信息" app="adm" />
+				<function id="com.bjsasc.adm.context.model.folder" name="按模型分类管理与著录" app="adm" />
+				<function id="com.bjsasc.adm.context.model.view" name="自定义分类视图" app="adm" />
+				<function id="com.bjsasc.adm.context.template" name="模板" app="adm" />
+				<!--  <function id="com.bjsasc.adm.context.team" name="团队" app="adm" />-->
+				<function id="com.bjsasc.adm.context.tool" name="管理工具" app="adm" />
+			</function>
+			<function id="com.bjsasc.adm.statictisMessage" name="现行信息统计图" app="adm" />
+			<function id="com.bjsasc.adm.statictisExport" name="统计与输出" app="adm" />
+			<functi-on id="com.bjsasc.adm.recycleManager" name="回收站管理" app="adm" />
+		</function>
+	</function>
+
+</group>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="GBK"?>
+<tools>
+	<tool title="升级二级调度组" weight="95" url="/ddm/system/upgrade/update_second_sche.jsp" clazz="com.bjsasc.ddm.common.DdmInitTool"/>
+	<tool title="删除对象模型实体权限" weight="35" url="/ddm/system/upgrade/deleteOperatePackage/deleteOperatePackage.jsp"/>
+</tools>

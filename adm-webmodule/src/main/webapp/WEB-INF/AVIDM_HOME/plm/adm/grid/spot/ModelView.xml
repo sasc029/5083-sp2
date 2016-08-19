@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<spot id="ListModelViews" filter="false">
+		<types>
+			<type id="ModelView"/>
+		</types>
+		<default>
+			<column id="NAME" />
+			<column id="NOTE" />
+			<column id="FOLDERPATH" />
+			<column id="MODELNAME" />
+			<column id="CREATOR" />
+			<column id="MODIFIER" />
+			<column id="CREATE_TIME" />
+			<column id="MODIFY_TIME" />
+		</default>
+	</spot>
+</config>

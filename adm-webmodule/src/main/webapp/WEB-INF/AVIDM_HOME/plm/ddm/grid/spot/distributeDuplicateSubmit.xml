@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<spot id="ListDistributeDuplicateSubmit" filter="false">
+		<types>
+			<type id="DistributePaperTask" />
+		</types>
+		<default>
+			<!-- <column id="OPENID" /> -->
+			<column id="NUMBER" />
+			<column id="NAME" />
+			<column id="TASKTYPE"/>
+			<column id="LIFECYCLE_STATE"/>
+			<column id="LIFECYCLE_TEMPLATE"/>
+			<column id="DISURGENT" />
+			<column id="DDMCONTEXT" />
+		</default>	
+	</spot>
+</config>

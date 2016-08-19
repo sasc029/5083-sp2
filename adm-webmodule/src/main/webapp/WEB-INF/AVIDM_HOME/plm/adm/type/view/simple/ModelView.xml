@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<type id="ModelView" name="模型视图" icon="/plm/images/prop/prop.gif">
+	<attr id="CLASSID" />
+	<attr id="INNERID" />
+	<attr id="OID" />
+	<attr id="TITLE" visible="false" formater="TitleFormater">
+		<src>name</src>
+	</attr>
+	<attr id="NAME" />
+	<attr id="NOTE" />
+	<attr id="FOLDERPATH" />
+	<attr id="MODELNAME" />
+	<attr id="CREATOR" />
+	<attr id="MODIFIER" />
+	<attr id="CREATE_TIME" />
+	<attr id="MODIFY_TIME" />
+</type>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="GBK"?>
+<type id="ActiveDocument" extAttrGroup="业务">
+	<attr id="CLASSID" />
+	<attr id="INNERID" />
+	<attr id="OID" visible="false" />
+	<attr id="TYPE" group="常规"/>
+	<attr id="NUMBER" group="常规">
+		<src>master.number</src>
+	</attr>
+	<attr id="NAME" group="常规">
+		<src>master.name</src>
+	</attr>
+	<attr id="VERSION" group="常规">
+		<src>iterationInfo.versionNo</src>
+	</attr>
+	<attr id="NOTE" group="常规" />
+	<attr id="TITLE" visible="false" formater="TitleFormater">
+		<src>master.number</src>
+		<src>master.name</src>
+		<src>iterationInfo.versionNo</src>
+		<src>iterationInfo.iterationNo</src>
+	</attr>
+	<attr id="PAGES" group="业务" />
+	<attr id="ADM_COUNT" group="业务" />
+	<attr id="AUTHORNAME" group="业务" />
+	<attr id="AUTHORUNIT" group="业务" />
+	<attr id="AUTHORTIME" group="业务" />
+	<attr id="FOLDERPATH" group="业务" />
+	<attr id="MODELNAME" group="业务" />
+	<attr id="SECLEVEL" group="业务">
+		<src>master.securityLevelInfo.securityLevelRef.object.name</src>
+	</attr>
+	<attr id="DATASOURCE" group="业务" />
+	<attr id="ACTIVECODE" group="业务" />
+	<attr id="DOMAIN" visible="false" />
+	<attr id="CONTEXT" group="系统" />
+	<attr id="LIFECYCLE_STATE" formater="LifeCycleStateFormater"
+		group="系统">
+		<src>this</src>
+	</attr>
+	<attr id="LIFECYCLE_TEMPLATE" group="系统" />
+	<attr id="LIFECYCLE_STATEID" visible="false" />
+	<attr id="CREATOR" group="系统" />
+	<attr id="CREATE_TIME" group="系统" />
+	<attr id="MODIFIER" group="系统" />
+	<attr id="MODIFY_TIME" group="系统" />
+</type>

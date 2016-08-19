@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="GBK"?>
+<package id="ActiveModelFolder" name="现行模型文件夹">
+	<operate id="access">
+		<operate id="plm_modify"/>
+		<operate id="plm_delete"/>
+		<operate id="plm_rename"/>
+	</operate>
+	<operate id="setPermission"/>
+	<operate id="FullControl"/>
+	<operate id="plm_create"/>
+</package>
+

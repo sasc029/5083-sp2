@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Lifecycle_State_Config>
+	<LifecycleObject name="发放单生命周期">
+		<WorkFlowEvent id="procInstanceStartEvent" name="流程启动">
+			<wfTemplate name="default">
+				<LifecycleSate id="approving" activityName="default"/>
+			</wfTemplate>
+		</WorkFlowEvent>
+		<WorkFlowEvent id="activityInstanceRejectEvent" name="流程打回">
+			<wfTemplate name="default">
+				<LifecycleSate id="approvereject" activityName="default"/>
+			</wfTemplate>
+		</WorkFlowEvent>
+		<WorkFlowEvent id="activityInstanceCompleteEvent" name="流程活动完成">
+			<wfTemplate name="default">
+				<LifecycleSate id="approving" activityName="default"/>
+			</wfTemplate>
+		</WorkFlowEvent>
+		<WorkFlowEvent id="procInstanceTerminateEvent" name="流程终止">
+			<wfTemplate name="default">
+				<LifecycleSate id="approveterminate" activityName="default"/>
+			</wfTemplate>
+		</WorkFlowEvent>
+		<WorkFlowEvent id="procInstanceCompleteEvent" name="流程结束">
+			<wfTemplate name="default">
+				<LifecycleSate id="distributing" activityName="default"/>
+			</wfTemplate>
+		</WorkFlowEvent>
+	</LifecycleObject>
+</Lifecycle_State_Config>

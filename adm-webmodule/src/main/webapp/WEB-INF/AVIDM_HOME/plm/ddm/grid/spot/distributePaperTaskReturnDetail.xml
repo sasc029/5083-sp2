@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<spot id="ListDistributePaperTaskReturnDetail" filter="false">
+		<types>
+			<type id="DistributePaperTask" />
+			<type id="ReturnReason" />
+		</types>
+		<default>
+			<!-- <column id="ID" /> -->
+			<column id="NUMBER" />
+			<column id="NAME" />
+			<column id="OPENCOUNT" />
+			<column id="RETURNREASON" />
+			<column id="RETURNTIME" />
+			<column id="RETURNUSER" />
+		</default>
+	</spot>
+</config>

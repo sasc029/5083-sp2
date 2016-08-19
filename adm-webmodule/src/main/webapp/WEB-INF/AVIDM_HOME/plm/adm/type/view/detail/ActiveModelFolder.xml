@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="GBK"?>
+<type id="ActiveModelFolder">
+	<attr id="CLASSID"/>
+	<attr id="INNERID"/>
+	<attr id="OID"/>
+	<attr id="TYPE"/>
+	<attr id="NAME"/>	
+	<attr id="TITLE" visible="false">
+		<src>name</src>
+	</attr>
+	<attr id="CREATOR"/>	
+	<attr id="MODIFIER"/>
+	<attr id="CREATE_TIME"/>	
+	<attr id="MODIFY_TIME"/>
+	<attr id="CONTEXT"/>	
+	<attr id="CONTEXT_OID"/>
+	<attr id="CONTEXT_CLASSID"/>
+	<attr id="CONTEXT_INNERID"/>
+	<attr id="DOMAIN"/>
+	<attr id="DOMAIN_OID"/>
+	<attr id="DOMAIN_CLASSID"/>
+	<attr id="DOMAIN_INNERID"/>	
+</type>

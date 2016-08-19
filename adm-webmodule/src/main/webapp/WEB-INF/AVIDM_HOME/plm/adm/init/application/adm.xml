@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<application id="adm" name="现行数据管理" url="/plm/mainframe/index.jsp">
+		 <module id="plm_global_context_desktop"/>
+		<!-- 现行数据管理 -->
+		<module id="plm_global_active_manager"/>
+		
+		<!-- 发放管理 -->
+		<module id="plm_global_distribute_manager"/>
+	</application>
+</config>

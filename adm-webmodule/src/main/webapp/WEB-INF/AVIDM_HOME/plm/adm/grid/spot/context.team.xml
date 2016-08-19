@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	
+	<!-- 产品、基础库、项目团队成员列表 -->
+	<spot id="ActiveContext.ListTeamMember" treeColumn="ROLENAME" view="false">
+		<types>
+			<type id="Role" />
+		</types>
+		<default>	
+			<column id="ROLENAME" />
+			<column id="INTEAM" />
+			<column id="AAUSEREMAIL"/>
+			<column id="SECLEVEL"/>
+			<column id="CONTEXT"/>
+		</default>
+		<custom>
+			<column id="ROLENAME" name="角色/成员"/>
+			<column id="INTEAM" name="所属团队"/>
+			<column id="SECLEVEL" name="密级"/>
+			<column id="AAUSEREMAIL" name="电子邮件"/>
+			<column id="CONTEXT" name="组织"/>
+		</custom>
+	</spot>
+	
+	<spot id="ActiveContext.ListLocalTeamMember" filter="false" search="false" view="false" page='false'>
+		<types>
+			<type id="Role" />
+		</types>
+		<default>	
+			<column id="ROLENAME" />
+			<!-- <column id="INTEAM" /> -->
+			<column id="AAUSEREMAIL"/>
+			<column id="SECLEVEL"/>
+			<column id="CONTEXT"/>
+		</default>
+		<custom>
+			<column id="ROLENAME" name="角色/成员"/>
+			<!-- <column id="INTEAM" name="所属团队"/> -->
+			<column id="SECLEVEL" name="密级"/>
+			<column id="AAUSEREMAIL" name="电子邮件"/>
+			<column id="CONTEXT" name="组织"/>
+		</custom>
+	</spot>
+	
+	
+	<spot id="ActiveContext.ListTeamMemberUser" filter="false" search="false" view="false" page='false'>
+		<types>
+			<type id="Role" />
+		</types>
+		<default>	
+			<column id="ROLENAME" />
+			<!-- <column id="INTEAM" /> -->
+			<column id="AAUSEREMAIL"/>
+			<column id="SECLEVEL"/>
+			<column id="CONTEXT"/>
+		</default>
+		<custom>
+			<column id="ROLENAME" name="角色/成员"/>
+			<!-- <column id="INTEAM" name="所属团队"/> -->
+			<column id="SECLEVEL" name="密级"/>
+			<column id="AAUSEREMAIL" name="电子邮件"/>
+			<column id="CONTEXT" name="组织"/>
+		</custom>
+	</spot>
+	
+	<spot id="ActiveContext.ListTeamDiscipline" filter="false" search="false" view="false" page='false'>
+		<types>
+			<type id="Discipline" />
+		</types>
+		<default>	
+			<column id="NAME" />
+			<column id="PRINCIPALTYPE" />
+			<column id="SECURITYLEVEL"/>
+			<column id="EMAIL"/>
+			<column id="CONTEXT"/>
+		</default>
+		<custom>
+		    <column id="NAME" name="专业及人员"/>
+			<column id="PRINCIPALTYPE" name="参与类型"/>
+			<column id="SECURITYLEVEL" name="密级"/>
+			<column id="EMAIL" name="电子邮件"/>
+			<column id="CONTEXT" name="组织机构"/>
+		</custom>
+	</spot>
+	
+	<spot id="ActiveContext.ListTeamOfMember" filter="false" search="false" view="false" page='false'>
+		<types>
+			<type id="Role" />
+		</types>
+		<default>	
+			<column id="TYPE" />
+			<column id="ROLENAME" />
+			<column id="INROLE" />
+			<column id="INTEAM" />
+			<column id="AAUSEREMAIL"/>
+			<column id="CONTEXT"/>
+		</default>
+		<custom>
+			<column id="ROLENAME" name="成员"/>
+			<column id="INROLE" name="所属角色"/>
+			<column id="INTEAM" name="所属团队"/>
+			<column id="AAUSEREMAIL" name="电子邮件"/>
+			<column id="CONTEXT" name="组织"/>
+		</custom>
+	</spot>
+	
+	<spot id="ActiveContext.ListLocalTeamOfMember" filter="false" search="false" view="false" page='false'>
+		<types>
+			<type id="Role" />
+		</types>
+		<default>	
+			<column id="TYPE" />
+			<column id="ROLENAME" />
+			<column id="INROLE" />
+			<!-- <column id="INTEAM" /> -->
+			<column id="AAUSEREMAIL"/>
+			<column id="CONTEXT"/>
+		</default>
+		<custom>
+			<column id="ROLENAME" name="成员"/>
+			<column id="INROLE" name="所属角色"/>
+			<!-- <column id="INTEAM" name="所属团队"/> -->
+			<column id="AAUSEREMAIL" name="电子邮件"/>
+			<column id="CONTEXT" name="组织"/>
+		</custom>
+	</spot>
+	
+	<spot id="ActiveContext.ListTeamOfMemberUser" filter="false" search="false" view="false" page='false'>
+	<types>
+		<type id="Role" />
+	</types>
+	<default>	
+		<column id="TYPE" />
+		<column id="ROLENAME" />
+		<column id="INROLE" />
+		<column id="INTEAM" />
+		<column id="AAUSEREMAIL"/>
+		<column id="CONTEXT"/>
+	</default>
+	<custom>
+		<column id="ROLENAME" name="成员"/>
+		<column id="INROLE" name="所属角色"/>
+		<column id="INTEAM" name="所属团队"/>
+		<column id="AAUSEREMAIL" name="电子邮件"/>
+		<column id="CONTEXT" name="组织"/>
+	</custom>
+	</spot>
+	<spot id="ActiveContext.ListSharedTeamMemberUser" filter="false" search="false" view="false" page='false'>
+	<types>
+		<type id="Role" />
+	</types>
+	<default>	
+		<column id="TYPE" />
+		<column id="ROLENAME" />
+		<column id="INROLE" />
+		<!-- <column id="INTEAM" /> -->
+		<column id="AAUSEREMAIL"/>
+		<column id="CONTEXT"/>
+	</default>
+	<custom>
+		<column id="ROLENAME" name="成员"/>
+		<column id="INROLE" name="所属角色"/>
+		<!-- <column id="INTEAM" name="所属团队"/> -->
+		<column id="AAUSEREMAIL" name="电子邮件"/>
+		<column id="CONTEXT" name="组织"/>
+	</custom>
+	</spot>
+</config>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<spot id="ACTIVEORDER" filter="false">
+		<types>
+			<type id="ActiveOrder" />
+		</types>
+		<default>
+			<column id="TYPE" />
+			<column id="NUMBER" />
+			<column id="NAME" />
+			<column id="DATASOURCE" />
+			<column id="VERSION" />
+		</default>
+	</spot>
+	<spot id="vc_browse_ActiveOrder" filter="true">
+		<types>
+			<type id="ActiveOrder" />
+		</types>
+		<default>
+			<column id="NEW_MARK" />
+			<column id="TYPE" />
+			<column id="NAME" />
+			<column id="VERSION"/>
+			<column id="LIFECYCLE_STATE" />
+			<column id="MODIFIER" />
+			<column id="MODIFY_TIME" />
+			<column id="CONTEXT" />
+		</default>
+	</spot>
+	<spot id="ActiveDocument_RelatedObject_ActiveOrder" filter="true">
+		<types>
+			<type id="ActiveOrder" />
+		</types>
+		<default>
+			<column id="TYPE" />
+			<column id="NUMBER" />
+			<column id="NAME" />
+			<column id="VERSION" />
+			<column id="LIFECYCLE_STATE" />
+			<column id="DATASOURCE" />
+			<column id="ACTIVECODE" />
+			<column id="ACTIVEDOCUMENTNUMBER" />
+			<column id="PAGES" />
+			<column id="ADM_COUNT" />
+			<column id="AUTHORNAME" />
+			<column id="AUTHORUNIT" />
+			<column id="AUTHORTIME" />
+			<column id="NOTE" />
+			<column id="CONTEXT" />
+			<column id="DOMAIN" />
+			<column id="SECLEVEL" />
+			<column id="LIFECYCLE_TEMPLATE" />
+			<column id="CREATOR" />
+			<column id="CREATE_TIME" />
+			<column id="MODIFIER" />
+			<column id="MODIFY_TIME" />
+			<column id="UPDATE_TIME" />
+			<column id="FOLDER" />
+		</default>
+	</spot>
+</config>

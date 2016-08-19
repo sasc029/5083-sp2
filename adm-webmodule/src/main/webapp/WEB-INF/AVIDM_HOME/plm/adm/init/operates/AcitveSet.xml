@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="GBK"?>
+<package id="ActiveSet" name="现行套">
+	<operate id="access" weight="10">
+		<operate id="plm_create"/>
+		<operate id="plm_modify">
+			<operate id="plm_promote" />
+			<operate id="plm_modify_content" />
+			<operate id="plm_rename"/>
+		</operate>
+		<operate id="plm_delete" />
+		<operate id="plm_revise"/>
+		<operate id="plm_administrative" />
+		<operate id="setPermission" />
+		<operate id="plm_set_state" />
+		<operate id="plm_change_domain" />
+		<operate id="plm_move_into_domain" />
+	</operate>
+
+	<operate id="FullControl" />
+	<operate id="setPermission" />
+</package>
+

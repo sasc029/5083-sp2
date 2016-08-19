@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<!-- 现行数据管理二级菜单定制 -->
+	<model id="com.bjsasc.adm.active">
+		<model id="manager" action="com.bjsasc.adm">
+			<action id="com.bjsasc.adm.detail"/>
+			<action id="com.bjsasc.adm.context.model.folder"/>
+			<action id="com.bjsasc.adm.context.model.view"/>
+			<action id="com.bjsasc.adm.context.template" />
+			<!--  <action id="com.bjsasc.adm.context.team" />-->
+			<action id="com.bjsasc.adm.context.tool" />
+		</model>
+		<action id="com.bjsasc.adm.statictisMessage"/>
+		<action id="com.bjsasc.adm.statictisExport"/>
+		<action id="com.bjsasc.adm.recycleManager"/> 
+	</model>
+</config>

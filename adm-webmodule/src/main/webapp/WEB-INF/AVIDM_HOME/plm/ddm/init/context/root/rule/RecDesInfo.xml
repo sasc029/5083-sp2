@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="GBK"?>
+<rule name="回收销毁信息初始化规则" typeId="RecDesInfo" type="system">
+	<attr id="lifeCycleInfo" algorithm="com.bjsasc.plm.core.context.rule.algorithm.impl.LifeCycleRuleImpl">
+		<arg name="templateName" value="回收销毁信息生命周期"/>
+		<arg name="stateName" value="未分发"/>
+	</attr>
+</rule>

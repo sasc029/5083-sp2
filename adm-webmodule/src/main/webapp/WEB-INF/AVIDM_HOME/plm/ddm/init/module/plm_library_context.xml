@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="GBK"?>
+<group id="plm_modules">
+	<module id="plm_global_library_context" name="基础库"
+		url="/plm/context/listLibraryContexts.jsp" childUrl="/plm/context/outlook/listLibraryContexts.jsp"
+		weight="50" icon="/plm/images/context/library.gif">
+		<module id="plm_library_context_tool" name="管理工具">
+			<module id="plm_library_context_manager_distribute" name="发放管理" />
+		</module>
+		<module id="plm_library_context_operate" name="操作">
+			<module id="plm_library_context_distributeOperate" name="发放" />
+		</module>
+		<module id="plm_library_context_visit" name="查看对象信息">
+			<module id="plm_library_context_related" name="相关对象">
+				<module id="plm_library_context_relatedDistribute" name="发放单" />
+			</module>
+		</module>
+	</module>
+</group>

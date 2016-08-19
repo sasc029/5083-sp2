@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<spot id="taskbox_daiban">
+		<types>
+			<type id="DistributeElecTask" view="true">
+				<column id="NUMBER"/>
+				<column id="NAME" />
+				<column id="TASKTYPE"/>
+				<column id="LIFECYCLE_STATE"/>
+				<column id="RECEIVER"/>
+				<column id="CREATE_TIME"/>
+		        <column id="RECEIVE_TIME"/>
+		        <column id="LIFECYCLE_TEMPLATE"/>
+				<column id="DDMCONTEXT"/>
+			</type>
+			<type id="DistributePaperSignTask" view="true">
+				<column id="NUMBER"/>
+				<column id="NAME" />
+				<column id="TASKTYPE"/>
+				<column id="LIFECYCLE_STATE"/>
+				<column id="RECEIVER"/>
+				<column id="CREATE_TIME"/>
+		        <column id="RECEIVE_TIME"/>
+		        <column id="LIFECYCLE_TEMPLATE"/>
+				<column id="DDMCONTEXT"/>
+			</type>
+		</types>
+	</spot>	
+	<spot id="taskbox_history">
+		<types>
+			<type id="DistributeElecTask" view="true">
+				<column id="NUMBER"/>
+				<column id="NAME" />
+				<column id="TASKTYPE"/>
+				<column id="LIFECYCLE_STATE"/>
+				<column id="RECEIVER"/>
+				<column id="CREATE_TIME"/>
+		        <column id="RECEIVE_TIME"/>
+		        <column id="LIFECYCLE_TEMPLATE"/>
+				<column id="DDMCONTEXT"/>
+			</type>
+			<type id="DistributePaperSignTask" view="true">
+				<column id="NUMBER"/>
+				<column id="NAME" />
+				<column id="TASKTYPE"/>
+				<column id="LIFECYCLE_STATE"/>
+				<column id="RECEIVER"/>
+				<column id="CREATE_TIME"/>
+		        <column id="RECEIVE_TIME"/>
+		        <column id="LIFECYCLE_TEMPLATE"/>
+				<column id="DDMCONTEXT"/>
+			</type>
+		</types>
+	</spot>	
+</config>

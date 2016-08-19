@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="GBK"?>
+<spot id="Distribute">
+	<type id="Document" />
+	<type id="Part" />
+	<type id="ECO" />
+	<type id="TNO" />
+	<type id="Variance" />
+	<type id="CADDocument" />
+	<type id="ApproveOrder" />
+	<type id="ManagedBaseline" />
+	<type id="ATSuit" />
+	<type id="ActiveDocument" />
+	<type id="ActiveOrder" />
+</spot>

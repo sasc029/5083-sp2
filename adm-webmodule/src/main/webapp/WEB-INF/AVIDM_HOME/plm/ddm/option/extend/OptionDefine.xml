@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="GBK"?>
+<root>
+	<DataDefine>
+		<!-- 发放管理 现行数据管理 配置项目增加  开始 -->
+		<DataSource id="现行生命周期状态" type="class">
+			<class name="com.bjsasc.adm.common.AdmLifeCycleStateOptionDataSource" />
+		</DataSource>
+		<!--发放管理  -->
+		<DataSource id="自动创建分发单策略" type="data">
+			<!--<data key="whole" value="整体分发" />-->
+			<data key="condition" value="仅对满足条件的数据自动分发" />
+		</DataSource>
+		<!-- 发放管理 现行数据管理 配置项目增加  结束 -->
+	</DataDefine>
+
+	<!-- 
+	首选项及分组定义，定义说明：
+		Group:首选项分组定义
+			isDisplay：跟节点中是否显示该分组 
+			
+		Option：首选项定义
+			id：首选项标识（需要保证唯一性）
+			name：首选项名称
+			describe：首选项描述信息
+			dataSource：数据源（通过数据源id引用）
+			defaultValue：首选项默认值
+			editType：首选项编辑类型（未配置时默认为select），select=下拉列表、text=输入框、checkbox=复选框、radio=单选框
+			level：首选项使用范围（可配置多项，未配置时默认为全部范围），站点=root、组织=org、产品=product、基础库=library、用户=user
+	-->
+	<OptionDefine>
+		<!-- 发放管理 现行数据管理 配置项目增加  开始 -->
+		<!--发放管理  -->
+	<!-- 	<Group name="发放管理" id="disMangeb" level="RootContext">此id值不可修改
+			<ReferenceGroup id="disLifeCycleLinkage" />
+		</Group> -->
+		<Group name="发放管理" id="disMange" level="RootContext,OrgContextContext,ProductContext,LibraryContext"><!-- 此id值不可修改 -->
+			<ReferenceGroup id="disObjState" />
+			<ReferenceGroup id="autoDisConfig" />
+			<ReferenceGroup id="disFlowConfig" />
+			<ReferenceGroup id="disManageConfig" />
+			<ReferenceGroup id="disStrategy" />
+			<ReferenceGroup id="disLifeCycleLinkage" />
+		</Group>
+		<Group name="参与分发的对象状态" isDisplay="N"  id="disObjState"><!-- 此id值不可修改 -->
+			<Option id="allowDocState" name="允许添加的文档的状态" describe="全部指不限制添加的文档状态，指定的状态指仅限定的状态的文档允许添加，空指不允许此类对象添加到分发单中"  dataSource="生命周期状态" defaultValue="受控中" editType="checkbox" />
+			<Option id="allowCADDocState" name="允许添加的CAD文档的状态" describe="全部指不限制添加的CAD文档状态，指定的状态指仅限定的状态的CAD文档允许添加，空指不允许此类对象添加到分发单中"  dataSource="生命周期状态" defaultValue="受控中" editType="checkbox" />
+			<Option id="allowPartState" name="允许添加的部件的状态" describe="全部指不限制添加的部件状态，指定的状态指仅限定的状态的部件允许添加，空指不允许此类对象添加到分发单中" dataSource="生命周期状态" defaultValue="受控中" editType="checkbox" />
+			<Option id="allowECOState" name="允许添加的更改单的状态" describe="全部指不限制添加的更改单状态，指定的状态指仅限定的状态的更改单允许添加，空指不允许此类对象添加到分发单中" dataSource="生命周期状态" defaultValue="受控中" editType="checkbox" />
+			<Option id="allowTNOState" name="允许添加的技术通知单的状态" describe="全部指不限制添加的技术通知单状态，指定的状态指仅限定的状态的技术通知单允许添加，空指不允许此类对象添加到分发单中"  dataSource="生命周期状态" defaultValue="受控中" editType="checkbox" />
+			<Option id="allowVarianceState" name="允许添加的超差代料质疑单的状态" describe="全部指不限制添加的质疑单状态，指定的状态指仅限定的状态的质疑单允许添加，空指不允许此类对象添加到分发单中"  dataSource="生命周期状态" defaultValue="受控中" editType="checkbox" />
+			<Option id="allowApproveOrderState" name="允许添加的送审单的状态" describe="全部指不限制添加的送审单状态，指定的状态指仅限定的状态的送审单允许添加，空指不允许此类对象添加到分发单中"  dataSource="生命周期状态" defaultValue="受控中" editType="checkbox" />
+			<Option id="allowActiveDocumentState" name="允许添加的现行文件的状态" describe="全部指不限制添加的现行文件状态，指定的状态指仅限定的状态的现行文件允许添加，空指不允许此类对象添加到分发单中"  dataSource="现行生命周期状态" defaultValue="受控中" editType="checkbox" />
+			<Option id="allowActiveOrderState" name="允许添加的现行单据的状态" describe="全部指不限制添加的现行单据状态，指定的状态指仅限定的状态的现行单据允许添加，空指不允许此类对象添加到分发单中"  dataSource="现行生命周期状态" defaultValue="受控中" editType="checkbox" />
+			<Option id="allowBaseLineState" name="允许添加的基线的状态" describe="全部指不限制添加的基线状态，指定的状态指仅限定的状态的基线允许添加，空指不允许此类对象添加到分发单中"  dataSource="生命周期状态" defaultValue="受控中" editType="checkbox" />
+			<Option id="allowSuitState" name="允许添加的套对象的状态" describe="全部指不限制添加的套对象状态，指定的状态指仅限定的状态的套对象允许添加，空指不允许此类对象添加到分发单中"  dataSource="生命周期状态" defaultValue="受控中" editType="checkbox" />
+			<Option id="allowPpcoState" name="允许添加的转阶段更改单的状态的状态" describe="全部指不限制添加的套对象状态，指定的状态指仅限定的状态的套对象允许添加，空指不允许此类对象添加到分发单中"  dataSource="生命周期状态" defaultValue="受控中" editType="checkbox" />
+		</Group>
+		<Group name="分发策略" isDisplay="N"  id="disStrategy" ><!-- 此id值不可修改 -->
+			<Option id="allDis" name="是否整体分发" describe="集合数据（基线、单据类、套对象等）作为一个整体添加至分发单中，当集合对象或者其内容对象中存在不满足分发条件的业务对象时不添加"  dataSource="boolean" defaultValue="false" editType="radio" />
+			<!-- <Option id="someDis" name="仅对满足条件的数据分发" describe="忽略不满足的数据，不符合分发条件的数据不添加，仅将满足条件的数据添加至分发单中"  dataSource="boolean" defaultValue="false" editType="radio" /> -->
+		</Group>
+		<Group name="是否启用生命周期状态联动" isDisplay="N"  id="disLifeCycleLinkage" ><!-- 此id值不可修改 -->
+			<Option level="RootContext" id="disLifeCycleLinkageOption" name="分发数据的生命周期状态是否需要与分发单的状态联动" describe="是，指分发数据（如文档、部件）的生命周期状态需要与该数据在分发单中的生命周期状态联动；否则不受该数据分发状态的影响"  dataSource="boolean" defaultValue="false" editType="radio" />
+			<!-- <Option id="someDis" name="仅对满足条件的数据分发" describe="忽略不满足的数据，不符合分发条件的数据不添加，仅将满足条件的数据添加至分发单中"  dataSource="boolean" defaultValue="false" editType="radio" /> -->
+		</Group>
+		<Group name="自动分发配置" isDisplay="N"  id="autoDisConfig"><!-- 此id值不可修改 -->
+			<Option id="autoCreateDisOrder" name="是否开启自动创建分发单" describe="是否自动创建分发单，是则在工作流程（送审、更改流程）结束后满足条件时自动创建分发单并将流程中的送审数据添加至分发单"  dataSource="boolean" defaultValue="false" editType="select" />
+			<!-- <Option id="autoDisOrderTactics" name="自动创建分发单的策略" describe="整体分发：送审数据作为整体添加至分发单中，只要送审数据中包含不需要自动分发的业务对象，即不自动创建分发单；仅对满足条件的数据自动分发：忽略不满足的数据，不符合自动分发条件的数据不添加，仅将送审数据中其他的业务对象添加至分发单"  dataSource="自动创建分发单策略" defaultValue="整体分发" editType="select" />
+			<Option id="notAutoDisCondition" name="不需要自动分发的条件" describe="指定的业务对象类型不需要自动分发" dataSource="生命周期状态" defaultValue="" url="/plm/type/visitTypeTree.jsp" editType="url"  /> -->
+			<Option id="autoStartDis" name="是否自动启动分发" describe="如果不自动启动，则自动创建的分发单状态为新建；如果自动启动，则（1）自动创建完成后自动进入调度环节，状态为调度；（2）更改分发自动创建完的分发单生命周期状态，取决于更改分发是否需要再次调度的选项设置，如果需要再次调度，则自动创建完成后自动进入调度环节，状态为调度；否则直接分发，状态为分发中" dataSource="boolean" defaultValue="false" editType="select" />
+		</Group>
+		<Group name="分发流程配置" isDisplay="N"  id="disFlowConfig"><!-- 此id值不可修改 -->
+			<Option id="checkNew" name="新建提交后是否需要内部审批" describe="配置是则新建提交分发单后启动内部审批流程；配置否则提交后进行调度" dataSource="boolean" defaultValue="false" editType="select" />
+			<Option id="check" name="调度提交后是否需要内部审批" describe="配置是则调度提交分发单后启动内部审批流程；配置否则进行分发" dataSource="boolean" defaultValue="false" editType="select" />
+			<Option id="dispatch" name="更改分发是否需要再次调度" describe="配置是则更改分发提交后进行调度；否则提交后直接分发"  dataSource="boolean" defaultValue="true" editType="select" />
+			<Option id="againDispatch" name="补发分发是否需要再次调度" describe="配置是则新建的补发分发单提交后进行调度；否则提交后直接分发"  dataSource="boolean" defaultValue="true" editType="select" />
+			<Option id="whetherPaperProcessing" name="补发发放单是否需要进行纸质处理 " describe="配置是则调度中的补发分发单提交后进行分发；否则提交后直接分发"  dataSource="boolean" defaultValue="true" editType="select" />
+		</Group>
+		<Group name="按对象类型配置角色权限的开关配置" isDisplay="N"  id="disManageConfig"><!-- 此id值不可修改 -->
+			<Option id="isOpenConfigRoleAuthByObjType" name="是否启用按对象类型配置角色权限" describe="配置是则按对象类型配置角色权限有效；否则无效"  dataSource="boolean" defaultValue="false" editType="select" />
+		</Group>
+		<!-- 发放管理 现行数据管理 配置项目增加  结束 -->
+	</OptionDefine>
+</root>

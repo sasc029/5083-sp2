@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="GBK"?>
+<folders>
+	<folder id="plm">		
+		<folder id="approve">
+			<folder id="beans">
+				<folder id="setLifeCycleState">
+				 	<param id="listener" name="listener" value="distributeOrderListener;autoDistributeListener;activeApproveCollector" merge="true"/>
+				</folder>			
+			</folder>
+		</folder>		
+	</folder>
+</folders>

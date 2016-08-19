@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+    <package name="ddm.distribute" namespace="/ddm/distribute" extends="struts-plm">
+    
+        <action name="distributeInfoHandle" class="com.bjsasc.ddm.distribute.action.distributeinfo.DistributeInfoAction">
+        	<result name="initPage">/ddm/distributeinfo/distributeInfo_content.jsp</result>
+        	<result name="editPage">/ddm/distributeinfo/distributeInfo_content_edit.jsp</result>
+        	<result name="Paperinfo">/ddm/distributepapertask/distributeInfo_content.jsp</result>
+        	<result name="recDesPaperInfo">/ddm/recdespapertask/recdesInfo_content.jsp</result>
+        	<result name="infoContextPage">/ddm/distributeelectask/distributeElecTaskInfo_content.jsp</result>
+        	<result name="paperSignTaskInfo">/ddm/distributepapersigntask/distributePaperSignTaskInfo_content.jsp</result>
+        	<result name="historyDistributeInfos">/ddm/distributeobject/distributeObject_history.jsp</result>
+        	
+        </action>
+        
+        <action name="distributeObjectHandle" class="com.bjsasc.ddm.distribute.action.distributeobject.DistributeObjectAction">
+        	<result name="initPage">/ddm/distributeobject/listDistributeObjects.jsp</result>
+        	<result name="listDisPaperObjectReturnDetail">/ddm/distributeobject/listDistributeObjectReturnDetail.jsp</result>
+        	<result name="listDistributeDataObject">/ddm/distributeobject/listDistributeDataObjects.jsp</result>
+        	
+        	<result name="listHistoryDistributeObject">/ddm/distributeobject/distributeObject_history.jsp</result>
+        	
+        </action>
+        
+        <!-- 发放管理 调度菜单 -->
+        <action name="distributeOrderHandle" class="com.bjsasc.ddm.distribute.action.distributeorder.DistributeOrderAction">
+        	<result name="initPage">/ddm/distributeorder/listDistributeOrders.jsp</result>
+        	<result name="listDisOrderReturn">/ddm/distributeorder/listDistributeOrdersReturn.jsp</result>
+        	<result name="listDisOrderReturnDetail">/ddm/distributeorder/listDistributeReturnDetail.jsp</result>
+      	   
+      	    <result name="listdistributesended">/ddm/distributeorder/listdistributesended.jsp</result>
+        	<result name="listdistributesending">/ddm/distributeorder/listdistributesending.jsp</result>
+        </action>
+        
+        <!-- 发放管理 加工单菜单 -->
+        <action name="distributePaperTaskHandle" class="com.bjsasc.ddm.distribute.action.distributepapertask.DistributePaperTaskAction">
+        	<result name="initPage">/ddm/distributepapertask/distributePaperTaskProperty.jsp</result>
+        	<result name="listPage">/ddm/distributepapertask/listDistributePaperTasks.jsp</result>
+        	<result name="getPrintProcessingDistributePaperTask">/ddm/distributepapertask/rePrint.jsp</result>
+        	<result name="listDuplicateSubmit">/ddm/distributepapertask/listDuplicateSubmit.jsp</result>
+        	<result name="listDuplicateReturn">/ddm/distributepapertask/listDuplicateReturn.jsp</result>
+        	<result name="listDisPaperTaskReturnDetail">/ddm/distributepapertask/listDistributeTaskReturnDetail.jsp</result>
+        	<result name="listdistributePaperTask">/ddm/distributeobject/listDistributePaperTaskObjects.jsp</result>
+        </action>
+        
+        <!-- 电子任务 -->
+        <action name="distributeElecTaskHandle" class="com.bjsasc.ddm.distribute.action.distributeelectask.DistributeElecTaskAction">
+        	<result name="detailInfo">/ddm/distributeelectask/distributeElecTaskDetailInfo.jsp</result>
+        	<result name="infoEdit">/ddm/distributeelectask/distributeInfo_content_edit.jsp</result>
+        	<result name="initPage">/ddm/distributeelectask/distributeInfo_content.jsp</result>
+        	<result name="dissontasks">/ddm/distributeelectask/distributeSonElect.jsp</result>
+        	<result name="synTask">/ddm/distributeelectask/listDistributeSynTasks.jsp?type=synTask</result>
+        	<result name="centerTask">/ddm/distributeelectask/listDistributeSynTasks.jsp?type=centerTask</result>
+        </action>
+        
+        <!-- 纸质签收任务 -->
+        <action name="distributePaperSignTaskHandle" class="com.bjsasc.ddm.distribute.action.distributepapersigntask.DistributePaperSignTaskAction">
+        	<result name="paperSignTaskObjects">/ddm/distributepapersigntask/distributePaperSignTaskObjects.jsp</result>
+        </action>
+        <action name="distributeTaskHandle" class="com.bjsasc.ddm.distribute.action.distributetask.DistributeTaskAction">
+        	<result name="initPage">/ddm/distributetask/listDistributeTasks.jsp</result>
+        	<result name="notSigned">/ddm/distributetask/distributeTask.jsp?type=notSigned</result>
+        	<result name="signed">/ddm/distributetask/distributeTask.jsp?type=signed</result>
+        	<result name="completed">/ddm/distributetask/distributeTask.jsp?type=completed</result>
+        	<result name="refuseSigned">/ddm/distributetask/distributeTask.jsp?type=refuseSigned</result>
+        </action>
+        
+        <!-- 发放管理 复制加工菜单 -->
+        <action name="duplicateProcessHandle" class="com.bjsasc.ddm.distribute.action.duplicateprocess.DuplicateProcessAction">
+        	<result name="noReceivePage">/ddm/duplicateprocess/listDuplicateNoReceive.jsp</result>
+        	<result name="initPage">/ddm/duplicateprocess/listDuplicateReceive.jsp</result>
+        	<result name="initDuplicateProcessList">/ddm/duplicateprocess/listAddDuplicateProcessor.jsp</result>
+        	<result name="listAddProcessInfo">/ddm/duplicateprocess/listAddProcessInfo.jsp</result>
+        	<result name="distributeTaskReturn">/ddm/duplicateprocess/listDistributeTaskReturn.jsp</result>
+        </action>
+        
+        <action name="commonSearchHandle" class="com.bjsasc.ddm.distribute.action.commonsearch.CommonSearchAction">
+        	<!-- <result name="initPage">/ddm/commonsearch/listDistributeAllObjects.jsp</result> -->
+        	<result name="initPage">/ddm/commonsearch/listDistributeConditions.jsp</result>
+        </action>
+        
+        <!-- 工作量统计 -->
+        <action name="distributeWorkloadHandle" class="com.bjsasc.ddm.distribute.action.distributeworkload.DistributeWorkloadAction">
+        	<result name="initPage">/ddm/distributeworkload/listDistributeWorkloads.jsp</result>
+        </action>
+         <!-- 内外发单 -->
+        <action name="distributeSendOrderHandle" class="com.bjsasc.ddm.distribute.action.distributesendorder.DistributeSendOrderAction">
+        	<result name="initPage">/ddm/distributesendorder/listDistributeInsideSearch.jsp</result>
+        	<result name="paperTaskObjects">/ddm/distributeobject/listDistributePaperTaskObjects.jsp</result>
+        </action>
+         <!-- 回收销毁单 modify: Sun Zongqing-->
+        <action name="distributeDestroyOrderHandle" class="com.bjsasc.ddm.distribute.action.distributedestroyorder.DistributeDestroyOrderAction">
+        	<result name="initPage">/ddm/distributesendorder/listDistributeDestorySearch.jsp</result>
+        	<result name="listRecDesPaperTask">/ddm/distributesendorder/listRecDesPaperTask.jsp</result>
+        </action>
+         <!-- kangyanfei 回收销毁发放单 -->
+        <action name="recDesInfo" class="com.bjsasc.ddm.distribute.action.recdesinfo.RecDesInfoAction">
+        	<result name="listRec">/ddm/recdesinfo/recInfo_content.jsp</result>
+        	<result name="listDes">/ddm/recdesinfo/desInfo_content.jsp</result>
+        	<result name="listNeedRecInfos">/ddm/recdesinfo/addRecInfos.jsp</result>
+        	<result name="listNeedDesInfos">/ddm/recdesinfo/addDesInfos.jsp</result>
+        </action>
+
+        <!-- 发放管理 发放管理通用配置 -->
+        <action name="distributeCommonConfigHandle" class="com.bjsasc.ddm.distribute.action.distributecommonconfig.DistributeCommonConfigAction">
+		</action>
+        <!-- 校验 -->
+        <action name="distributeOperateValidationHandle" class="com.bjsasc.ddm.distribute.action.distributeoptvalidation.DistributeOptValidationAction">
+        </action>
+        <!-- 跨版本任务签署信息-->
+        <action name="dcA3TaskSignatureHandle" class="com.bjsasc.ddm.distribute.action.convertversion.DcA3TaskSignatureAction">
+        </action>
+    </package>
+
+</struts>
+ 

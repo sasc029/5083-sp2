@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="GBK"?>
+<rule name="发放单初始化规则" typeId="DistributeOrder" type="system">
+	<attr id="lifeCycleInfo" algorithm="com.bjsasc.plm.core.context.rule.algorithm.impl.LifeCycleRuleImpl">
+		<arg name="templateName" value="发放单生命周期"/>
+		<arg name="stateName" value="新建"/>
+	</attr>		
+	<attr id="number">
+		<arg name="editType" value="mix"/><!--还可以是"select"自动申请编码；"mix"自动申请编码，并可以手工修改；"input"不能自动申请编码，只能手动修改。-->
+	</attr>
+</rule>

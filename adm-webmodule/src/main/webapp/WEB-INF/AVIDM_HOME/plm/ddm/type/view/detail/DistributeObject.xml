@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<type id="DistributeObject" extAttrGroup="业务">
+	<attr id="CLASSID"/>
+	<attr id="INNERID"/>
+	<attr id="OID" visible="false"/>
+	<attr id="TITLE" visible="false" formater="TitleFormater">	
+		<src>id</src>
+	</attr>
+	<attr id="LINKID" group="常规" formater="javaScriptLinkFormatImpl" link=""/>
+	<attr id="NAME" group="常规" formater="javaScriptLinkFormatImpl" link=""/>
+	<attr id="DATATYPE" group="常规"/>
+	<attr id="DDMCONTEXT" group="常规"/>
+	<attr id="VERSION" group="常规" >
+		<src>version</src>
+	</attr>
+	<attr id="NOTE" group="常规"/>
+	<attr id="LIFECYCLE_TEMPLATE_NAME" group="系统"/>
+	<attr id="LIFECYCLE_STATE_ALL2" group="系统"/>
+	<attr id="DATAFROM" group="业务"/>
+</type>

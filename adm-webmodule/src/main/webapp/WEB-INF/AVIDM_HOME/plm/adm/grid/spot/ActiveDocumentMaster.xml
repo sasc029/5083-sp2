@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<spot id="ACTIVEDOCUMENTMASTER" filter="false">
+		<types>
+			<type id="ActiveDocumentMaster"/>
+		</types>
+		<default>
+			<column id="NUMBER" />
+			<column id="NAME" />
+			<column id="TYPE"/>
+		</default>
+	</spot>
+</config>

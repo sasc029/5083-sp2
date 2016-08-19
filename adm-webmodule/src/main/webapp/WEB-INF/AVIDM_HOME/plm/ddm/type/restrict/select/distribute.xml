@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="GBK"?>
+<selects>
+	<!-- 单据类型(0发放单、1补发发放单) -->
+	<select id="orderType">
+		<option id="0">发放单</option>
+		<option id="1">补发发放单</option>
+		<option id="2">回收发放单</option>
+		<option id="3">销毁发放单</option>
+	</select>
+	<!-- 是否在这个发放单内是父节点（0：不是，1：是） -->
+	<select id="isParent">
+		<option id="0">不是</option>
+		<option id="1">是</option>
+	</select>
+	<!-- 分发信息类型（0为单位，1为人员） -->
+	<select id="disInfoType">
+		<option id="0">单位</option>
+		<option id="1">人员</option>
+	</select>
+	<!-- 分发介质类型（0为纸质，1为电子，２为跨域） -->
+	<select id="disMediaType">
+	 <option id="0">纸质</option>
+     <option id="1">电子</option>
+     <option id="2">跨域</option>
+	</select>
+	<!-- 分发信息选人页面分发介质类型（0为纸质，1为电子） -->
+	<select id="disMediaType2">
+	 <option id="0">纸质</option>
+     <option id="1">电子</option>
+	</select>
+	<!-- 分发方式（0为直接分发，1为补发，2为移除，3为转发） -->
+	<select id="disType">
+		<option id="0">直接分发</option>
+		<option id="1">补发</option>
+		<option id="2">移除</option>
+		<option id="3">转发</option>
+		<option id="4">回收</option>
+		<option id="5">销毁</option>
+	</select>
+	<!-- 紧急程度（0为普通，1为加急） -->
+	<select id="disUrgent">
+		<option id="0">普通</option>
+		<option id="1">加急</option>
+	</select>
+	<!-- 任务类型（0：纸质任务，1：电子任务） -->
+	<select id="taskType">
+		<option id="0">纸质任务</option>
+		<option id="1">电子任务</option>
+		<option id="5">纸质签收任务</option>
+	</select>
+	<!-- 过去天数 -->
+	<select id="pastDays">
+		<option id="0">请选择</option>
+		<option id="1">今天</option>
+		<option id="2">昨天</option>
+		<option id="7">过去7天</option>
+		<option id="30">过去30天</option>
+		<option id="60">过去60天</option>
+		<option id="90">过去90天</option>
+		<option id="180">过去180天</option>
+	</select>
+	<!-- 发放管理-类型 -->
+	<select id="distributeType">
+		<option id="DistributeOrder">发放单</option>
+		<option id="DistributeObject">现行文件</option>
+		<option id="DistributePaperTask">纸质任务</option>
+		<option id="DistributeElecTask">电子任务</option>
+		<!-- <option id="DistributeDestroyed">销毁单</option>
+		<option id="DistributeProcessing">加工单</option>
+		<option id="DistributeSent">发送单</option> -->
+	</select>
+	<!-- 发放管理-状态 -->
+	<select id="distributeState">
+		<option id="new">新建</option>
+		<option id="scheduling">调度中</option>
+		<option id="distributing">分发中</option>
+		<option id="completed">已完成</option>
+		<option id="backoff">已退回</option>
+		<option id="processing">加工中</option>
+		<option id="duplicate_process_not_received">复制未签收</option>
+		<option id="duplicate_process_received">复制中</option>
+		<option id="processing_backoff">加工被退回</option>
+		<option id="duplicated">复制完成</option>
+		<option id="destroyed">销毁完成</option>
+		<option id="duplicate_backoff">复制被退回</option>
+		<option id="distributed">已分发</option>
+		<option id="not_distribute">未分发</option>
+		<option id="not_sign">未签收</option>
+		<option id="signed">已签收</option>
+		<option id="refuse_signed">已拒绝</option>
+	</select>
+	<!-- 工作量统计-状态 -->
+	<select id="lifeCycleType">
+		<option id="0">调度</option>
+		<option id="1">加工</option>
+		<option id="2">复制</option>
+		<option id="3">发送</option>
+	</select>
+	<!-- 是否跟踪（0：否，1：是） -->
+	<select id="isTrack">
+	 <option id="0">否</option>
+     <option id="1">是</option>
+	</select>
+	<!-- 外域（0：数据中心，1：接收方） -->
+	<select id="outSiteType">
+		<option id="0">数据中心</option>
+		<option id="1">接收方</option>
+	</select>
+	<!-- 类别（0：角色，1：用户） -->
+	<select id="dotState">
+		<option id="0">角色</option>
+		<option id="1">用户</option>
+	</select>
+	<!-- 是否已打印（0：否，1：是） -->
+	<select id="isprint">
+		<option id="0">否</option>
+		<option id="1">是</option>
+	</select>
+	<!-- 是否主对象（0：否，1：是） -->
+	<select id="isMaster">
+		<option id="0"></option>
+		<option id="1">是</option>
+	</select>
+	<!-- 签署状态（0：未签署，1：已签署，2：不需要签署） -->
+	<select id="signatureState">
+		<option id="0">未签署</option>
+		<option id="1">已签署</option>
+		<option id="2">不需签署</option>
+	</select>
+	<!-- 是否签署同意（0：否，1：是,-1:空） -->
+	<select id="isAgree">
+		<option id="0">否</option>
+		<option id="1">是</option>
+		<option id="-1"></option>
+	</select>
+</selects>

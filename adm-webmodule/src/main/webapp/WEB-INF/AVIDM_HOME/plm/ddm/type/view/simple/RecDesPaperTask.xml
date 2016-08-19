@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<type id="RecDesPaperTask" name="回收销毁纸质任务" alias="recDesPaperTask"
+	icon="/plm/images/prop/prop.gif">
+	<attr id="CLASSID"/>
+	<attr id="INNERID"/>
+	<attr id="OPENID" visible="false"/>
+	<attr id="DISOPERATE"/>
+	<attr id="OID"/>
+	<attr id="NAME"/>
+	<attr id="NOTE" />
+	<attr id="DDMCONTEXT" />
+	<attr id="LIFECYCLE_STATE"/>
+	<attr id="LIFECYCLE_TEMPLATE"/>
+	<attr id="CREATOR"/>
+	<attr id="CREATE_TIME"/>
+	<attr id="TASKTYPE" visiable="false"/>
+	<attr id="DOMAIN"/>
+	<attr id="DISURGENT" />
+	<attr id="NUMBER"/>
+	<attr id="CONTEXT" visible="false"/>
+	<attr id="MODIFIER"/>
+	<attr id="MODIFY_TIME"/>
+	<attr id="TITLE" visible="false" formater="TitleFormater">	
+		<src>number</src>
+		<src>name</src>
+	</attr>
+</type>

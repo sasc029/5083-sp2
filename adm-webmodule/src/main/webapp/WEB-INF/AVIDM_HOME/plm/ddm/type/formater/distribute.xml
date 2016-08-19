@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="GBK"?>
+<formaters>
+	<!-- 单据类型(0发放单、1补发发放单) -->
+	<formater id="orderTypeFormater" clazz="com.bjsasc.plm.type.formater.impl.SelectFormatImpl">
+		<param id="selectId">orderType</param>
+	</formater>
+	<!-- 是否在这个发放单内是父节点（0：不是，1：是） -->
+	<formater id="isParentFormater" clazz="com.bjsasc.plm.type.formater.impl.SelectFormatImpl">
+		<param id="selectId">isParent</param>
+	</formater>
+	<!-- 分发信息类型（0为单位，1为人员） -->
+	<formater id="disInfoTypeFormater" clazz="com.bjsasc.plm.type.formater.impl.SelectFormatImpl">
+		<param id="selectId">disInfoType</param>
+	</formater>
+	<!-- 分发介质类型（0为纸质，1为电子） -->
+	<formater id="disMediaTypeFormater" clazz="com.bjsasc.plm.type.formater.impl.SelectFormatImpl">
+		<param id="selectId">disMediaType</param>
+	</formater>
+	<!-- 分发方式（0为直接分发，1为补发，2为移除，3为转发） -->
+	<formater id="disTypeFormater" clazz="com.bjsasc.plm.type.formater.impl.SelectFormatImpl">
+		<param id="selectId">disType</param>
+	</formater>
+	<!-- 紧急程度（0为普通，1为加急） -->
+	<formater id="disUrgentFormater" clazz="com.bjsasc.plm.type.formater.impl.SelectFormatImpl">
+		<param id="selectId">disUrgent</param>
+	</formater>
+	<!-- 外域（0为数据中心，1为接收方） -->
+	<formater id="outSiteTypeFormater" clazz="com.bjsasc.plm.type.formater.impl.SelectFormatImpl">
+		<param id="selectId">outSiteType</param>
+	</formater>
+	<!-- 自定义JavaScript方法调用 -->
+	<formater id="javaScriptFormatImpl" clazz="com.bjsasc.ddm.common.JavaScriptFormatImpl">
+	</formater>
+	<formater id="javaScriptFormatManyImpl" clazz="com.bjsasc.ddm.common.JavaScriptFormatManyImpl">
+	</formater>
+	<formater id="javaScriptLinkFormatImpl" clazz="com.bjsasc.ddm.common.JavaScriptLinkFormatImpl">
+	</formater>
+	<!-- 任务类型（0：纸质任务，1：电子任务，5：纸质签收任务） -->
+	<formater id="taskTypeFormater" clazz="com.bjsasc.plm.type.formater.impl.SelectFormatImpl">
+		<param id="selectId">taskType</param>
+	</formater>
+	<!-- 状态（0：调度，1：加工，2：已发送，3：完成） -->
+	<formater id="lifeCycleTypeFormater" clazz="com.bjsasc.plm.type.formater.impl.SelectFormatImpl">
+		<param id="selectId">lifeCycleType</param>
+	</formater>
+	<!-- 是否跟踪（0：否，1：是） -->
+	<formater id="isTrackFormater" clazz="com.bjsasc.plm.type.formater.impl.SelectFormatImpl">
+		<param id="selectId">isTrack</param>
+	</formater>
+	<!-- 类别（0：角色，1：用户） -->
+	<formater id="dotStateFormater" clazz="com.bjsasc.plm.type.formater.impl.SelectFormatImpl">
+		<param id="selectId">dotState</param>
+	</formater>
+	<!-- 是否主对象（0：否，1：是） -->
+	<formater id="isMaster" clazz="com.bjsasc.plm.type.formater.impl.SelectFormatImpl">
+		<param id="selectId">isMaster</param>
+	</formater>
+	<!-- 各个对象的图标（CAD文档需要特殊处理） -->
+	<formater id="disTypeFormatImpl" clazz="com.bjsasc.ddm.common.DisTypeFormatImpl">
+		<param id="style">icon</param>
+	</formater>
+	<!-- 签署状态（0：未签署，1：已签署，2：不需要签署） -->
+	<formater id="signatureStateFormater" clazz="com.bjsasc.plm.type.formater.impl.SelectFormatImpl">
+		<param id="selectId">signatureState</param>
+	</formater>
+	<!-- 是否签署同意（0：否，1：是） -->
+	<formater id="isAgreeFormater" clazz="com.bjsasc.plm.type.formater.impl.SelectFormatImpl">
+		<param id="selectId">isAgree</param>
+	</formater>
+	<!-- 是否是分发数据住对象（0：否，1：是） -->
+	<formater id="IsMainDataImgFormater" clazz="com.bjsasc.plm.type.formater.impl.ReplaceWithImageFormatImpl">
+		<param id="1">/plm/images/common/tag.gif|主对象</param>
+		<param id="0">|</param>
+	</formater>
+</formaters>

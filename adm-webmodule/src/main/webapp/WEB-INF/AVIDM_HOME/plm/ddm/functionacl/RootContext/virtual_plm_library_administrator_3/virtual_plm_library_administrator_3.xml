@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="GBK"?>
+<principal id="virtual_LibraryAdministrator_3" name="基础库管理员（安全）" type="">
+	<function id="plm_global_library_context">
+		<function id="plm_library_context_tool">
+			<function id="plm_library_context_manager_distribute" />
+		</function>
+		<function id="plm_library_context_operate">
+			<function id="plm_library_context_distributeOperate" />
+		</function>
+		<function id="plm_library_context_visit">
+			<function id="plm_library_context_related">
+				<function id="plm_library_context_relatedDistribute" />
+			</function>
+		</function>
+	</function>
+</principal>

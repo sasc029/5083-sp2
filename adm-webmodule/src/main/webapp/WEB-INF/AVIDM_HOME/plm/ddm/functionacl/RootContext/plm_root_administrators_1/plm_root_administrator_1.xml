@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="GBK"?>
+<principal id="plm_root_administrators" name="系统管理员" type="">
+	<function id="plm_global_context">
+		<function id="plm_global_distribute_manager">
+			<function id="plm_global_distribute_order" />
+			<function id="plm_global_dispatch_manager" />
+			<function id="plm_global_distributePaperTask" />
+			<function id="plm_global_duplicate" />
+			<function id="plm_global_ddm_distribute_inside" />
+			<function id="plm_global_ddm_distribute_outside" />
+			<function id="plm_global_ddm_common_search" />
+			<function id="plm_global_workload_count" />
+			<function id="plm_global_RecoverDestroy">
+				<function id="plm_global_RecDesPaperTask" />
+				<function id="plm_global_Recover" />
+				<function id="plm_global_Destroy" />
+			</function>
+			<function id="plm_global_graftManageCenter" />
+		</function>
+		<function id="plm_global_context_desktop">
+			<function id="plm_global_elecTaskReceive" />
+		</function>
+	</function>
+	<function id="plm_global_root_context">
+		<function id="plm_root_context_tool">
+			<function id="plm_root_context_business_manager">
+				<function id="plm_root_context_manager_distribute" />
+			</function>
+		</function>
+	</function>
+	<function id="plm_global_org_context">
+		<function id="plm_org_context_tool">
+			<function id="plm_org_context_business_manager">
+				<function id="plm_org_context_manager_distribute" />
+			</function>
+		</function>
+	</function>
+
+</principal>

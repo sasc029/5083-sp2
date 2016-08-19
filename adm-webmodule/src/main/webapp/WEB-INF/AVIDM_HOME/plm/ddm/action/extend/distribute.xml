@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>	
+	<!-- ================================发放按钮和相关发放单=========================================== -->
+	<!-- 文档.操作.发放按钮 -->
+	<model id="ProductContext.Document.list.operate" callback="reload" target="popup">
+		<action id="ddm.distribute.operate" target="ajax"/>
+	</model>
+	<model id="LibraryContext.Document.list.operate" callback="reload" target="popup">
+		<action id="ddm.distribute.operate" target="ajax"/>
+	</model>
+	<!-- CAD文档.操作.发放按钮 -->
+	<model id="epm.visit.operate" callback="reload" target="popup">
+		<action id="ddm.distribute.operate" target="ajax"/>
+	</model>
+	<!-- 部件.操作.发放按钮 -->
+	<model id="part" callback="reload" target="popup">
+		<action id="ddm.distribute.operate" target="ajax"/>
+	</model>
+	<!-- 更改单.操作.发放按钮 -->
+	<model id="change.visit.eco" callback="reload" target="popup">
+		<action id="ddm.distribute.operate" target="ajax"/>
+	</model>
+	<!-- 转阶段更改单.操作.发放按钮 -->
+	<model id="change.visit.ppco" callback="reload" target="popup">
+		<action id="ddm.distribute.operate" target="ajax"/>
+	</model>
+	<!-- 送审单.操作.发放按钮 -->
+	<model id="approveOrder.list.operate" callback="reload" target="popup">
+		<action id="ddm.distribute.operate" target="ajax"/>
+	</model>
+	<!-- 管理基线.操作.发放按钮 -->
+	<model id="baseline.visit.operate" callback="reload" target="popup">
+		<action id="ddm.distribute.operate" target="ajax"/>
+	</model>
+	<!-- 技术通知单.操作.发放按钮 -->
+	<model id="change.visit.tno" callback="reload" target="popup">
+		<action id="ddm.distribute.operate" target="ajax"/>
+	</model>
+	<!-- 超差代料质疑单.操作.发放按钮 -->
+	<model id="change.visit.variance" callback="reload" target="popup">
+		<action id="ddm.distribute.operate" target="ajax"/>
+	</model>
+	<!-- 现行文件.操作.发放按钮 -->
+	<model id="activedocument.operate" callback="reload" target="popup">
+		<action id="ddm.distribute.operate" target="ajax"/>
+	</model>
+	<!-- 现行单据.操作.发放按钮 -->
+	<model id="activeorder.operate" callback="reload" target="popup">
+		<action id="ddm.distribute.operate" target="ajax"/>
+	</model>
+	<!-- 套对象.操作.发放按钮 -->
+	<model id="ProductContext.Suit.list.operate" callback="reload" target="popup">
+		<action id="ddm.distribute.operate" target="ajax"/>
+	</model>
+	<model id="LibraryContext.Suit.list.operate" callback="reload" target="popup">
+		<action id="ddm.distribute.operate" target="ajax"/>
+	</model>
+	<!-- 文档属性页面的工具条-->
+	<group id="document.visit.menubar">
+		<!-- 文档.相关对象.发放单 -->
+		<model id="document.visit.relationObject" callback="reload" target="popup">
+			<action id="com.bjsasc.plm.ddm.relateddistributeorder" target="self"/>
+		</model>
+	</group>
+	<group id="epm.visit.menubar">
+		<!-- CAD文档.相关对象.发放单 -->
+		<model id="epm_relatedObjects" callback="reload" target="popup">
+			<action id="com.bjsasc.plm.ddm.relateddistributeorder" target="self"/>
+		</model>
+	</group>
+	<!-- 送审单.相关对象.发放单： 目前还看不到，所以暂不配置，如果以后需要，可按照下面注释配置-->
+<!-- <group id="approveOrder.visit.menubar">
+		<model id="approveOrder.visit.relationObject" callback="reload" target="popup">
+			<action id="com.bjsasc.plm.ddm.relateddistributeorder" target="self"/>
+		</model> 
+	</group> -->
+	<group id="visit_part_third">	
+		<!-- 部件.相关对象.发放单 -->
+		<model id="part_relatedObjects" callback="reload" target="popup">
+			<action id="com.bjsasc.plm.ddm.relateddistributeorder" target="self"/>
+		</model>
+	</group>
+
+	<!--访问页面菜单条-->
+<!-- 	<group id="baseline.visit.menubar">
+		管理基线.相关对象.发放单
+		<model id="baseline.visit.related" callback="reload" target="popup">
+			<action id="com.bjsasc.plm.ddm.relateddistributeorder" target="self"/>
+		</model>
+	</group> -->
+	<!--访问页面菜单条-->
+	<group id="suit.visit.menubar">
+		<!-- 套图对象.相关对象.发放单 -->
+		<model id="suit.visit.related" callback="reload" target="popup">
+			<action id="com.bjsasc.plm.ddm.relateddistributeorder" target="self"/>
+		</model>
+	</group>
+	<!--visitECO 访问页面菜单条-->
+	<group id="change.visit.menubar.eco">
+		<!-- 更改单.相关对象.发放单 -->
+		<model id="change.visit.related.eco" callback="reload" target="popup">
+			<action id="com.bjsasc.plm.ddm.relateddistributeorder" target="self"/>
+		</model>
+	</group>
+	<!--visit转阶段更改单 访问页面菜单条-->
+	<group id="change.visit.menubar.ppco">
+		<!-- 更改单.相关对象.发放单 -->
+		<model id="change.visit.related.ppco" callback="reload" target="popup">
+			<action id="com.bjsasc.plm.ddm.relateddistributeorder" target="self"/>
+		</model>
+	</group>
+	<!--visitTNO 访问页面菜单条-->
+	<group id="change.visit.menubar.tno" >
+		<!-- 技术通知单.相关对象.发放单 -->
+		<model id="change.visit.related.tno" callback="reload" target="popup">
+			<action id="com.bjsasc.plm.ddm.relateddistributeorder" target="self"/>
+		</model>
+	</group>
+	<!--visitVariance 访问页面菜单条-->
+	<group id="change.visit.menubar.variance" >
+		<!-- 超差代料质疑单.相关对象.发放单 -->
+		<model id="change.visit.related.Variance" callback="reload" target="popup">
+			<action id="com.bjsasc.plm.ddm.relateddistributeorder" target="self"/>
+		</model>
+	</group>
+	<!--  现行文件-TAB -->
+	<group id="activedocument.tab" >
+		<!-- 现行文件.相关对象.发放单 -->
+		<model id="activedocument.tab.relationobject" callback="reload" target="popup">
+			<action id="com.bjsasc.plm.ddm.relateddistributeorder" target="self"/>
+		</model>
+	</group>
+	<!--  现行单据-TAB -->
+	<group id="activeorder.tab">
+		<!-- 现行单据.相关对象.发放单 -->
+		<model id="activeorder.tab.relationobject" callback="reload" target="popup">
+			<action id="com.bjsasc.plm.ddm.relateddistributeorder" target="self"/>
+		</model>
+	</group>
+	<!-- 文档.右键操作.发放按钮 -->
+	<model id="ProductContext.ListFolderContents.com.bjsasc.plm.core.doc.Document" callback="reload" target="popup">
+		<action id="ddm.distribute.operate" target="ajax"/>
+	</model>
+	<!--现行文件.右键操作.发放按钮 -->
+	<model id="ProductContext.ListFolderContents.com.bjsasc.adm.active.model.activedocument.ActiveDocument" callback="reload" target="popup">
+		<action id="ddm.distribute.operate" target="ajax"/>
+	</model>
+	<!--现行单据.右键操作.发放按钮 -->
+	<model id="ProductContext.ListFolderContents.com.bjsasc.adm.active.model.activeorder.ActiveOrder" callback="reload" target="popup">
+		<action id="ddm.distribute.operate" target="ajax"/>
+	</model>
+	<!-- CAD文档.右键操作.发放按钮 -->
+	<model id="ProductContext.ListFolderContents.com.bjsasc.plm.core.cad.CADDocument" callback="reload" target="popup">
+		<action id="ddm.distribute.operate" target="ajax"/>
+	</model>
+	<!-- 部件.右键操作.发放按钮 -->
+	<model id="ProductContext.ListFolderContents.com.bjsasc.plm.core.part.Part" callback="reload" target="popup">
+		<action id="ddm.distribute.operate" target="ajax"/>
+	</model>
+	<!-- 更改单.右键操作.发放按钮 -->
+	<model id="com.bjsasc.plm.core.change.ECO" callback="reload" target="popup">
+		<action id="ddm.distribute.operate" target="ajax"/>
+	</model>
+	<!-- 转阶段更改单.右键操作.发放按钮 -->
+	<model id="com.bjsasc.plm.core.change.PPCO" callback="reload" target="popup">
+		<action id="ddm.distribute.operate" target="ajax"/>
+	</model>
+	<!-- 送审单.右键操作.发放按钮 -->
+	<model id="ProductContext.ListFolderContents.com.bjsasc.plm.core.approve.ApproveOrder" callback="reload" target="popup">
+		<action id="ddm.distribute.operate" target="ajax"/>
+	</model>
+	<!-- 管理基线.右键操作.发放按钮 -->
+	<model id="com.bjsasc.plm.core.baseline.model.ManagedBaseline" callback="reload" target="popup">
+		<action id="ddm.distribute.operate" target="ajax"/>
+	</model>
+	<!-- 技术通知单.右键操作.发放按钮 -->
+	<model id="com.bjsasc.plm.core.change.TNO" callback="reload" target="popup">
+		<action id="ddm.distribute.operate" target="ajax"/>
+	</model>
+	<!-- 超差代料质疑单.右键操作.发放按钮 -->
+	<model id="com.bjsasc.plm.core.change.Variance" callback="reload" target="popup">
+		<action id="ddm.distribute.operate" target="ajax"/>
+	</model>
+	<!-- 套对象.右键操作.发放按钮 -->
+	<model id="ProductContext.ListFolderContents.com.bjsasc.plm.core.suit.ATSuit" callback="reload" target="popup">
+		<action id="ddm.distribute.operate" target="ajax"/>
+	</model>
+	<!-- 任务接收.工作台面.其他 -->	
+	<model id="com.bjsasc.plm.core.Desktop.outlookmenu">			
+		<model id="other">		
+			<action id="com.bjsasc.plm.core.desktop.distributeTask"/>
+		</model>
+	</model>
+</config>

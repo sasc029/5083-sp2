@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="GBK"?>
+<group id="plm_modules">
+	<module id="plm_global_context" name="全局">
+		<module id="plm_global_distribute_manager" name="发放管理"
+			childUrl="/ddm/outlook/listDistributeMenu.jsp">
+			<module id="plm_global_distribute_order" name="发放单" />
+			<module id="plm_global_dispatch_manager" name="调度" />
+			<module id="plm_global_distributePaperTask" name="加工单" />
+			<module id="plm_global_duplicate" name="复制加工" />
+			<module id="plm_global_ddm_distribute_inside" name="内发单" />
+			<module id="plm_global_ddm_distribute_outside" name="外发单" />
+			<module id="plm_global_ddm_common_search" name="综合查询" />
+			<module id="plm_global_workload_count" name="工作量统计" />
+			<module id="plm_global_RecoverDestroy" name="回收销毁">
+				<module id="plm_global_RecDesPaperTask" name="回收销毁任务" />
+				<module id="plm_global_Recover" name="回收单" />
+				<module id="plm_global_Destroy" name="销毁单" />
+			</module>
+			<module id="plm_global_graftManageCenter" name="借用管理中心" />
+		</module>
+		<module id="plm_global_context_desktop" name="工作台面"
+			childUrl="/plm/context/outlook/listDesktopMenu.jsp">
+			<module id="plm_global_elecTaskReceive" name="任务接收">
+			</module>
+		</module>
+	</module>
+</group>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="GBK"?>
+<folders>	
+	<folder id="platform">		
+		<folder id="LifeCycle">							
+			<folder id="beans">
+				<!--监听底层生命周期状态进入事件 -->
+				<folder id="phaseEnteredInEvent">
+					<param id="listener" name="listener" value="integrateEventListener" merge="true" />
+				</folder>
+				<folder id="integrateEventListener" name="集成导出XML监听器：状态进入">
+					<param id="id" name="id" value="integrateEventListener" default="integrateEventListener" ></param>
+					<param id="beantype" name="beantype" value="listener" default="listener"></param>
+					<param id="class" name="class" value="com.bjsasc.ddm.distribute.listener.IntegrateEventListener" default="com.bjsasc.ddm.distribute.listener.IntegrateEventListener"></param>
+					<param id="sync" name="sync" value="false" default="false"></param>
+				</folder>
+				<!-- 发放单创建成功后事件  -->
+				<folder id="createDistributeOrderSucessEvent" name="事件：发放单创建成功后,抛出发放单对象">
+					<param id="beantype" name="beantype" value="event" default="event" ></param>
+					<param id="class" name="class" value="com.bjsasc.ddm.distribute.event.CreateDistributeOrderSucessEvent" default="com.bjsasc.ddm.distribute.event.CreateDistributeOrderSucessEvent" ></param>
+					<param id="id" name="id" value="createDistributeOrderSucessEvent" default="createDistributeOrderSucessEvent" ></param>
+					<param id="listener" name="listener" value="" default="" ></param><!-- 多个监听以分号分隔 -->
+					<param id="sync" name="sync" value="true" default="true" ></param>
+				</folder>
+			</folder>
+		</folder>
+	</folder>	
+</folders>

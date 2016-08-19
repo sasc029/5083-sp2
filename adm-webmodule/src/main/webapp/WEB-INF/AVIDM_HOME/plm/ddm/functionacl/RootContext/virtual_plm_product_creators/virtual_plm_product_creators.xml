@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="GBK"?>
+<principal id="virtual_ProductCreators" name="产品创建者" >
+	<function id="plm_global_context">
+		<function id="plm_global_context_desktop">
+			<function id="plm_global_elecTaskReceive" />
+		</function>
+	</function>
+</principal>
+			

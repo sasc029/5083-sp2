@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<type id="DistributeInfo" name="发放单" alias="distributeInfo"
+	icon="/plm/images/prop/prop.gif">
+	<attr id="CLASSID" />
+	<attr id="INNERID" />
+	<attr id="OID" />
+	<attr id="OIDS" />
+	<attr id="DISORDEROBJLINKID" />
+	<attr id="DISORDEROBJLINKCLASSID" />
+	<attr id="DISINFONAME" />
+	<attr id="DISINFOTYPE" />
+	<attr id="DISINFONUM" />
+	<attr id="DESTROYNUM" />
+	<attr id="RECOVERDESTROYNUM" />
+	<attr id="TASKNAME" />
+	<attr id="RECOVERNUM" />
+	<attr id="DISMEDIATYPE" />
+	<attr id="DISTYPE" />
+	<attr id="NOTE" />
+	<attr id="SENDTIME" />
+	<attr id="LIFECYCLE_STATE" />
+	<attr id="LIFECYCLE_STATEID" />
+	<attr id="LIFECYCLE_TEMPLATE" />
+	<attr id="CREATOR" />
+	<attr id="MODIFIER" />
+	<attr id="CREATE_TIME" />
+	<attr id="MODIFY_TIME" />
+	<attr id="OUTSIGNNAME" />
+	<attr id="SEALINFO" />
+	<!-- kangyanfei 2014-07-08 -->
+	<attr id="DISINFOID" visible="false"/>
+	<attr id="NEEDRECOVERNUM" visible="false"/>
+	<attr id="NEEDDESTROYNUM" visible="false"/>
+	<attr id="DISOBJID" visible="false"/>
+	<attr id="DISOBJNAME" visible="false"/>
+	<attr id="TITLE" visible="false" formater="TitleFormater">	
+		<src>disTypeName</src>
+		<src>disMediaTypeName</src>
+		<src>disUrgentName</src>
+	</attr>
+</type>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<spot id="distributeCommonSearch" filter="true" view="false">
+		<types>
+			<type id="DistributeOrder" view="true"/>
+			<type id="DistributeObject" view="true"/>
+			<type id="DistributePaperTask" view="true"/>
+			<type id="DistributeElecTask" view="true"/>
+		</types>
+		<default>
+			<column id="NUMBER" />
+			<column id="NAME" />
+			<column id="LIFECYCLE_STATE" />
+			<column id="LIFECYCLE_TEMPLATE"/>
+			<column id="DDMCONTEXT" />
+			<column id="CREATOR"/>
+			<column id="MODIFIER"/>
+			<column id="CREATE_TIME"/>
+			<column id="MODIFY_TIME"/>
+		</default>
+	</spot>	
+</config>

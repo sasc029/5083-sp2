@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OM-file>
+	<sessionFactory poolName="AvidmSystemDB">
+		<list>
+			<value>com/bjsasc/adm/active/model/activedocument/ActiveDocument.xml</value>
+			<value>com/bjsasc/adm/active/model/activedocument/ActiveDocumentMaster.xml</value>
+			<!--
+			<value>com/bjsasc/adm/active/model/activeset/ActiveSetMaster.xml</value>
+			<value>com/bjsasc/adm/active/model/activeset/ActiveSet.xml</value>
+			<value>com/bjsasc/adm/active/model/activesetlink/ActiveSetLink.xml</value>
+			 -->
+			<value>com/bjsasc/adm/active/model/activeorder/ActiveOrder.xml</value>
+			<value>com/bjsasc/adm/active/model/activeorder/ActiveOrderMaster.xml</value> 
+			<value>com/bjsasc/adm/active/model/activeorderlink/ActiveOrderLink.xml</value>
+			<value>com/bjsasc/adm/active/model/modelfolderlink/ModelFolderLink.xml</value>
+			<value>com/bjsasc/adm/active/model/activemodel/ActiveModel.xml</value>
+			<value>com/bjsasc/adm/active/model/activerecycle/ActiveRecycle.xml</value>
+			<value>com/bjsasc/adm/active/model/activecontext/ActiveContext.xml</value>
+			<value>com/bjsasc/adm/active/model/query/ActiveQuerySchema.xml</value>
+			<value>com/bjsasc/adm/active/model/activefolder/ActiveCabinet.xml</value>
+			<value>com/bjsasc/adm/active/model/activefolder/ActiveSubFolder.xml</value>
+			<value>com/bjsasc/adm/active/model/activefolder/ActiveModelFolder.xml</value>
+		</list>
+	</sessionFactory>
+</OM-file>

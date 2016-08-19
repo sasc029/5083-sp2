@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="GBK"?>
+<package id="DistributeOrder" name="分发单">
+	<operate id="access" weight="10">
+		<operate id="plm_create"/>
+		<operate id="plm_modify">
+			<operate id="plm_modify_content" />
+			<operate id="plm_delete" />
+		</operate>
+		<operate id="plm_set_state">
+		       <operate id="plm_promote"/>	
+		</operate>	
+		<operate id="plm_administrative" />
+		<operate id="setPermission" />
+	</operate>
+	<operate id="FullControl" />
+</package>
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="GBK"?>
+<type id="DistributePaperTask">
+	<attr id="ID"/>
+	<attr id="NAME">
+		<validators>
+			<validator id="EmptyValidator"/>
+		</validators>	
+	</attr>
+	<attr id="REFUSENOTE" max="1000">
+		<validators>
+			<validator id="StringMaxLengthValidator"/>
+		</validators>
+	</attr>
+	<attr id="RETURNREASON" max="1000">
+		<validators>
+			<validator id="StringMaxLengthValidator"/>
+		</validators>
+	</attr>
+	<attr id="NOTE" max="1000">
+		<validators>
+			<validator id="StringMaxLengthValidator"/>
+		</validators>
+	</attr>
+</type>

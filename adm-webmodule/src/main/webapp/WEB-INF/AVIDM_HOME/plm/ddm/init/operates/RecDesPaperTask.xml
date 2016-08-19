@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GBK"?>
+<package id="RecDesPaperTask" name="回收销毁纸质任务">
+	<operate id="access" weight="10">
+		<operate id="plm_create"/>
+		<operate id="plm_modify">
+	        <operate id="plm_delete" />
+		</operate>
+		<operate id="plm_set_state">
+		       <operate id="plm_promote"/>	
+		</operate>	
+		<operate id="plm_administrative" />
+		<operate id="setPermission" />
+	</operate>
+	<operate id="FullControl" />
+</package>

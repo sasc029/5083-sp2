@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<type id="DistributeInfoConfig" name="发放单" alias="distributeInfoConfig"
+	icon="/plm/images/prop/prop.gif">
+	<attr id="CLASSID" />
+	<attr id="INNERID" />
+	<attr id="OID" />
+	<attr id="OIDS" />
+	<attr id="DISINFONAME" />
+	<attr id="DISINFOTYPE" />
+	<attr id="DISINFONUM" />
+	<attr id="DISMEDIATYPE" />
+	<attr id="NOTE" />
+</type>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="GBK"?>
+<!-- 现行文件管理配置信息初始化 -->
+<folders>
+	<folder id="plm" name="产品全生命周期" note="plm参数配置文件夹">
+		<!-- 送审监听器  -->
+		<folder id="approve" name="送审">
+			<folder id="beans" name="PLM事件监听配置集合">
+				<folder id="activeApproveCollector" name="现行文件送审收集">
+				 	<param id="beantype" name="beantype" value="listener" default=""/>
+				 	<param id="class" name="class" value="com.bjsasc.adm.active.listener.WorkflowEventListener" default=""/>
+				 	<param id="id" name="id" value="activeApproveCollector" default=""/>
+				 	<param id="sync" name="sync" value="false" default=""/>
+				</folder>			
+			</folder>
+		</folder>
+	</folder>
+</folders>

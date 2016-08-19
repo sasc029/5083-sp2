@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<type id="DistributePaperSignTask" name="纸质签收任务" alias="distributePaperSignTask"
+	icon="/plm/images/prop/prop.gif">
+	<attr id="CLASSID"/>
+	<attr id="INNERID"/>
+	<attr id="OPERATES"/>
+	<attr id="DISOPERATE"/>
+	<attr id="OID" visible="false"/>
+	<attr id="NUMBER"/>
+	<attr id="NAME"/>
+	<attr id="NOTE" />
+	<attr id="LIFECYCLE_STATE"/>
+	<attr id="LIFECYCLE_TEMPLATE"/>
+	<attr id="DDMCONTEXT"/>
+	<attr id="RECEIVER"/>
+	<attr id="RECEIVE_TIME"/>
+	<attr id="DISURGENT" />
+	<attr id="CREATOR"/>
+	<attr id="CREATE_TIME"/>
+	<attr id="TASKTYPE" visiable="false"/>
+	<attr id="DOMAIN"/>
+	<attr id="CONTEXT" visible="false"/>
+	<attr id="MODIFIER"/>
+	<attr id="MODIFY_TIME"/>
+	<attr id="TASKFROMNAME"/>
+	<attr id="TARGETSITENAME"/>
+	<attr id="TITLE" visible="false" formater="TitleFormater">	
+        <src>number</src>
+		<src>name</src>
+	</attr>
+</type>

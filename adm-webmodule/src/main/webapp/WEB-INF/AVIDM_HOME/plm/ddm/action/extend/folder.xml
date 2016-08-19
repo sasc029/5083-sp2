@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+
+<model id="folder.items.more.ProductContext"  action="com.bjsasc.plm.operate.more" callback="reload" target="popup">
+			<!--在更多操作中添加了“批量发放” -->
+			<action id="com.bjsasc.plm.distribute.distributeMulti"/>		
+</model>
+
+</config>

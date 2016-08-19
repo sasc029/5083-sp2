@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<spot id="ListDistributeObjectNotAutoCreate" filter="false">
+		<types>
+			<type id="DistributeObjectNotAutoCreate"/>
+		</types>
+		<default>
+			    <column id="DOT_TYPE_NAME" />
+			    <column id="CONTEXT" />
+			    <column id="MODIFIER"/>
+			    <column id="MODIFY_TIME"/>
+		</default>
+	</spot>
+	
+</config>

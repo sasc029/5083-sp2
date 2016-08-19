@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<spot id="ListDistributeTasks" filter="false">
+		<types>
+			<type id="DistributePaperTask" />
+			<type id="DistributeElecTask" />
+			<type id="DistributePaperSignTask" /> 
+			<type id="RecDesPaperTask"/>
+			<type id="ReturnReason" />
+		</types>
+		<default>
+			<column id="NUMBER" />
+			<column id="NAME" />
+			<column id="TASKTYPE"/>
+			<column id="DISINFONAME"/>
+			<column id="DISURGENT" />
+			<column id="CREATOR" />
+			<column id="CREATE_TIME"/>
+			<column id="LIFECYCLE_STATE"/>
+			<column id="LIFECYCLE_TEMPLATE"/>
+			<column id="DDMCONTEXT" />
+		</default>
+		<custom>
+			<column id="RETURNREASON" name="拒签原因"/>
+		</custom>
+	</spot>	
+	<spot id="ListDistributeSynTasks" filter="false">
+		<types>
+			<type id="DistributeElecTask" />
+			<type id="ReturnReason" />
+		</types>
+		<default>
+			<column id="NUMBER" />
+			<column id="NAME" />
+			<column id="TASKTYPE"/>
+			<column id="LIFECYCLE_STATE"/>
+			<column id="LIFECYCLE_TEMPLATE"/>
+			<column id="DDMCONTEXT" />
+			<column id="RECEIVER" />
+			<column id="RETURNREASON" />
+		</default>
+	</spot>	
+	
+	<spot id="ListDistributeElecTasks_notSigned" filter="false">
+		<types>
+			<type id="DistributeElecTask" />
+			<type id="DistributePaperSignTask" />
+		    <!--  <type id="DistributeInfo" />-->
+		</types>
+		<default>
+			<column id="NUMBER" />
+			<column id="NAME" />
+			<column id="TASKTYPE"/>
+			<column id="LIFECYCLE_STATE"/>
+			<column id="RECEIVER"/>
+			<column id="CREATE_TIME"/>
+	        <column id="RECEIVE_TIME"/>
+	        <column id="LIFECYCLE_TEMPLATE"/>
+			<column id="DDMCONTEXT" />
+		    <column id="OPERATES"/>
+		</default>
+	  <custom>
+	    <column id="CREATE_TIME" name="送达时间"/>
+	    <!--  <column id="DISINFONAME" name="接收者"/>-->
+	    
+     </custom>
+	</spot>
+	
+	<spot id="ListDistributeElecTasks_signed" filter="false">
+		<types>
+			<type id="DistributeElecTask" />
+			<type id="DistributePaperSignTask" />
+		</types>
+		<default>
+			<!-- <column id="OPENID" /> -->
+			<column id="NUMBER" />
+			<column id="NAME" />
+			<column id="TASKTYPE"/>
+			<column id="LIFECYCLE_STATE"/>
+			<column id="RECEIVER"/>
+			<column id="CREATE_TIME"/>
+	        <column id="RECEIVE_TIME"/>
+	        <column id="LIFECYCLE_TEMPLATE"/>
+			<column id="DDMCONTEXT" />
+			<column id="DISOPERATE"/>
+		</default>
+		<editable>
+				<column id="OPERATES"/>
+		</editable>
+		<custom>
+			<column id="OPERATES" editor="hiddenEditor"/>
+			<column id="CREATE_TIME" name="送达时间"/>
+		</custom>
+
+	    
+ 
+	</spot>
+	<spot id="ListDistributeElecTasks_refuseSigned" filter="false">
+		<types>
+			<type id="DistributeElecTask" />
+			<type id="DistributePaperSignTask" />
+			<type id="ReturnReason" />
+		</types>
+		<default>
+			<!-- <column id="OPENID" /> -->
+			<column id="NUMBER" />
+			<column id="NAME" />
+			<column id="TASKTYPE"/>
+			<column id="LIFECYCLE_STATE"/>
+			<column id="RECEIVER"/>
+			<column id="CREATE_TIME"/>
+	        <column id="RECEIVE_TIME"/>
+	        <column id="LIFECYCLE_TEMPLATE"/>
+			<column id="DDMCONTEXT" />
+			<column id="RETURNREASON" />
+		</default>
+		<editable>
+				<column id="OPENCOUNT"/>
+				<column id="RETURNCOUNT"/>
+				<column id="OPERATES"/>
+				<column id="RETURNTIME"/>
+		</editable>
+		<custom>
+			<column id="OPENCOUNT" editor="hiddenEditor"/>
+			<column id="RETURNCOUNT" editor="hiddenEditor"/>
+			<column id="OPERATES" editor="hiddenEditor"/>
+			<column id="RETURNTIME" editor="hiddenEditor"/>
+			<column id="RETURNREASON" name="拒签原因"/>
+			<column id="CREATE_TIME" name="送达时间"/>
+		</custom>
+	</spot>
+	<spot id="ListDistributeElecTasks_completed" filter="false">
+		<types>
+			<type id="DistributeElecTask" />
+			<type id="DistributePaperSignTask" />
+		</types>
+		<default>
+			<!-- <column id="OPENID" /> -->
+			<column id="NUMBER" />
+			<column id="NAME" />
+			<column id="TASKTYPE"/>
+			<column id="LIFECYCLE_STATE"/>
+			<column id="RECEIVER"/>
+			<column id="CREATE_TIME"/>
+	        <column id="RECEIVE_TIME"/>
+	        <column id="LIFECYCLE_TEMPLATE"/>
+			<column id="DDMCONTEXT" />
+		</default>
+		<editable>
+				<column id="OPERATES"/>
+		</editable>
+		<custom>
+			<column id="OPERATES" editor="hiddenEditor"/>
+			<column id="CREATE_TIME" name="送达时间"/>
+		</custom>
+	</spot>
+	<spot id="ListDistributeTaskBox" filter="false">
+		<types>
+			<type id="DistributeElecTask" view="true"/>
+			<type id="DistributePaperSignTask" view="true"/>
+		</types>
+		<default>
+			<column id="NEW_MARK" />
+			<column id="NUMBER"/>
+			<column id="NAME"/>
+			<column id="TASKTYPE"/>
+			<column id="LIFECYCLE_STATE"/>
+			<column id="RECEIVER"/>
+			<column id="CREATOR"/>
+			<column id="CREATE_TIME"/>
+	        <column id="RECEIVE_TIME"/>
+	        <column id="LIFECYCLE_TEMPLATE"/>
+			<column id="DDMCONTEXT" />
+		    <column id="OPERATES"/>
+			<column id="NOTE" />
+		</default>
+	</spot>	
+</config>

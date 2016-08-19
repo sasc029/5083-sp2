@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<model id="context.active.tool" callback="reload" target="self">
+		<model id="com.bjsasc.adm.context.tool.business" action="com.bjsasc.adm.context.tool.business">
+			<action id="com.bjsasc.adm.context.option"/>
+			<action id="com.bjsasc.adm.context.domain"/>
+			<action id="com.bjsasc.adm.context.rule"/>	
+			<action id="com.bjsasc.adm.tool.code"/>		
+		</model>
+	</model>
+</config>

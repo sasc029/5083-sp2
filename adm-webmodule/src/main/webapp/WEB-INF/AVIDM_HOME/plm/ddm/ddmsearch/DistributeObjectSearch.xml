@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<!-- 分发数据对象 -->
+	<view typeName="DistributeObject" CNName="分发数据对象" tableNames="DDM_DIS_OBJECT a" > 
+		<column name="CLASSID">a.classId</column>
+		<column name="INNERID">a.innerId</column>
+		<column name="NUMBER">a.id</column>
+		<column name="NAME">a.name</column>
+		<column name="CONTEXTID">a.contextId</column>
+		<column name="CONTEXTCLASSID">a.contextClassId</column>
+		<column name="WORKSTATE">''</column>
+		<column name="MODIFY_TIME">a.modifyTime</column> 
+		<column name="CREATE_TIME">a.createTime</column>
+		<column name="CREATOR">a.createById</column>
+		<column name="MODIFIER">a.modifierId</column>
+	</view>
+</config>

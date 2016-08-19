@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<type id="DistributeWorkload" name="工作量统计" alias="distributeWorkload"
+	icon="/plm/images/prop/prop.gif">
+	<attr id="CLASSID"/>
+	<attr id="INNERID"/>
+	<attr id="OID"/>
+	<attr id="DISTRIBUTEDATA"/>
+	<attr id="FROMSTATEID" visible="false"/>
+	<attr id="FROMSTATENAME"/>
+	<attr id="FROMLIFECYCLETEMPLATE"/>
+	<attr id="TOSTATEID" visible="false"/>
+	<attr id="TOSTATENAME"/>
+	<attr id="TOLIFECYCLETEMPLATE"/>
+	<attr id="CREATOR"/>
+	<attr id="CREATE_TIME"/>
+	<attr id="ID" visible="false"/>
+	<attr id="NAME"/>
+	<attr id="LIFTCYCLETYPE"/>
+	<attr id="NUMBER"/>
+</type>

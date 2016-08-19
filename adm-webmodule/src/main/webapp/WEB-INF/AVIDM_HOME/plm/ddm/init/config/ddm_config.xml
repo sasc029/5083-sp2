@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="GBK"?>
+<!-- 发放管理配置信息初始化 -->
+<folders>
+	<folder id="plm" name="产品全生命周期" note="plm参数配置文件夹">
+		<!-- 送审结束后自动创建发放单监听器,审批通过后发放单分发监听器,发放单创建成功后抛出事件  -->
+		<folder id="approve" name="送审">
+			<folder id="beans" name="PLM事件监听配置集合">
+				<folder id="autoDistributeListener" name="受控后自动创建发放单">
+				 	<param id="beantype" name="beantype" value="listener" default=""/>
+				 	<param id="class" name="class" value="com.bjsasc.ddm.distribute.listener.WorkflowEventListener" default=""/>
+				 	<param id="id" name="id" value="autoDistributeListener" default=""/>
+				 	<param id="sync" name="sync" value="false" default=""/>
+				</folder>
+				<folder id="distributeOrderListener" name="发放单进行分发并创建任务">
+				 	<param id="beantype" name="beantype" value="listener" default=""/>
+				 	<param id="class" name="class" value="com.bjsasc.ddm.distribute.listener.DistributeOrderEventListener" default=""/>
+				 	<param id="id" name="id" value="distributeOrderListener" default=""/>
+				 	<param id="sync" name="sync" value="false" default=""/>
+				</folder>					
+			</folder>
+		</folder>
+	</folder>
+</folders>

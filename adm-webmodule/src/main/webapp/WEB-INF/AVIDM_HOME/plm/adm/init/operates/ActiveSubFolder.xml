@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="GBK"?>
+<package id="ActiveSubFolder" name="现行子文件夹">
+	<operate id="access">
+		<operate id="plm_modify"/>
+		<operate id="plm_delete"/>
+		<operate id="plm_rename"/>
+	</operate>
+	<operate id="setPermission"/>
+	<operate id="FullControl"/>
+	<operate id="plm_create"/>
+	<operate id="plm_change_domain"/>
+	<operate id="plm_move_into_domain"/>
+</package>
+

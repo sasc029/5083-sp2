@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<spot id="ListDistributeOrderObjectLinks" filter="false">
+		<types>
+			<type id="DistributeOrderObjectLink" />
+		</types>
+		<default>
+			<column id="FROMOBJECTID" />
+			<column id="FROMOBJECTCLASSID"/>
+			<column id="TOOBJECTID" />
+			<column id="TOOBJECTCLASSID"/>
+			<column id="ISPARENT" />
+		</default>
+	</spot>	
+</config>

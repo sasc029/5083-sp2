@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="GBK"?>
+<type id="ActiveContext">
+	<attr id="CLASSID"/>
+	<attr id="INNERID"/>
+	<attr id="OID"/>
+	<attr id="TYPE"/>
+ 	<attr id="NUMBER" group="常规"/>	
+ 	<attr id="NAME" group="常规"/>	
+	<attr id="TITLE"/>
+	<attr id="CONTEXT" group="常规"/>
+ 	<attr id="NOTE" group="常规"/>	
+	<attr id="MODIFIER" group="系统"/>
+	<attr id="MODIFY_TIME" group="系统"/>
+	<attr id="CREATOR" group="系统"/>	
+	<attr id="CREATE_TIME" group="系统"/>
+	<attr id="CONTEXT_OID"/>
+	<attr id="CONTEXT_CLASSID"/>
+	<attr id="CONTEXT_INNERID"/>
+	<attr id="DOMAIN" visible="false"/>
+	<attr id="ISPRIVATE" group="常规"/>
+</type>

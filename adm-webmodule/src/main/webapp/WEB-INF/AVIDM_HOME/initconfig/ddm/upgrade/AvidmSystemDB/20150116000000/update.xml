@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="GBK"?>
+<ConfigList>
+	<Config>	
+		<ConfigClass>
+			<value>com.bjsasc.platform.update.impl.PtUpdate4SQL</value>
+		</ConfigClass>
+		<files>
+			<file>U.ddm.distribute.ora.sql</file>
+		</files>
+	</Config>
+</ConfigList>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!DOCTYPE class PUBLIC "-//Objectmodel//DTD Configuration 1.0//EN" "http://www.bjsasc.com/dtds/om-configuration-1.0.dtd">
+
+<class id="DistributePaperTask" name="com.bjsasc.ddm.distribute.model.distributepapertask.DistributePaperTask"
+	display-name="纸质任务" icon="/ddm/images/paperTask.gif" table="DDM_DIS_PAPERTASK"
+	storageMode="share" mappingMode="3" relation="false" parentID="ATObject">
+	<property name="number" display-name="编号" column="id" unique="true"/>
+	<property name="name" display-name="名称" />
+	<property name="isprint" display-name="是否已打印" />
+	<property name="disOrderCreator" display-name="发放单创建者" />
+	<property name="note" display-name="备注" length="1000"/>
+	<property name="disUrgent" display-name="紧急程度（0为普通，1为加急）" />
+	<component name="lifeCycleInfo" display-name="生命周期信息" class="LifeCycleInfo" />
+	<component name="manageInfo" display-name="管理信息" class="ManageInfo" />
+	<component name="contextInfo" display-name="上下文" class="ContextInfo" />
+	<component name="domainInfo" display-name="域信息" class="DomainInfo" />
+	 <!-- 模型绑定操作权限时对应的typeId  -->
+	<operation depend-type="DistributePaperTask"/>
+</class>

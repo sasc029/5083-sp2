@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE class PUBLIC "-//Objectmodel//DTD Configuration 1.0//EN" "http://www.bjsasc.com/dtds/om-configuration-1.0.dtd">
+
+<class id="ModelFolderLink"
+	name="com.bjsasc.adm.active.model.modelfolderlink.ModelFolderLink"
+	display-name="现行文件模型与现行文件夹关联" icon="/plm/images/context/product.gif" table="ADM_MODELFOLDERLINK"
+	storageMode="share" mappingMode="3" relation="true" parentID="ATLink">
+</class>

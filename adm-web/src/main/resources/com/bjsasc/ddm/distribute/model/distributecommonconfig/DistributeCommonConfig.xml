@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!DOCTYPE class PUBLIC "-//Objectmodel//DTD Configuration 1.0//EN" "http://www.bjsasc.com/dtds/om-configuration-1.0.dtd">
+<class id="DistributeCommonConfig" name="com.bjsasc.ddm.distribute.model.distributecommonconfig.DistributeCommonConfig" display-name="发放管理通用配置参数" table="DDM_DIS_COMMON_CONFIG" storageMode="alone" relation="false" mappingMode="3" parentID="ATObject">
+    <property name="configID" display-name="配置ID" type="string" length="510"/>
+    <property name="configName" display-name="配置名称" type="string" length="510"/>
+    <property name="configValue" display-name="配置值" type="string" length="510"/>
+    <property name="isPermitDelete" display-name="是否能删除" type="int" length="10"/>
+    <property name="configDefaultValue" display-name="配置默认值" type="string" length="510"/>
+    <component name="manageInfo" display-name="属性的管理信息" class="ManageInfo"/>
+</class>

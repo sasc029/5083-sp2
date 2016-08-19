@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!DOCTYPE class PUBLIC "-//Objectmodel//DTD Configuration 1.0//EN" "http://www.bjsasc.com/dtds/om-configuration-1.0.dtd">
+
+<class id="DistributeTaskSite" name="com.bjsasc.ddm.distribute.model.distributetasksite.DistributeTaskSite"
+	display-name="任务站点" icon="/plm/images/context/product.gif" table="DDM_DIS_TASKSITE"
+	storageMode="share" mappingMode="3" relation="false" parentID="ATObject">
+	<property name="taskId" display-name="任务内部标识" />
+	<property name="taskClassId" display-name="任务对象类标识" />
+	<property name="siteId" display-name="站点内部标识" />
+	<property name="siteClassId" display-name="站点类标识" />
+</class>

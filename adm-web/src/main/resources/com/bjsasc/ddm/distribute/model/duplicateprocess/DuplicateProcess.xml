@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!DOCTYPE class PUBLIC "-//Objectmodel//DTD Configuration 1.0//EN" "http://www.bjsasc.com/dtds/om-configuration-1.0.dtd">
+
+<class id="DuplicateProcess" name="com.bjsasc.ddm.distribute.model.duplicateprocess.DuplicateProcess"
+	display-name="复制加工" icon="/plm/images/context/product.gif" table="DDM_DIS_DUPLICATE"
+	storageMode="share" mappingMode="3" relation="false" parentID="ATObject">
+	<property name="disObjectInnerId" display-name="分发数据内部标识" />
+	<property name="disObjectClassId" display-name="分发数据内部类标识" />
+	<property name="disPaperTaskInnerId" display-name="关联纸质分发任务内部标识"/>
+	<property name="disPaperTaskClassId" display-name="关联纸质分发任务内部类标识"/>
+	<property name="contractor" display-name="复印人"/>
+	<property name="collator" display-name="整理人"/>
+	<property name="finishTime" display-name="完成时间"/>
+</class>

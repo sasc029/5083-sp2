@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!DOCTYPE class PUBLIC "-//Objectmodel//DTD Configuration 1.0//EN" "http://www.bjsasc.com/dtds/om-configuration-1.0.dtd">
+
+<class id="DistributeElecTask" name="com.bjsasc.ddm.distribute.model.distributeelectask.DistributeElecTask"
+	display-name="电子任务" icon="/ddm/images/elecTask.gif" table="DDM_DIS_ELECTASK"
+	storageMode="share" mappingMode="3" relation="false" parentID="ATObject">
+	<property name="number" display-name="编号" column="id" unique="true"/>
+	<property name="name" display-name="名称" />
+	<property name="note" display-name="备注" length="1000"/>
+    <property name="receiveTime" display-name="接受时间"/>
+    <property name="fromTaskId" display-name="父任务标识"/>
+    <property name="fromTaskClassId" display-name="父任务类标识"/>
+    <property name="elecTaskType" display-name="任务类型"/>
+    <reference name="receiveBy" display-name="接受人"/>
+    <property name="sourceSiteId" display-name="源站点内部标识"/>
+    <property name="sourceSiteClassId" display-name="源站点类标识"/>
+    <property name="sourceSiteName" display-name="源站点名称"/>
+    <property name="targetSiteId" display-name="目标站点内部标识"/>
+    <property name="targetSiteClassId" display-name="目标站点类标识"/>
+    <property name="targetSiteName" display-name="目标站点名称"/>
+    <property name="centerSiteId" display-name="中心站点内部标识"/>
+    <property name="centerSiteClassId" display-name="中心站点类标识"/>
+    <property name="receiveByName" display-name="接收者名称"/>
+	<component name="lifeCycleInfo" display-name="生命周期信息" class="LifeCycleInfo" />
+	<component name="manageInfo" display-name="管理信息" class="ManageInfo" />
+	<component name="contextInfo" display-name="上下文" class="ContextInfo" />
+	<component name="domainInfo" display-name="域信息" class="DomainInfo" />
+	<property name="disInfoName" display-name="分发信息名称（单位/人员）"/>
+	<property name="disInfoId" display-name="分发信息的innerid"/>
+	<property name="infoClassId" display-name="分发信息的classid"/>
+</class>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!DOCTYPE class PUBLIC "-//Objectmodel//DTD Configuration 1.0//EN" "http://www.bjsasc.com/dtds/om-configuration-1.0.dtd">
+
+<class id="DisInfoIsTrack" name="com.bjsasc.ddm.distribute.model.disinfoistrack.DisInfoIsTrack"
+	display-name="是否跟踪" icon="/plm/images/context/product.gif" table="DDM_DIS_ISTRACK"
+	storageMode="share" mappingMode="3" relation="false" parentID="ATObject">
+	<property name="istrack" display-name="是否跟踪"   type="int" />
+	<property name="disInfoId" display-name="分发信息ID" />
+	<property name="infoClassId" display-name="分发信息的类标识" />
+	<component name="manageInfo" display-name="管理信息" class="ManageInfo" />
+
+</class>

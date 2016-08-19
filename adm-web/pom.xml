@@ -1,0 +1,108 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>adm-web</artifactId>
+	<name>adm-web</name>
+	<parent>
+		<groupId>com.bjsasc.avpdm</groupId>
+		<artifactId>avpdm-base</artifactId>
+		<version>5.0.8.3-SP2-SNAPSHOT</version>
+	</parent>
+	<dependencies>
+		<dependency>
+			<groupId>com.bjsasc.avidm</groupId>
+			<artifactId>avidm-foundation-web</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.bjsasc.avidm</groupId>
+			<artifactId>avidm-foundation-util</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.bjsasc.avpdm</groupId>
+			<artifactId>collaboration</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.bjsasc.avpdm</groupId>
+			<artifactId>classification</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.bjsasc.avpdm</groupId>
+			<artifactId>approve</artifactId>
+			<version>3.0.0.2-SNAPSHOT</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.bjsasc.avpdm</groupId>
+			<artifactId>code</artifactId>
+			<version>3.0.0.2-SNAPSHOT</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.bjsasc.avpdm</groupId>
+			<artifactId>plm-core</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.bjsasc.avpdm</groupId>
+			<artifactId>plm-web</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.bjsasc.platform</groupId>
+			<artifactId>ptUtil</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.bjsasc.platform</groupId>
+			<artifactId>ptBase</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.bjsasc.avidm</groupId>
+			<artifactId>avidm-foundation-dts</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.bjsasc.platform</groupId>
+			<artifactId>ptProcess</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.bjsasc.platform</groupId>
+			<artifactId>ptPlugin_siteMgr_jar</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.bjsasc.platform</groupId>
+			<artifactId>ptFileComponent</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.bjsasc.platform</groupId>
+			<artifactId>ptWeb</artifactId>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+	<properties>
+		<isjar>true</isjar>
+	</properties>
+</project>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!DOCTYPE class PUBLIC "-//Objectmodel//DTD Configuration 1.0//EN" "http://www.bjsasc.com/dtds/om-configuration-1.0.dtd">
+
+<class id="DistributeSeriaNo" name="com.bjsasc.ddm.distribute.model.distributepapertask.DistributeSeriaNo"
+	display-name="流水号" icon="/plm/images/context/product.gif" table="DDM_DIS_SERIANO"
+	storageMode="share" mappingMode="3" relation="false" parentID="ATObject">
+	<property name="seriaNo" display-name="流水号" />
+	<property name="createSerianoTime" display-name="创建时间" />
+	<property name="orderType" display-name="单据类型"/>
+</class>

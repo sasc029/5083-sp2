@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!DOCTYPE class PUBLIC "-//Objectmodel//DTD Configuration 1.0//EN" "http://www.bjsasc.com/dtds/om-configuration-1.0.dtd">
+
+<class id="DistributeTaskSyn" name="com.bjsasc.ddm.distribute.model.distributetasksyn.DistributeTaskSyn"
+	display-name="同步任务" icon="/plm/images/context/product.gif" table="DDM_DIS_TASKSYN"
+	storageMode="share" mappingMode="3" relation="false" parentID="ATObject">
+	<property name="taskId" display-name="任务内部标识" />
+	<property name="taskClassId" display-name="任务对象类标识" />
+	<property name="taskSynId" display-name="同步任务内部标识" />
+	<property name="taskSynClassId" display-name="同步任务类标识" />
+	<property name="siteType" display-name="站点类型" />
+</class>

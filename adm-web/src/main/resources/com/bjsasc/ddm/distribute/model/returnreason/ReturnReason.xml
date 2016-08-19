@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!DOCTYPE class PUBLIC "-//Objectmodel//DTD Configuration 1.0//EN" "http://www.bjsasc.com/dtds/om-configuration-1.0.dtd">
+
+<class id="ReturnReason" name="com.bjsasc.ddm.distribute.model.returnreason.ReturnReason"
+	display-name="回退原因" icon="/plm/images/context/product.gif" table="DDM_DIS_RETURN"
+	storageMode="share" mappingMode="3" relation="false" parentID="ATObject">
+	<property name="objectId" display-name="对象内部标识" />
+	<property name="objectClassId" display-name="对象类标识" />
+	<property name="taskId" display-name="任务内部标识" />
+	<property name="taskClassId" display-name="任务类标识" />
+	<property name="returnCount" display-name="回退次数"/>
+	<property name="returnReason" display-name="回退原因"/>
+	<property name="userId" display-name="回退人内部标识"/>
+	<property name="userClassId" display-name="回退人类标识"/>
+	<property name="userName" display-name="回退人名称"/>
+	<component name="lifeCycleInfo" display-name="生命周期信息" class="LifeCycleInfo" />
+</class>

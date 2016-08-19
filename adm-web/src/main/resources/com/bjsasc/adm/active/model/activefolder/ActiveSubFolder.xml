@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!DOCTYPE class PUBLIC "-//Objectmodel//DTD Configuration 1.0//EN" "http://www.bjsasc.com/dtds/om-configuration-1.0.dtd">
+
+<class id="ActiveSubFolder" name="ActiveSubFolder" display-name="现行文件夹" icon="/plm/images/folder/folder.gif" table="PLM_FOLDER_SUBFOLDER" storageMode="share" mappingMode="3" relation="false" parentID="ATObject">
+	<property name="name" display-name="名称" />
+  	<component name="contextInfo" display-name="所属上下文信息" class="ContextInfo" />
+  	<component name="domainInfo" display-name="所属域信息" class="DomainInfo" />
+  	<component name="manageInfo" display-name="管理信息" class="ManageInfo" />
+  	<component name="folderInfo" display-name="父文件信息" class="FolderInfo" />
+  	<property name="domaintype"  display-name="域类型" type="string" length="255"/>
+  	<property name="note" display-name="备注" />
+  	<operation depend-type="SubFolder"/>
+</class>

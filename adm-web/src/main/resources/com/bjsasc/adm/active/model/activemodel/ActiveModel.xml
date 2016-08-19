@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE class PUBLIC "-//Objectmodel//DTD Configuration 1.0//EN" "http://www.bjsasc.com/dtds/om-configuration-1.0.dtd">
+
+<class id="ActiveModel" name="com.bjsasc.adm.active.model.activemodel.ActiveModel"
+	display-name="模型结构" icon="/plm/images/context/product.gif" table="ADM_ACTIVEMODEL"
+	storageMode="share" mappingMode="3" relation="false" parentID="ATObject">
+	<property name="modelId" display-name="模型编号" type="String" length="255"/>
+	<property name="modelName" display-name="模型名称" type="String" length="255"/>
+</class>

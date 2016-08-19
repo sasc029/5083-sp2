@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!DOCTYPE class PUBLIC "-//Objectmodel//DTD Configuration 1.0//EN" "http://www.bjsasc.com/dtds/om-configuration-1.0.dtd">
+
+<class id="DistributeObject" name="com.bjsasc.ddm.distribute.model.distributeobject.DistributeObject"
+	display-name="分发数据对象" icon="/plm/images/context/product.gif" table="DDM_DIS_OBJECT"
+	storageMode="share" mappingMode="3" relation="false" parentID="ATObject">
+	<property name="dataInnerId" display-name="分发数据源内部标识" />
+	<property name="dataClassId" display-name="分发数据源类名" />
+	<property name="dataFrom" display-name="分发数据源来源" />
+	<property name="number" display-name="编号" column="id" unique="true"/>
+	<property name="name" display-name="名称" />
+	<property name="note" display-name="备注" />
+	<property name="linkUrl" display-name="分发数据链接url" />
+	<property name="accessUrl" display-name="接收方访问分发数据的链接" />
+	<property name="pages" display-name="页数" />
+	<component name="manageInfo" display-name="管理信息" class="ManageInfo" />
+	<component name="contextInfo" display-name="所属下上文信息" class="ContextInfo" />
+	<component name="domainInfo" display-name="域信息" class="DomainInfo" />
+	<reference name="department"  display-name="部门" />
+	<component name="iterationInfo" display-name="版本信息" class="IterationInfo" />
+	<component name="phaseInfo" display-name="阶段信息" class="PhaseInfo"/>
+	<component name="securityLevelInfo" display-name="密级信息" class="SecurityLevelInfo"/>
+	<component name="disciplineInfo" display-name="专业信息" class="DisciplineInfo"/>
+</class>

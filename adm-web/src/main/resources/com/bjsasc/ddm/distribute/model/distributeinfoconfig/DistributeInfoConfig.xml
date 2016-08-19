@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!DOCTYPE class PUBLIC "-//Objectmodel//DTD Configuration 1.0//EN" "http://www.bjsasc.com/dtds/om-configuration-1.0.dtd">
+
+<class id="DistributeInfoConfig" name="com.bjsasc.ddm.distribute.model.distributeinfoconfig.DistributeInfoConfig"
+	display-name="分发信息配置" icon="/ddm/images/disInfo.gif" table="DDM_DIS_INFO_CONFIG"
+	storageMode="share" mappingMode="3" relation="false" parentID="ATObject">
+	<property name="disInfoName" display-name="分发信息名称（单位/人员）" />
+	<property name="disInfoId" display-name="分发信息IID（人员或组织的内部标识）" />
+	<property name="disInfoType" display-name="分发信息类型（0为单位，1为人员）" />
+	<property name="disInfoNum" display-name="分发份数" />
+	<property name="disMediaType" display-name="分发介质类型（0为纸质，1为电子，2为跨域）" />
+	<property name="note" display-name="备注" />
+</class>

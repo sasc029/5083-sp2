@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!DOCTYPE class PUBLIC "-//Objectmodel//DTD Configuration 1.0//EN" "http://www.bjsasc.com/dtds/om-configuration-1.0.dtd">
+
+<class id="ActiveCabinet"  name="ActiveCabinet" display-name="现行根目录" icon="/plm/images/doc/contenType_url.gif" table="PLM_FOLDER_CABINET" storageMode="share" mappingMode="3" relation="false" parentID="ATObject">
+  <component name="contextInfo" display-name="所属上下文信息" class="ContextInfo" />
+  <component name="manageInfo" display-name="管理信息" class="ManageInfo" />
+  <component name="domainInfo" display-name="所属域信息" class="DomainInfo" />
+  <property name="cabtype"  display-name="类型" type="string" length="255"/>
+  <property name="name" display-name="名称" />
+  <property name="note" display-name="备注" />
+  <reference name="owner" display-name="所有者引用" />
+  <operation depend-type="Cabinet"/>
+</class>

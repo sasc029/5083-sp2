@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE class PUBLIC 
+			"-//Objectmodel//DTD Configuration 1.0//EN" 
+			"http://www.bjsasc.com/dtds/om-configuration-1.0.dtd">
+<class id="ActiveQuerySchema" name="com.bjsasc.adm.active.model.query.ActiveQuerySchema"
+	display-name="统计方案" table="ADM_QuerySchema" icon="/plm/images/context/product.gif"
+	storageMode="share" mappingMode="3" relation="false" parentID="ATObject">
+	<property name="schemaName" display-name="方案名称" type="string" length="255"/>
+	<property name="activename" display-name="现行对象" type="string" length="255"/>
+	<property name="defaultSchema" display-name="是否是默认方案" type="int" length="10"/>
+	<property name="beginTime" display-name="开始时间" type="string" length="255"/>
+	<property name="endTime" display-name="结束时间" type="string" length="255"/>
+	<property name="lifeCycle" display-name="生命周期" type="string" length="255"/>
+	<property name="activeModelId" display-name="子模型ID" type="string" length="255"/>
+	<property name="activeModelname" display-name="子模型名称" type="string" length="255"/>
+	<property name="groupCondition" display-name="展示条件" type="string" length="255"/>
+	<component name="manageInfo" display-name="管理信息" class="ManageInfo" />
+	
+</class>

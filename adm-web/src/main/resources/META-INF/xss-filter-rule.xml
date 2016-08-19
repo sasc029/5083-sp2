@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<url-rule>
+		<!--以下配置项标识对所有以/plm开头的URL（但不包括/plm目录下的）路径（*.jsp,*.action,*.jsps,*.do）需要进行html符号内容转义
+		      如果encode-for-html属性值为false时（默认值为true），表示对匹配的URL不进行转义，同时也将忽略其下的params配置信息
+		      params：该节点的配置目的是允许忽略对URL下的某几个参数的XSS过滤。如果参数值是JSON格式或数据要求其必须保证原始格式，应该在params下增加param节点进行配置。
+		      param：对单个参数的配置。 pattern-regex="false"标识参数名的全匹配的（默认值为false），支持通配配置。encode-for-html表示是否对html符号(如：/、‘、“)进行转义，其默认值为true。
+		-->
+	    <url pattern="*/ddm/**" encode-for-html="false" />
+	    <url pattern="*/adm/**" encode-for-html="false" />
+	</url-rule>
+</config>

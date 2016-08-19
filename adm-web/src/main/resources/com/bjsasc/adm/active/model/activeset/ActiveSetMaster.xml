@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE class PUBLIC "-//Objectmodel//DTD Configuration 1.0//EN" "http://www.bjsasc.com/dtds/om-configuration-1.0.dtd">
+
+<class id="ActiveSetMaster" name="com.bjsasc.adm.active.model.activeset.ActiveSetMaster"
+	display-name="现行套主对象" icon="/plm/images/context/product.gif" table="ADM_ACTIVESETMASTER" storageMode="compound"
+	mappingMode="3" relation="false" parentID="ATObject">
+	<property name="number" display-name="编号" column="id" unique="true" type="String" length="255"/>
+	<property name="name" display-name="名称" type="String" length="255"/>
+	<component name="securityLevelInfo" display-name="密级信息"	class="SecurityLevelInfo" />
+
+</class>

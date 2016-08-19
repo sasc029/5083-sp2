@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!DOCTYPE class PUBLIC "-//Objectmodel//DTD Configuration 1.0//EN" "http://www.bjsasc.com/dtds/om-configuration-1.0.dtd">
+
+<class id="DcA3SigObjectLink" name="com.bjsasc.ddm.distribute.model.convertversion.DcA3SigObjectLink"
+	display-name="跨版本任务签署信息与分发业务对象link"  icon="/ddm/images/disOrderObjLink.gif"
+	table="DDM_DC_A3_SIGOBJLINK" storageMode="share" mappingMode="3"
+	relation="true" parentID="ATLink">
+
+</class>

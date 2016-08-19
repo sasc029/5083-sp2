@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE class PUBLIC 
+			"-//Objectmodel//DTD Configuration 1.0//EN" 
+			"http://www.bjsasc.com/dtds/om-configuration-1.0.dtd">
+<class id="ActiveContext" polymorphism="implicit" name="ActiveContext"
+	display-name="现行上下文" icon="/plm/images/context/product.gif" table="ADM_CONTEXT_ACTIVE"
+	storageMode="share" relation="false" mappingMode="3" parentID="AbstractContext">
+	<component name="contextInfo" display-name="所属上下文信息" class="ContextInfo" />
+	<reference name="sharedTeam" display-name="共享团队引用" />
+	<reference name="localTeam" display-name="本地团队引用" />
+	<property name="isPrivate" display-name="是否专用" type="boolean"
+		access="field" />
+	<operation depend-type="ActiveContext" />
+</class>

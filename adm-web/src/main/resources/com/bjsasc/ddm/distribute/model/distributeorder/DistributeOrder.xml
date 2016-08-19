@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!DOCTYPE class PUBLIC "-//Objectmodel//DTD Configuration 1.0//EN" "http://www.bjsasc.com/dtds/om-configuration-1.0.dtd">
+
+<class id="DistributeOrder" name="com.bjsasc.ddm.distribute.model.distributeorder.DistributeOrder"
+	display-name="发放单" icon="/ddm/images/disOrder.gif" table="DDM_DIS_ORDER"
+	storageMode="share" mappingMode="3" relation="false" parentID="ATObject">
+	<property name="number" display-name="编号" column="id" unique="true"/>
+	<property name="name" display-name="名称" />
+	<property name="orderType" display-name="单据类型(0发放单、1补发发放单)" />
+	<property name="note" display-name="备注" length="1000"/>
+	<property name="submitUserId" display-name="发起人内部标识" />
+	<property name="submitUserClassId" display-name="发起人类标识" />
+	<property name="submitUserName" display-name="发起人名称" />
+	<property name="siteId" display-name="发起站点内部标识" />
+	<property name="siteClassId" display-name="发起站点类标识" />
+	<property name="siteName" display-name="发起站点名称" />
+	<property name="masterDataClassID" display-name="分发数据主对象类型" />
+	<component name="lifeCycleInfo" display-name="生命周期信息" class="LifeCycleInfo" />
+	<component name="manageInfo" display-name="管理信息" class="ManageInfo" />
+	<component name="contextInfo" display-name="上下文" class="ContextInfo" />
+    <component name="domainInfo" display-name="域信息" class="DomainInfo" />
+    <!-- 模型绑定操作权限时对应的typeId  -->
+    <operation depend-type="DistributeOrder"/>
+</class>

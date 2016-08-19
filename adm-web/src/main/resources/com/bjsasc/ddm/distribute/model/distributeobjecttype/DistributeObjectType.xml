@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!DOCTYPE class PUBLIC "-//Objectmodel//DTD Configuration 1.0//EN" "http://www.bjsasc.com/dtds/om-configuration-1.0.dtd">
+
+<class id="DistributeObjectType" name="com.bjsasc.ddm.distribute.model.distributeobjecttype.DistributeObjectType"
+	display-name="对象模型配置" icon="/plm/images/context/product.gif" table="DDM_DIS_OBJECT_TYPE"
+	storageMode="share" mappingMode="3" relation="false" parentID="ATObject">
+	
+	<property name="dataId" display-name="角色/成员内部标识" />
+	<property name="dataClassId" display-name="角色/成员名" />
+	<property name="typeId" display-name="类型ID" />
+	<property name="typeName" display-name="类型名称" />
+	<property name="state" display-name="类别" />
+	<component name="contextInfo" display-name="上下文" class="ContextInfo" />
+    <component name="domainInfo" display-name="域信息" class="DomainInfo" />
+	<component name="manageInfo" display-name="管理信息" class="ManageInfo" />
+</class>

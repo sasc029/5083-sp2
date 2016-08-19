@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE class PUBLIC "-//Objectmodel//DTD Configuration 1.0//EN" "http://www.bjsasc.com/dtds/om-configuration-1.0.dtd">
+
+<class id="ActiveDocument"
+	name="com.bjsasc.adm.active.model.activedocument.ActiveDocument"
+	display-name="现行文件" icon="/plm/images/doc/doc.gif" table="ADM_ACTIVEDOCUMENT" storageMode="share"
+	mappingMode="3" relation="false" parentID="ATObject">
+	<reference name="master" display-name="主对象" class="Master" sort-no="3" />
+	<component name="iterationInfo" display-name="版本信息" class="IterationInfo" />
+	<component name="lifeCycleInfo" display-name="生命周期信息" class="LifeCycleInfo" />
+	<component name="manageInfo" display-name="管理信息" class="ManageInfo" />
+	<component name="folderInfo" display-name="所属文件夹信息" class="FolderInfo" />
+	<component name="contextInfo" display-name="所属下上文信息" class="ContextInfo" />
+	<component name="domainInfo" display-name="域信息" class="DomainInfo" />
+	<property name="dataSource" display-name="来源" type="String" length="255"/>
+	<property name="activeCode" display-name="代号" type="String" length="255"/>
+	<property name="authorName" display-name="编制者" type="String" length="255"/>
+	<property name="authorTime" display-name="编制日期" type="long" length="19"/>
+	<property name="authorUnit" display-name="编制单位" type="String" length="255"/>
+	<property name="pages" display-name="页数" type="int" length="10"/>
+	<property name="count" display-name="份数" column="copies" type="int" length="10"/>
+	<property name="note" display-name="备注" type="String" length="2000"/>
+	<!-- 模型绑定操作权限时对应的typeId  -->
+    <operation depend-type="ActiveDocument"/>
+</class>

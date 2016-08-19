@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!DOCTYPE class PUBLIC "-//Objectmodel//DTD Configuration 1.0//EN" "http://www.bjsasc.com/dtds/om-configuration-1.0.dtd">
+
+<class id="DistributeWorkload"
+	name="com.bjsasc.ddm.distribute.model.distributeworkload.DistributeWorkload"
+	display-name="工作量统计" icon="/plm/images/context/product.gif" table="DDM_DIS_WORKLOAD"
+	storageMode="share" mappingMode="3" relation="false" parentID="ATObject">
+	<property name="objectId" display-name="对象内部标识" />
+	<property name="objectClassId" display-name="对象类标识" />
+	<property name="fromStateId" display-name="原生命周期状态" />
+	<property name="fromStateName" display-name="原生命周期名称" />
+	<property name="fromLifeCycleTemplate" display-name="原生命周期模板" />
+	<property name="toStateId" display-name="现生命周期状态" />
+	<property name="toStateName" display-name="现生命周期名称" />
+	<property name="toLifeCycleTemplate" display-name="现生命周期模板" />
+	<property name="number" display-name="编号" column="id" unique="true"/>
+	<property name="name" display-name="名称" />
+	<component name="manageInfo" display-name="管理信息" class="ManageInfo" />
+</class>

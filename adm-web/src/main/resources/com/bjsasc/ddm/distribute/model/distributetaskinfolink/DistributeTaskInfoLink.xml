@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!DOCTYPE class PUBLIC "-//Objectmodel//DTD Configuration 1.0//EN" "http://www.bjsasc.com/dtds/om-configuration-1.0.dtd">
+
+<class id="DistributeTaskInfoLink" 
+	name="com.bjsasc.ddm.distribute.model.distributetaskinfolink.DistributeTaskInfoLink" 
+	display-name="任务与分发信息link"
+	table="DDM_DIS_TASKINFOLINK" storageMode="share" mappingMode="3"
+	relation="true" parentID="ATLink">
+	<property name="taskType" display-name="任务类型（0：纸质任务，1：电子任务）" />
+</class>

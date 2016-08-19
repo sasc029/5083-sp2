@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!DOCTYPE class PUBLIC "-//Objectmodel//DTD Configuration 1.0//EN" "http://www.bjsasc.com/dtds/om-configuration-1.0.dtd">
+
+<class id="RecDesInfo" name="com.bjsasc.ddm.distribute.model.recdesinfo.RecDesInfo"
+	display-name="回收销毁信息" icon="/ddm/images/disInfo.gif" table="DDM_RECDES_INFO"
+	storageMode="share" mappingMode="3" relation="false" parentID="ATObject">
+
+	<property name="disOrderObjectLinkId" display-name="回收销毁单与分发数据LINK内部标识" />
+	<property name="disOrderObjectLinkClassId" display-name="回收销毁单与分发数据LINK类标识" />
+	<property name="needDestroyNum" display-name="需要销毁的份数 " />
+	<property name="needRecoverNum" display-name="需要销毁的份数" />
+	<property name="disInfoNum" display-name="分发份数 " />
+	<property name="destroyNum" display-name="销毁份数" />
+	<property name="recoverNum" display-name="回收份数" />
+	<property name="sendTime" display-name="分发信息变为已分发状态的时间" />
+	<property name="disInfoName" display-name="分发信息名称（单位/人员）" />
+	<property name="disInfoId" display-name="分发信息IID（人员或组织的内部标识）" />
+	<property name="infoClassId" display-name="分发信息的类标识（人员或者组织的类标识）" />
+	<property name="disInfoType" display-name="分发信息类型（0为单位，1为人员）" />
+	<property name="disMediaType" display-name="分发介质类型（0为纸质，1为电子，2为跨域）" />
+	<property name="disType" display-name="分发方式（0为直接分发，1为补发，2为移除，3为转发，4为回收，5为销毁）" />
+	<property name="note" display-name="备注" />
+
+	<component name="lifeCycleInfo" display-name="生命周期信息" class="LifeCycleInfo" />
+	<component name="manageInfo" display-name="管理信息" class="ManageInfo" />
+	
+	<!-- 模型绑定操作权限时对应的typeId  -->
+	<operation depend-type="RecDesInfo"/>
+</class>

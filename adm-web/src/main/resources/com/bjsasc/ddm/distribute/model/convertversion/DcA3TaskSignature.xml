@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!DOCTYPE class PUBLIC "-//Objectmodel//DTD Configuration 1.0//EN" "http://www.bjsasc.com/dtds/om-configuration-1.0.dtd">
+
+<class id="DcA3TaskSignature" name="com.bjsasc.ddm.distribute.model.convertversion.DcA3TaskSignature"
+	display-name="跨版本任务签署信息" icon="/ddm/images/disInfo.gif" table="DDM_DC_A3_TASK_SIGNATURE"
+	storageMode="share" mappingMode="3" relation="false" parentID="ATObject">
+	
+	<property name="dealUserIID" display-name="处理人标识" />
+	<property name="dealUserID" display-name="处理人编号" />
+	<property name="dealUserName" display-name="处理人名称" />
+	<property name="dealDevisionIID" display-name="处理人部门标识" />
+	<property name="dealDevisionID" display-name="处理人部门编号" />
+	<property name="dealDevisionName" display-name="处理人部门名称" />
+	<property name="dealRole" display-name="处理人角色" />
+	<property name="isAgree" display-name="是否同意" />
+	<property name="dealMind" display-name="处理意见" />
+	<property name="mindType" display-name="意见类型" />
+	<property name="isNeedDevisionMind" display-name="是否需要单位意见" />
+	<property name="startTime" display-name="任务开始时间" />
+	<property name="signatureTime" display-name="签署时间" />
+	<property name="signatureState" display-name="签署状态" />
+	<property name="domainIID" display-name="域标识" />
+	<property name="orderIID" display-name="单据标识" />
+	<property name="taskIID" display-name="任务标识" />
+	
+</class>

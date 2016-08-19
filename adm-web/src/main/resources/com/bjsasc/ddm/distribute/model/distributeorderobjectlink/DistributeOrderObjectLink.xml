@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!DOCTYPE class PUBLIC "-//Objectmodel//DTD Configuration 1.0//EN" "http://www.bjsasc.com/dtds/om-configuration-1.0.dtd">
+
+<class id="DistributeOrderObjectLink" 
+	name="com.bjsasc.ddm.distribute.model.distributeorderobjectlink.DistributeOrderObjectLink" 
+	display-name="发放单与分发数据link" icon="/ddm/images/disOrderObjLink.gif"
+	table="DDM_DIS_ORDEROBJLINK" storageMode="share" mappingMode="3"
+	relation="true" parentID="ATLink">
+	<property name="isParent" display-name="是否在这个发放单内是父节点（0：不是，1：是）" />
+	<property name="isMaster" display-name="是否在这个发放单内是主对象（0：不是，1：是）" />
+	<property name="disDeadLine" display-name="分发信息完工期限" />
+	<property name="disUrgent" display-name="紧急程度（0为普通，1为加急）" />
+	<component name="lifeCycleInfo" display-name="生命周期信息" class="LifeCycleInfo" />
+	<property name="disStyle" display-name="分发方式（0为正式分发，1为一次性分发）" />
+</class>

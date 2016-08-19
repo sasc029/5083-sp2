@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!DOCTYPE class PUBLIC "-//Objectmodel//DTD Configuration 1.0//EN" "http://www.bjsasc.com/dtds/om-configuration-1.0.dtd">
+
+<class id="DistributeConfigParameter" name="com.bjsasc.ddm.distribute.model.distributeconfigparameter.DistributeConfigParameter"
+	display-name="发放管理参数配置" icon="/plm/images/context/product.gif" table="DDM_DIS_CONFIG_PARAMETER"
+	storageMode="share" mappingMode="3" relation="false" parentID="ATObject">
+	
+	<property name="paramId" display-name="参数ID" />
+	<property name="paramName" display-name="参数名称" />
+	<property name="defaultValue" display-name="默认值" />
+	<property name="currentValue" display-name="当前值" />
+	<property name="state" display-name="类别" />
+	<property name="description" display-name="说明" />	
+	<component name="contextInfo" display-name="上下文" class="ContextInfo" />
+    <component name="domainInfo" display-name="域信息" class="DomainInfo" />
+	<component name="manageInfo" display-name="管理信息" class="ManageInfo" />
+</class>

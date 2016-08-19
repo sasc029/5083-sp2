@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE class PUBLIC "-//Objectmodel//DTD Configuration 1.0//EN" "http://www.bjsasc.com/dtds/om-configuration-1.0.dtd">
+
+<class id="ActiveRecycle" name="com.bjsasc.adm.active.model.activerecycle.ActiveRecycle"
+	display-name="回收站" icon="/plm/images/context/product.gif" table="ADM_ACTIVERECYCLE"
+	storageMode="share" mappingMode="3" relation="false" parentID="ATObject">
+	<property name="itemId" display-name="回收对象ID" type="String" length="255"/>
+	<property name="itemClassId" display-name="回收对象类型" type="String" length="255"/>
+	<property name="itemPropertiesUrl" display-name="浏览对象属性页面的URL" type="String" length="255"/>
+	<property name="modelId" display-name="模型ID" type="String" length="255"/>
+	<property name="modelClassId" display-name="模型类型" type="String" length="255"/>
+	<property name="number" column="id" display-name="编号" type="String" length="255"/>
+	<property name="name" display-name="名称" type="String" length="255"/>
+	<property name="securityLevel" display-name="密级" type="String" length="255" />
+	<property name="versionNo" display-name="版本" type="String" length="255" />
+	<property name="folderPath" display-name="位置" type="String" length="255" />
+	<property name="modelName" display-name="模型" type="String" length="255" />
+	<component name="lifeCycleInfo" display-name="生命周期信息" class="LifeCycleInfo" />
+</class>

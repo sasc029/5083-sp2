@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE class PUBLIC "-//Objectmodel//DTD Configuration 1.0//EN" "http://www.bjsasc.com/dtds/om-configuration-1.0.dtd">
+
+<class id="ActiveOrderLink"
+	name="com.bjsasc.adm.active.model.activeorderlink.ActiveOrderLink"
+	display-name="现行单据与文件关联" icon="/plm/images/context/product.gif" table="ADM_ACTIVEORDEREDLINK"
+	storageMode="share" mappingMode="3" relation="true" parentID="ATLink">
+	<property name="mainOrdered" display-name="是否主对像（1：是，0：不是）" type="int" length="1"/>
+	<property name="orderedBeforeClassID" display-name="改前数据classid" type="String" length="255"/>
+	<property name="orderedBeforeID" display-name="改前数据innerid" type="String" length="255"/>
+	<property name="orderedBeforeVersionClassID" display-name="改前数据版本classid" type="String" length="255"/>
+	<property name="orderedBeforeVersionID" display-name="改前数据版本innerid" type="String" length="255"/>
+</class>

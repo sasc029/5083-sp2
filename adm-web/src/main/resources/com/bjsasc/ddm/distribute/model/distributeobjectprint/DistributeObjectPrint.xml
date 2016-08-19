@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!DOCTYPE class PUBLIC "-//Objectmodel//DTD Configuration 1.0//EN" "http://www.bjsasc.com/dtds/om-configuration-1.0.dtd">
+
+<class id="DistributeObjectPrint" name="com.bjsasc.ddm.distribute.model.distributeobjectprint.DistributeObjectPrint"
+	display-name="任务下分发数据是否已打印" icon="/plm/images/context/product.gif" table="DDM_DIS_OBJECT_PRINT"
+	storageMode="share" mappingMode="3" relation="false" parentID="ATObject">
+	<property name="objInnerid" display-name="数据内部标识" />
+	<property name="objClassid" display-name="数据内部类标识" />
+	<property name="taskInnerid" display-name="任务内部标识" />
+	<property name="taskClassid" display-name="任务内部类标识" />
+	<property name="isprint" display-name="是否打印(0:否,1:是)" />
+</class>
